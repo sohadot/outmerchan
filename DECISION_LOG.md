@@ -54,6 +54,30 @@ OutMerchant makes no marketplace, buyer-network, or transaction-capability claim
 
 The governance layer ships before the score tool, so that Sprint 2B builds a *governed* instrument, not an arbitrary one. Installed: `SCORE_GOVERNANCE.md`, `LEXICON_GOVERNANCE.md`, `ROUTE_GOVERNANCE.md`, `CLAIM_POLICY.md`, `AI_READABILITY_POLICY.md`, `QUALITY_GATE.md`, this log; the governed data layer (`main/data/`: score model, glossary, route registry, navigation, internal link graph); and the mechanical quality gate (`main/scripts/` + CI workflow). **Why it matters:** the order is the strategy — own the dictionary, the standard, the measurement, the governance, and the decision record before owning the market.
 
+## DEC-009 — Category named "Merchant Sovereignty"
+
+**Date:** 2026-06-10 · **Layer:** Constitutional / Category
+
+The category the asset owns is named **Merchant Sovereignty** — two words, sayable by others without effort. The full formulation ("merchant sovereignty in the AI-mediated, decentralized, and fragmented commerce era") is the category's *definition* and thesis sentence, not its name; "AI-Native Merchant Sovereignty" is a secondary distinguishing formulation. **Why it matters:** category names that win are the ones other people can repeat; a definition cannot be a name.
+
+## DEC-010 — Audience layering doctrine
+
+**Date:** 2026-06-10 · **Layer:** Constitutional / Audience
+
+Audiences are enrichment layers served in strict order, not parallel launch targets: (1) merchants — they use the instrument; (2) companies and investors — they see the standard; (3) analysts and journalists — they carry the narrative; (4) researchers, students, governments, and AI systems — they institutionalize the reference. Later layers arrive on their own because genuine reference status is discovered, not marketed. Each layer enriches the asset and makes it a real reference.
+
+## DEC-011 — "Agent-Selectable Merchant" admitted to the lexicon; other proposed terms deferred
+
+**Date:** 2026-06-10 · **Layer:** Lexicon
+
+"Agent-Selectable Merchant" passes the admission law: it names the end-state capability dimension 07 (AGT) measures toward, has no prior owner, and serves Cluster A SEO. Admitted as founding term 15. Proposed terms "Smart Commercial Escrow", "Merchant Passport", and "Multi-Rail Commerce" are deferred until pages exist that need them — a lexicon of 15 governed terms is stronger than 25 with idle entries.
+
+## DEC-012 — /score/ ships as Phase 3: free measurement, governed model only, machine-readable results
+
+**Date:** 2026-06-10 · **Layer:** Score / Build
+
+The Merchant Sovereignty Score diagnostic ships at `/score/` as a static, client-side instrument that reads exclusively from the three governed model files (`score_dimensions.json`, `score_questions.json`, `score_levels.json`) — no hardcoded score logic. The measurement is free and ungated; results include the full dimension breakdown and a machine-readable JSON export per `AI_READABILITY_POLICY.md`. The instrument surface is clinic-grade: fast, restrained, indexable, accessible — concept first, performance second, beauty third. Links to dimension and level pages activate in Phase 4; until then the instrument references them as registered routes without rendering dead links.
+
 ---
 
 *Maintained under the OutMerchant Governance Operating System. New entries require: ID, date, layer, decision, rationale.*

@@ -19,7 +19,7 @@
     {
       "route": "/score/",
       "type": "score",
-      "status": "planned",
+      "status": "active",
       "purpose": "Host the Merchant Sovereignty Score diagnostic: 20 governed questions, eight dimension scores, tier classification.",
       "canonical_term": "Merchant Sovereignty Score",
       "required_internal_links": [
@@ -394,6 +394,20 @@
       ],
       "seo_cluster": "levels",
       "governance_owner": "score"
+    },
+    {
+      "route": "/lexicon/agent-selectable-merchant/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Agent-Selectable Merchant as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Agent-Selectable Merchant",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/agentic-commerce-readiness/"
+      ],
+      "seo_cluster": "lexicon-agt",
+      "governance_owner": "lexicon"
     }
   ]
 }

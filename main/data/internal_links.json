@@ -511,6 +511,24 @@
       "to": "/lexicon/merchant-sovereignty/",
       "kind": "required",
       "reason": "level route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/agent-selectable-merchant/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/agent-selectable-merchant/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/agent-selectable-merchant/",
+      "to": "/lexicon/agentic-commerce-readiness/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
     }
   ]
 }
