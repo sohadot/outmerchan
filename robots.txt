@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://outmerchant.com/sitemap.xml
