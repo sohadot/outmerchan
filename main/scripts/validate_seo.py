@@ -39,6 +39,15 @@ def run():
             errors.append(f"seo: {p['route']} missing title")
         if not re.search(r'<meta name="description" content="[^"]+"', html):
             errors.append(f"seo: {p['route']} missing meta description")
+        if not re.search(r'<meta name="robots" content="index', html):
+            errors.append(f"seo: {p['route']} missing robots meta")
+        h1_count = len(re.findall(r"<h1[\s>]", html))
+        if h1_count != 1:
+            errors.append(f"seo: {p['route']} must have exactly one H1, found {h1_count}")
+        text = re.sub(r"<script.*?</script>|<style.*?</style>|<[^>]+>", " ", html, flags=re.S)
+        words = len(text.split())
+        if words < 200:
+            errors.append(f"seo: {p['route']} is thin content ({words} words of visible text)")
 
     # JSON-LD on the home surface must parse and carry the lexicon
     html = (ROOT / "index.html").read_text()
@@ -71,6 +80,12 @@ def run():
         for p in active:
             if f"<loc>{ORIGIN}{p['route']}</loc>" not in sm:
                 errors.append(f"seo: active route {p['route']} missing from sitemap.xml")
+        # Only active routes may appear in the sitemap — never planned or unregistered ones
+        active_routes = {p["route"] for p in active}
+        for loc in re.findall(r"<loc>([^<]+)</loc>", sm):
+            route = loc.replace(ORIGIN, "") or "/"
+            if route not in active_routes:
+                errors.append(f"seo: sitemap contains non-active route {route}")
     return errors
 
 

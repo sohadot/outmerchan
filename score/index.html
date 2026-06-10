@@ -6,6 +6,7 @@
 <title>Merchant Sovereignty Score — Measure Your Commercial Independence | OutMerchant</title>
 <meta name="description" content="The Merchant Sovereignty Score is a 0–100 measurement of a merchant's real commercial independence across eight dimensions of control: platform dependency, customer ownership, reputation portability, settlement exposure, margin leakage, cross-border trust, AI commerce readiness, and governance independence.">
 <link rel="canonical" href="https://outmerchant.com/score/">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#020408">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://outmerchant.com/score/">
@@ -116,6 +117,13 @@
   .bar-fill { height: 100%; background: var(--signal); width: 0; transition: width 0.6s ease; }
   .bar-val { text-align: right; color: var(--text-dim); }
 
+  .ref { margin-top: 56px; border-top: 1px solid var(--text-ghost); padding-top: 36px; }
+  .ref-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 16px; }
+  .ref-grid a { display: block; border: 1px solid var(--text-ghost); padding: 12px 16px; font-size: 12px; color: var(--text-dim); text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+  .ref-grid a:hover { border-color: var(--signal-mid); color: var(--signal); }
+  .ref-grid a span { color: var(--signal); margin-right: 10px; font-size: 10px; letter-spacing: 0.15em; }
+  @media (max-width: 640px) { .ref-grid { grid-template-columns: 1fr; } }
+
   .machine { margin-top: 28px; border-top: 1px solid var(--text-ghost); padding-top: 20px; }
   .machine p { font-size: 11px; color: var(--text-dim); margin-bottom: 12px; }
   #error { display: none; color: var(--danger); font-size: 12px; border: 1px solid var(--danger); padding: 16px; margin: 24px 0; }
@@ -195,6 +203,27 @@
           <button type="button" class="btn-secondary" id="copyJson">Copy JSON</button>
           <button type="button" class="btn-secondary" id="downloadJson">Download JSON</button>
         </div>
+      </div>
+    </section>
+
+    <section class="ref" aria-label="The reference standard">
+      <p class="kicker">// The Reference Standard</p>
+      <p class="lead">Every dimension and tier of the score is formally defined in the reference standard:</p>
+      <div class="ref-grid">
+        <a href="/dimensions/platform-dependency/"><span>01 / DEP</span>Platform Dependency</a>
+        <a href="/dimensions/customer-ownership/"><span>02 / OWN</span>Customer Ownership</a>
+        <a href="/dimensions/reputation-portability/"><span>03 / REP</span>Reputation Portability</a>
+        <a href="/dimensions/payment-settlement-exposure/"><span>04 / PAY</span>Payment &amp; Settlement Exposure</a>
+        <a href="/dimensions/fee-margin-leakage/"><span>05 / FEE</span>Fee &amp; Margin Leakage</a>
+        <a href="/dimensions/cross-border-trust/"><span>06 / XBR</span>Cross-Border Trust</a>
+        <a href="/dimensions/ai-commerce-readiness/"><span>07 / AGT</span>AI Commerce Readiness</a>
+        <a href="/dimensions/governance-independence/"><span>08 / GOV</span>Governance Independence</a>
+      </div>
+      <div class="ref-grid" style="margin-top:2px">
+        <a href="/levels/captured/"><span>00–25</span>Captured</a>
+        <a href="/levels/dependent/"><span>26–50</span>Dependent</a>
+        <a href="/levels/emerging/"><span>51–75</span>Emerging</a>
+        <a href="/levels/outmerchant/"><span>76–100</span>OutMerchant</a>
       </div>
     </section>
   </div>

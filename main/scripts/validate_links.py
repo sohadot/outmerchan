@@ -30,16 +30,40 @@ def run():
             if (p["route"], target) not in edge_set:
                 errors.append(f"links: required edge missing from graph: {p['route']} -> {target}")
 
-    # Live surface: anchor links and navigation must resolve
+    # Live surfaces: anchors resolve, rendered route links target ACTIVE routes
+    # only (a link to a planned route is a live 404), and every active route
+    # has at least one inbound and one outbound internal link.
+    active_routes = {p["route"] for p in pages if p["status"] == "active"}
+    inbound = {r: 0 for r in active_routes}
+    for p in pages:
+        if p["status"] != "active":
+            continue
+        path = ROOT / "index.html" if p["route"] == "/" else ROOT / p["route"].strip("/") / "index.html"
+        if not path.exists():
+            continue
+        html = path.read_text()
+        ids = set(re.findall(r'id="([^"]+)"', html))
+        for href in re.findall(r'href="(#[^"]+)"', html):
+            if href[1:] not in ids:
+                errors.append(f"links: broken anchor on {p['route']}: {href}")
+        outbound = 0
+        for href in re.findall(r'href="(/[^"#]*)"', html):
+            route = href if href.endswith("/") else href + "/"
+            route = "/" if href == "/" else route
+            if route not in routeset:
+                errors.append(f"links: {p['route']} links to unregistered route {href}")
+            elif route not in active_routes:
+                errors.append(f"links: {p['route']} links to non-active route {href} (live 404)")
+            if route in active_routes and route != p["route"]:
+                outbound += 1
+                inbound[route] += 1
+        if outbound == 0:
+            errors.append(f"links: active route {p['route']} has no outbound internal links")
+    for r in active_routes:
+        if r != "/" and inbound.get(r, 0) == 0:
+            errors.append(f"links: active route {r} has no inbound internal links (orphan on the live surface)")
     html = (ROOT / "index.html").read_text()
     ids = set(re.findall(r'id="([^"]+)"', html))
-    for href in re.findall(r'href="(#[^"]+)"', html):
-        if href[1:] not in ids:
-            errors.append(f"links: broken anchor on live surface: {href}")
-    for href in re.findall(r'href="(/[^"#]*)"', html):
-        route = href if href.endswith("/") else href + "/"
-        if href != "/" and route not in routeset and href not in routeset:
-            errors.append(f"links: live surface links to unregistered route {href}")
     for item in nav.get("primary", []):
         target = item["target"]
         if target.startswith("/#") and target[2:] not in ids:

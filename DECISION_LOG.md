@@ -78,6 +78,12 @@ Audiences are enrichment layers served in strict order, not parallel launch targ
 
 The Merchant Sovereignty Score diagnostic ships at `/score/` as a static, client-side instrument that reads exclusively from the three governed model files (`score_dimensions.json`, `score_questions.json`, `score_levels.json`) — no hardcoded score logic. The measurement is free and ungated; results include the full dimension breakdown and a machine-readable JSON export per `AI_READABILITY_POLICY.md`. The instrument surface is clinic-grade: fast, restrained, indexable, accessible — concept first, performance second, beauty third. Links to dimension and level pages activate in Phase 4; until then the instrument references them as registered routes without rendering dead links.
 
+## DEC-013 — OutMerchant moves from diagnostic product to reference standard surface
+
+**Date:** 2026-06-10 · **Layer:** Build / Reference Standard
+
+The governed dimension and level pages are activated: eight dimension reference pages (`/dimensions/…`) and four tier definition pages (`/levels/…`), generated exclusively from the governed model files by `main/scripts/build_reference_pages.py` — pages are regenerated, never hand-edited, so the reference layer cannot drift from the standard it documents. `/levels/outmerchant/` formally defines OutMerchant as the protected highest sovereignty rank, citing DEC-001/DEC-006. The quality gate gains a sixth validator (`validate_reference.py`) enforcing name/ID/range fidelity against the model, the protected-rank statement, and the cross-link topology; SEO and link validators are tightened (robots meta, exactly one H1, thin-content floor, no non-active routes in the sitemap, no live links to non-active routes, inbound/outbound link coverage). **Why it matters:** with measurement (Phase 3) and formal definitions (this phase) both live and mutually linked, the asset is no longer a tool with a story — it is a reference standard surface: every term it measures is now a citable page.
+
 ---
 
 *Maintained under the OutMerchant Governance Operating System. New entries require: ID, date, layer, decision, rationale.*
