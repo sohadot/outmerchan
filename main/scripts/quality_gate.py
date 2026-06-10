@@ -11,6 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import validate_glossary
 import validate_links
+import validate_reference
 import validate_routes
 import validate_score_model
 import validate_seo
@@ -21,6 +22,7 @@ VALIDATORS = [
     ("routes (ROUTE_GOVERNANCE.md)", validate_routes),
     ("internal links (ROUTE_GOVERNANCE.md)", validate_links),
     ("seo / ai-readability (AI_READABILITY_POLICY.md)", validate_seo),
+    ("reference standard (DEC-013)", validate_reference),
 ]
 
 

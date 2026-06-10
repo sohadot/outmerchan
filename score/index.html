@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merchant Sovereignty Score — Measure Your Commercial Independence | OutMerchant</title>
+<meta name="description" content="The Merchant Sovereignty Score is a 0–100 measurement of a merchant's real commercial independence across eight dimensions of control: platform dependency, customer ownership, reputation portability, settlement exposure, margin leakage, cross-border trust, AI commerce readiness, and governance independence.">
+<link rel="canonical" href="https://outmerchant.com/score/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#020408">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://outmerchant.com/score/">
+<meta property="og:site_name" content="OutMerchant">
+<meta property="og:title" content="Merchant Sovereignty Score — Measure Your Commercial Independence">
+<meta property="og:description" content="20 governed questions. Eight dimensions of control. Four tiers: Captured, Dependent, Emerging, OutMerchant. The measurement is free.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Merchant Sovereignty Score — Measure Your Commercial Independence">
+<meta name="twitter:description" content="20 governed questions. Eight dimensions of control. Four tiers: Captured, Dependent, Emerging, OutMerchant. The measurement is free.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://outmerchant.com/score/#app",
+      "name": "Merchant Sovereignty Score",
+      "url": "https://outmerchant.com/score/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "A free diagnostic measuring a merchant's commercial independence (0–100) across eight dimensions of control, classifying the result into four tiers: Captured, Dependent, Emerging, OutMerchant.",
+      "publisher": { "@id": "https://outmerchant.com/#organization" },
+      "about": { "@id": "https://outmerchant.com/#term-sovereignty-score" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "OutMerchant", "item": "https://outmerchant.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Merchant Sovereignty Score", "item": "https://outmerchant.com/score/" }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --void: #020408;
+    --deep: #050d15;
+    --grid: #0a1628;
+    --signal: #00d4ff;
+    --signal-dim: rgba(0,212,255,0.08);
+    --signal-mid: rgba(0,212,255,0.3);
+    --gold: #c8a96e;
+    --danger: #ff3d3d;
+    --text: #e8f0f8;
+    --text-dim: rgba(232,240,248,0.55);
+    --text-ghost: rgba(232,240,248,0.12);
+    --mono: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    --display: 'Syne', system-ui, sans-serif;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Mono:wght@400;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--void); color: var(--text); font-family: var(--mono); line-height: 1.7; }
+  a { color: var(--signal); }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  header { border-bottom: 1px solid var(--text-ghost); padding: 20px 0; }
+  header .wrap { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-family: var(--display); font-weight: 800; font-size: 16px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text); text-decoration: none; }
+  .logo span { color: var(--signal); }
+  .header-tag { font-size: 10px; letter-spacing: 0.2em; color: var(--text-dim); text-transform: uppercase; }
+
+  main { padding: 56px 0 96px; }
+  .kicker { font-size: 10px; letter-spacing: 0.4em; color: var(--signal); text-transform: uppercase; margin-bottom: 16px; }
+  h1 { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 5vw, 48px); line-height: 1.1; margin-bottom: 20px; }
+  .lead { color: var(--text-dim); font-size: 14px; max-width: 680px; margin-bottom: 12px; }
+  .lead strong { color: var(--text); font-weight: 400; }
+
+  .tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; margin: 40px 0; }
+  .tier { border: 1px solid var(--text-ghost); padding: 16px 12px; text-align: center; }
+  .tier-range { font-size: 10px; color: var(--signal); letter-spacing: 0.2em; }
+  .tier-name { font-family: var(--display); font-weight: 700; font-size: 14px; margin-top: 6px; }
+  .tier-name.t1 { color: var(--danger); }
+  .tier-name.t2 { color: var(--gold); }
+  .tier-name.t3 { color: var(--text); }
+  .tier-name.t4 { color: var(--signal); }
+
+  .note { font-size: 11px; color: var(--text-dim); border-left: 1px solid var(--gold); padding: 12px 16px; background: rgba(200,169,110,0.06); margin: 24px 0 48px; }
+
+  .dim-section { border: 1px solid var(--text-ghost); background: var(--deep); margin-bottom: 24px; padding: 28px; }
+  .dim-code { font-size: 10px; letter-spacing: 0.3em; color: var(--signal); margin-bottom: 4px; }
+  .dim-name { font-family: var(--display); font-weight: 700; font-size: 18px; margin-bottom: 4px; }
+  .dim-q { font-size: 12px; color: var(--text-dim); margin-bottom: 20px; }
+
+  fieldset { border: none; margin-bottom: 22px; }
+  legend { font-size: 13px; color: var(--text); margin-bottom: 10px; font-weight: 700; }
+  .opt { display: block; padding: 8px 12px; border: 1px solid var(--text-ghost); margin-bottom: 6px; font-size: 12px; color: var(--text-dim); cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+  .opt:hover { border-color: var(--signal-mid); color: var(--text); }
+  .opt input { margin-right: 10px; accent-color: var(--signal); }
+  .opt:has(input:checked) { border-color: var(--signal); color: var(--text); background: var(--signal-dim); }
+
+  .actions { margin: 32px 0; display: flex; gap: 12px; flex-wrap: wrap; }
+  button { font-family: var(--mono); font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; padding: 14px 32px; cursor: pointer; border: none; }
+  .btn-primary { background: var(--signal); color: var(--void); }
+  .btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--text-ghost); }
+  .btn-secondary:hover { border-color: var(--signal-mid); color: var(--signal); }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  .progress { font-size: 11px; color: var(--text-dim); letter-spacing: 0.1em; }
+
+  #results { border: 1px solid var(--signal-mid); background: var(--deep); padding: 36px; margin-top: 40px; display: none; }
+  .result-total { font-family: var(--display); font-weight: 800; font-size: 64px; line-height: 1; color: var(--signal); }
+  .result-tier { font-family: var(--display); font-weight: 700; font-size: 22px; margin: 8px 0 4px; }
+  .result-meaning { font-size: 12px; color: var(--text-dim); max-width: 600px; margin-bottom: 28px; }
+  .bar-row { display: grid; grid-template-columns: 220px 1fr 48px; gap: 12px; align-items: center; margin-bottom: 10px; font-size: 11px; }
+  .bar-track { height: 6px; background: var(--grid); border: 1px solid var(--text-ghost); }
+  .bar-fill { height: 100%; background: var(--signal); width: 0; transition: width 0.6s ease; }
+  .bar-val { text-align: right; color: var(--text-dim); }
+
+  .ref { margin-top: 56px; border-top: 1px solid var(--text-ghost); padding-top: 36px; }
+  .ref-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 16px; }
+  .ref-grid a { display: block; border: 1px solid var(--text-ghost); padding: 12px 16px; font-size: 12px; color: var(--text-dim); text-decoration: none; transition: border-color 0.2s, color 0.2s; }
+  .ref-grid a:hover { border-color: var(--signal-mid); color: var(--signal); }
+  .ref-grid a span { color: var(--signal); margin-right: 10px; font-size: 10px; letter-spacing: 0.15em; }
+  @media (max-width: 640px) { .ref-grid { grid-template-columns: 1fr; } }
+
+  .machine { margin-top: 28px; border-top: 1px solid var(--text-ghost); padding-top: 20px; }
+  .machine p { font-size: 11px; color: var(--text-dim); margin-bottom: 12px; }
+  #error { display: none; color: var(--danger); font-size: 12px; border: 1px solid var(--danger); padding: 16px; margin: 24px 0; }
+
+  footer { border-top: 1px solid var(--text-ghost); padding: 32px 0; font-size: 10px; color: var(--text-dim); letter-spacing: 0.15em; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+
+  @media (max-width: 640px) {
+    .tiers { grid-template-columns: repeat(2, 1fr); }
+    .bar-row { grid-template-columns: 130px 1fr 40px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="/">OUT<span>MERCHANT</span></a>
+    <div class="header-tag">The Merchant Sovereignty Standard</div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="kicker">// The Instrument — Free Measurement</p>
+    <h1>Merchant Sovereignty Score</h1>
+    <p class="lead">
+      A 0–100 measurement of your real commercial independence, assessed across
+      <strong>eight dimensions of control</strong>: platform dependency, customer ownership, reputation
+      portability, payment &amp; settlement exposure, fee &amp; margin leakage, cross-border trust,
+      AI commerce readiness, and governance independence.
+    </p>
+    <p class="lead">
+      20 governed questions. One honest answer per question. Your answers never leave this page —
+      the measurement runs entirely in your browser. <strong>The measurement is free, always.</strong>
+    </p>
+
+    <div class="tiers" aria-label="The four classification tiers">
+      <div class="tier"><div class="tier-range">00 — 25</div><div class="tier-name t1">Captured</div></div>
+      <div class="tier"><div class="tier-range">26 — 50</div><div class="tier-name t2">Dependent</div></div>
+      <div class="tier"><div class="tier-range">51 — 75</div><div class="tier-name t3">Emerging</div></div>
+      <div class="tier"><div class="tier-range">76 — 100</div><div class="tier-name t4">OutMerchant</div></div>
+    </div>
+
+    <p class="note">
+      The model is governed: dimensions, questions, weights, and tiers are fixed under public
+      score governance and protected by an automated quality gate. The instrument reads exclusively
+      from the governed model — the same model machines read. The terminal tier carries the
+      standard's name: <a href="/#lexicon">to complete the standard is to become an OutMerchant</a>.
+    </p>
+
+    <noscript>
+      <div id="error" style="display:block">
+        The diagnostic requires JavaScript. The governed model itself is openly readable:
+        dimensions, questions, and tiers are published as structured data at
+        /main/data/score_dimensions.json, /main/data/score_questions.json, and /main/data/score_levels.json.
+      </div>
+    </noscript>
+
+    <div id="error"></div>
+    <form id="diagnostic" aria-label="Merchant Sovereignty Score diagnostic"></form>
+
+    <div class="actions">
+      <button type="button" class="btn-primary" id="computeBtn" disabled>→ Compute My Score</button>
+      <span class="progress" id="progress"></span>
+    </div>
+
+    <section id="results" aria-live="polite">
+      <p class="kicker">// Result</p>
+      <div class="result-total" id="resultTotal">0</div>
+      <div class="result-tier" id="resultTier"></div>
+      <p class="result-meaning" id="resultMeaning"></p>
+      <div id="resultBars"></div>
+      <div class="machine">
+        <p>Machine-readable result — structured output for your records, your advisors, or your agents:</p>
+        <div class="actions" style="margin:0">
+          <button type="button" class="btn-secondary" id="copyJson">Copy JSON</button>
+          <button type="button" class="btn-secondary" id="downloadJson">Download JSON</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="ref" aria-label="The reference standard">
+      <p class="kicker">// The Reference Standard</p>
+      <p class="lead">Every dimension and tier of the score is formally defined in the reference standard:</p>
+      <div class="ref-grid">
+        <a href="/dimensions/platform-dependency/"><span>01 / DEP</span>Platform Dependency</a>
+        <a href="/dimensions/customer-ownership/"><span>02 / OWN</span>Customer Ownership</a>
+        <a href="/dimensions/reputation-portability/"><span>03 / REP</span>Reputation Portability</a>
+        <a href="/dimensions/payment-settlement-exposure/"><span>04 / PAY</span>Payment &amp; Settlement Exposure</a>
+        <a href="/dimensions/fee-margin-leakage/"><span>05 / FEE</span>Fee &amp; Margin Leakage</a>
+        <a href="/dimensions/cross-border-trust/"><span>06 / XBR</span>Cross-Border Trust</a>
+        <a href="/dimensions/ai-commerce-readiness/"><span>07 / AGT</span>AI Commerce Readiness</a>
+        <a href="/dimensions/governance-independence/"><span>08 / GOV</span>Governance Independence</a>
+      </div>
+      <div class="ref-grid" style="margin-top:2px">
+        <a href="/levels/captured/"><span>00–25</span>Captured</a>
+        <a href="/levels/dependent/"><span>26–50</span>Dependent</a>
+        <a href="/levels/emerging/"><span>51–75</span>Emerging</a>
+        <a href="/levels/outmerchant/"><span>76–100</span>OutMerchant</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>MERCHANT SOVEREIGNTY SCORE — V1.0.0</div>
+    <div><a href="/">OUTMERCHANT.COM</a> — EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var MODEL = {};
+  var form = document.getElementById('diagnostic');
+  var computeBtn = document.getElementById('computeBtn');
+  var progress = document.getElementById('progress');
+  var errorBox = document.getElementById('error');
+  var lastResult = null;
+
+  function fail(msg) {
+    errorBox.textContent = msg;
+    errorBox.style.display = 'block';
+  }
+
+  // The instrument reads exclusively from the governed model (SCORE_GOVERNANCE.md, DEC-012)
+  Promise.all([
+    fetch('/main/data/score_dimensions.json').then(function (r) { return r.json(); }),
+    fetch('/main/data/score_questions.json').then(function (r) { return r.json(); }),
+    fetch('/main/data/score_levels.json').then(function (r) { return r.json(); })
+  ]).then(function (data) {
+    MODEL.dimensions = data[0].dimensions.slice().sort(function (a, b) { return a.order - b.order; });
+    MODEL.questions = data[1].questions.filter(function (q) { return q.status === 'active'; });
+    MODEL.levels = data[2].levels.slice().sort(function (a, b) { return a.min - b.min; });
+    MODEL.version = data[0].version;
+    render();
+  }).catch(function () {
+    fail('The governed score model could not be loaded. Refresh the page, or read the model directly under /main/data/.');
+  });
+
+  function render() {
+    MODEL.dimensions.forEach(function (dim) {
+      var section = document.createElement('section');
+      section.className = 'dim-section';
+      section.innerHTML =
+        '<div class="dim-code">' + String(dim.order).padStart(2, '0') + ' / ' + dim.code + '</div>' +
+        '<div class="dim-name">' + dim.name + '</div>' +
+        '<div class="dim-q">' + dim.question + '</div>';
+      MODEL.questions.filter(function (q) { return q.dimension === dim.code; }).forEach(function (q) {
+        var fs = document.createElement('fieldset');
+        var lg = document.createElement('legend');
+        lg.textContent = q.text;
+        fs.appendChild(lg);
+        q.options.forEach(function (opt, i) {
+          var label = document.createElement('label');
+          label.className = 'opt';
+          var input = document.createElement('input');
+          input.type = 'radio';
+          input.name = q.id;
+          input.value = String(i);
+          input.addEventListener('change', updateProgress);
+          label.appendChild(input);
+          label.appendChild(document.createTextNode(opt.label));
+          fs.appendChild(label);
+        });
+        section.appendChild(fs);
+      });
+      form.appendChild(section);
+    });
+    updateProgress();
+  }
+
+  function answered() {
+    return MODEL.questions.filter(function (q) {
+      return form.querySelector('input[name="' + q.id + '"]:checked');
+    }).length;
+  }
+
+  function updateProgress() {
+    var done = answered();
+    progress.textContent = done + ' / ' + MODEL.questions.length + ' answered';
+    computeBtn.disabled = done !== MODEL.questions.length;
+  }
+
+  function compute() {
+    // Scoring contract (SCORE_GOVERNANCE.md):
+    // dimension score = points earned / max points * 100
+    // total = weighted average of dimension scores; tier boundaries inclusive
+    var dimScores = MODEL.dimensions.map(function (dim) {
+      var qs = MODEL.questions.filter(function (q) { return q.dimension === dim.code; });
+      var earned = 0, max = 0;
+      qs.forEach(function (q) {
+        var pts = q.options.map(function (o) { return o.points; });
+        max += Math.max.apply(null, pts);
+        var sel = form.querySelector('input[name="' + q.id + '"]:checked');
+        earned += q.options[Number(sel.value)].points;
+      });
+      return { code: dim.code, name: dim.name, weight: dim.weight, score: max ? (earned / max) * 100 : 0 };
+    });
+    var total = dimScores.reduce(function (acc, d) { return acc + d.score * (d.weight / 100); }, 0);
+    var rounded = Math.round(total);
+    var tier = MODEL.levels.filter(function (l) { return rounded >= l.min && rounded <= l.max; })[0];
+    return { total: rounded, tier: tier, dimensions: dimScores };
+  }
+
+  computeBtn.addEventListener('click', function () {
+    var r = compute();
+    document.getElementById('resultTotal').textContent = r.total;
+    document.getElementById('resultTier').textContent = 'Tier: ' + r.tier.name + ' (' + r.tier.min + '–' + r.tier.max + ')';
+    document.getElementById('resultMeaning').textContent = r.tier.meaning;
+    var bars = document.getElementById('resultBars');
+    bars.innerHTML = '';
+    r.dimensions.forEach(function (d) {
+      var row = document.createElement('div');
+      row.className = 'bar-row';
+      row.innerHTML = '<span>' + d.code + ' — ' + d.name + '</span>' +
+        '<div class="bar-track"><div class="bar-fill"></div></div>' +
+        '<span class="bar-val">' + Math.round(d.score) + '</span>';
+      bars.appendChild(row);
+      requestAnimationFrame(function () {
+        row.querySelector('.bar-fill').style.width = Math.round(d.score) + '%';
+      });
+    });
+    lastResult = {
+      standard: 'Merchant Sovereignty Score',
+      source: 'https://outmerchant.com/score/',
+      model_version: MODEL.version,
+      generated: new Date().toISOString(),
+      total_score: r.total,
+      tier: { name: r.tier.name, min: r.tier.min, max: r.tier.max },
+      dimensions: r.dimensions.map(function (d) {
+        return { code: d.code, name: d.name, score: Math.round(d.score) };
+      })
+    };
+    var panel = document.getElementById('results');
+    panel.style.display = 'block';
+    panel.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  function resultJson() { return JSON.stringify(lastResult, null, 2); }
+
+  document.getElementById('copyJson').addEventListener('click', function () {
+    if (!lastResult) return;
+    navigator.clipboard.writeText(resultJson()).then(function () {
+      document.getElementById('copyJson').textContent = 'Copied';
+      setTimeout(function () { document.getElementById('copyJson').textContent = 'Copy JSON'; }, 1500);
+    });
+  });
+
+  document.getElementById('downloadJson').addEventListener('click', function () {
+    if (!lastResult) return;
+    var blob = new Blob([resultJson()], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'merchant-sovereignty-score.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  });
+})();
+</script>
+</body>
+</html>

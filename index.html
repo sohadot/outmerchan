@@ -6,6 +6,7 @@
 <title>OutMerchant — The Merchant Sovereignty Standard</title>
 <meta name="description" content="OutMerchant is the reference standard for merchant sovereignty: the classification system, eight-dimension control architecture, and Sovereignty Score that measure whether a merchant owns their commerce — or rents access to it.">
 <link rel="canonical" href="https://outmerchant.com/">
+<meta name="robots" content="index, follow">
 <meta name="theme-color" content="#020408">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://outmerchant.com/">
@@ -1039,7 +1040,7 @@
     </p>
 
     <div class="cta-group" style="justify-content:center; opacity:1;">
-      <a href="#" class="btn-primary" id="scoreBtn">
+      <a href="/score/" class="btn-primary" id="scoreBtn">
         → Calculate My Score
       </a>
     </div>
@@ -1317,12 +1318,6 @@ nodeCards.forEach(node => {
   nodeObserver.observe(node);
 });
 
-// SCORE BUTTON
-document.getElementById('scoreBtn').addEventListener('click', e => {
-  e.preventDefault();
-  // Future: open score modal
-  alert('Sovereignty Score — Coming to outmerchant.com');
-});
 </script>
 </body>
 </html>
