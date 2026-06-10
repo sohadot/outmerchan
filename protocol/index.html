@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The OutMerchant Protocol — How Merchant Sovereignty Is Named, Measured, Explained, and Protected</title>
+<meta name="description" content="The OutMerchant Protocol defines how Merchant Sovereignty is named, measured, explained, and protected across the asset: the canonical lexicon, the Sovereignty Score, the reference standard, and the governance that holds them together as one system.">
+<link rel="canonical" href="https://outmerchant.com/protocol/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#020408">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://outmerchant.com/protocol/">
+<meta property="og:site_name" content="OutMerchant">
+<meta property="og:title" content="The OutMerchant Protocol">
+<meta property="og:description" content="How Merchant Sovereignty is named, measured, explained, and protected — the lexicon, the score, the reference standard, and the governance that holds them together as one system.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The OutMerchant Protocol">
+<meta name="twitter:description" content="How Merchant Sovereignty is named, measured, explained, and protected — one system, not separate parts.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://outmerchant.com/protocol/#article",
+      "headline": "The OutMerchant Protocol",
+      "description": "How Merchant Sovereignty is named, measured, explained, and protected across the asset.",
+      "url": "https://outmerchant.com/protocol/",
+      "isPartOf": { "@id": "https://outmerchant.com/#website" },
+      "publisher": { "@id": "https://outmerchant.com/#organization" },
+      "about": { "@id": "https://outmerchant.com/#term-merchant-sovereignty" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "OutMerchant", "item": "https://outmerchant.com/" },
+        { "@type": "ListItem", "position": 2, "name": "The Protocol", "item": "https://outmerchant.com/protocol/" }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --void:#020408; --deep:#050d15; --grid:#0a1628;
+    --signal:#00d4ff; --signal-dim:rgba(0,212,255,0.08); --signal-mid:rgba(0,212,255,0.3);
+    --gold:#c8a96e; --danger:#ff3d3d;
+    --text:#e8f0f8; --text-dim:rgba(232,240,248,0.55); --text-ghost:rgba(232,240,248,0.12);
+    --mono:'Space Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    --display:'Syne', system-ui, sans-serif;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--void); color:var(--text); font-family:var(--mono); line-height:1.8; }
+  a { color:var(--signal); }
+  .wrap { max-width:820px; margin:0 auto; padding:0 24px; }
+  header { border-bottom:1px solid var(--text-ghost); padding:20px 0; }
+  header .wrap { display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-family:var(--display); font-weight:800; font-size:16px; letter-spacing:0.3em; text-transform:uppercase; color:var(--text); text-decoration:none; }
+  .logo span { color:var(--signal); }
+  .header-tag { font-size:10px; letter-spacing:0.2em; color:var(--text-dim); text-transform:uppercase; }
+  main { padding:56px 0 96px; }
+  .kicker { font-size:10px; letter-spacing:0.4em; color:var(--signal); text-transform:uppercase; margin-bottom:16px; }
+  h1 { font-family:var(--display); font-weight:800; font-size:clamp(28px,5vw,44px); line-height:1.15; margin-bottom:20px; }
+  h2 { font-family:var(--display); font-weight:700; font-size:18px; margin:40px 0 12px; letter-spacing:0.03em; }
+  p { font-size:13px; color:var(--text-dim); margin-bottom:14px; max-width:680px; }
+  p strong { color:var(--text); font-weight:400; }
+  .charter { border-left:1px solid var(--signal); background:var(--signal-dim); padding:20px 24px; margin:20px 0 36px; }
+  .charter p { margin:0; font-size:15px; color:var(--text); }
+  .law { border:1px solid var(--text-ghost); background:var(--deep); padding:24px 28px; margin-bottom:16px; }
+  .law h3 { font-family:var(--display); font-size:14px; color:var(--signal); margin-bottom:8px; letter-spacing:0.05em; }
+  .law p { margin:0; font-size:12px; }
+  .governing { text-align:center; font-family:var(--display); font-weight:700; font-size:clamp(16px,3vw,22px); color:var(--text); border-top:1px solid var(--text-ghost); border-bottom:1px solid var(--text-ghost); padding:32px 16px; margin:48px 0; }
+  .governing span { color:var(--signal); }
+  .crosslinks { border-top:1px solid var(--text-ghost); margin-top:48px; padding-top:24px; }
+  .crosslinks p { font-size:12px; }
+  .cta { display:inline-block; background:var(--signal); color:var(--void); font-weight:700; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; padding:14px 32px; text-decoration:none; margin:8px 16px 8px 0; }
+  .cta-secondary { display:inline-block; border:1px solid var(--text-ghost); color:var(--text); font-size:11px; letter-spacing:0.2em; text-transform:uppercase; padding:14px 32px; text-decoration:none; margin:8px 16px 8px 0; }
+  .cta-secondary:hover { border-color:var(--signal-mid); color:var(--signal); }
+  footer { border-top:1px solid var(--text-ghost); padding:32px 0; font-size:10px; color:var(--text-dim); letter-spacing:0.15em; }
+  footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="/">OUT<span>MERCHANT</span></a>
+    <div class="header-tag">The Merchant Sovereignty Standard</div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <p class="kicker">// The Protocol — The System, Not the Parts</p>
+    <h1>The OutMerchant Protocol</h1>
+    <div class="charter">
+      <p>The OutMerchant Protocol defines how Merchant Sovereignty is named, measured, explained, and protected across the asset.</p>
+    </div>
+    <p>The lexicon, the score, the reference pages, and the ranks are not separate features. They are four functions of one system, and this page states how they bind together. A definition that is not measured is rhetoric; a measurement that is not defined is arbitrary; an explanation that can drift from both is decoration. The protocol exists so that none of these failures can occur here.</p>
+
+    <h2>1. Named — The Lexicon</h2>
+    <div class="law">
+      <h3>The Naming Law</h3>
+      <p>Every concept the standard uses is defined once, canonically, in <a href="/lexicon/">the OutMerchant Lexicon</a>. No term enters without a definition, a function inside the system, a relationship to other terms, and a place in the measurement. Definitions are published verbatim from the governed structured record — the lexicon a machine reads and the lexicon a human reads are the same lexicon.</p>
+    </div>
+
+    <h2>2. Measured — The Score</h2>
+    <div class="law">
+      <h3>The Measurement Law</h3>
+      <p><a href="/score/">The Merchant Sovereignty Score</a> measures the condition the lexicon names: 0–100, across eight governed dimensions of control, classified into four tiers. The model — dimensions, weights, questions, boundaries — lives in public structured files and changes only through a recorded decision. Every surface that computes or displays a score reads from that model; none may carry its own.</p>
+    </div>
+
+    <h2>3. Explained — The Reference Standard</h2>
+    <div class="law">
+      <h3>The Explanation Law</h3>
+      <p>Every dimension and every tier of the score has a reference page — from <a href="/dimensions/platform-dependency/">Platform Dependency</a> through <a href="/dimensions/governance-independence/">Governance Independence</a>, and from <a href="/levels/captured/">Captured</a> to the terminal rank. Reference pages are generated from the governed model itself, never written separately from it: the explanation cannot drift from the thing it explains.</p>
+    </div>
+
+    <h2>4. Protected — The Governance</h2>
+    <div class="law">
+      <h3>The Protection Law</h3>
+      <p>An automated quality gate validates the whole system on every change: model integrity, definition fidelity, link topology, indexability, and the inviolable elements. Chief among the protected elements is the terminal rank: the highest tier of the score permanently carries the name <a href="/levels/outmerchant/">OutMerchant</a> (decisions DEC-001, DEC-006). Every significant decision about the system is recorded in a public decision log — the asset does not merely have pages; it has reasons.</p>
+    </div>
+
+    <div class="governing">
+      Every layer serves the merchant.<br><span>No layer owns the merchant.</span>
+    </div>
+
+    <p>The protocol's posture is deliberately bounded: not anti-platform, not anti-state, not anti-bank — <strong>anti-single-point-of-control</strong>. The standard does not campaign against infrastructure; it measures the merchant's independence from any single piece of it, and names the condition in which that independence is complete.</p>
+
+    <div class="crosslinks">
+      <p>Begin where the system begins: measure, then read what the measurement means.</p>
+      <a class="cta" href="/score/">→ Measure Your Sovereignty</a>
+      <a class="cta-secondary" href="/lexicon/">The Lexicon</a>
+      <a class="cta-secondary" href="/levels/outmerchant/">The Protected Rank</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div>THE OUTMERCHANT PROTOCOL — V1.0.0</div>
+    <div><a href="/">OUTMERCHANT.COM</a> — EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
+  </div>
+</footer>
+</body>
+</html>

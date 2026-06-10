@@ -49,22 +49,26 @@ def run():
         if words < 200:
             errors.append(f"seo: {p['route']} is thin content ({words} words of visible text)")
 
-    # JSON-LD on the home surface must parse and carry the lexicon
-    html = (ROOT / "index.html").read_text()
-    blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
-    if not blocks:
-        errors.append("seo: home surface carries no JSON-LD")
+    # JSON-LD must parse on every canonical lexicon surface (home + /lexicon/),
+    # and the union of their DefinedTerms must cover every in_jsonld term.
     defined = set()
-    for block in blocks:
-        try:
-            data = json.loads(block)
-        except json.JSONDecodeError as exc:
-            errors.append(f"seo: invalid JSON-LD on home surface ({exc})")
+    for surface, path in (("home", ROOT / "index.html"), ("/lexicon/", ROOT / "lexicon" / "index.html")):
+        if not path.exists():
             continue
-        collect_defined_terms(data, defined)
+        html = path.read_text()
+        blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
+        if not blocks:
+            errors.append(f"seo: {surface} surface carries no JSON-LD")
+        for block in blocks:
+            try:
+                data = json.loads(block)
+            except json.JSONDecodeError as exc:
+                errors.append(f"seo: invalid JSON-LD on {surface} surface ({exc})")
+                continue
+            collect_defined_terms(data, defined)
     for t in terms:
         if t.get("in_jsonld") and t["term"] not in defined:
-            errors.append(f"seo: lexicon term '{t['term']}' marked in_jsonld but absent from DefinedTermSet")
+            errors.append(f"seo: lexicon term '{t['term']}' marked in_jsonld but absent from DefinedTermSet surfaces")
 
     # Indexability layer
     robots = ROOT / "robots.txt"

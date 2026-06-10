@@ -21,6 +21,14 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "DefinedTerm",
+      "@id": "https://outmerchant.com/#term-merchant-sovereignty-score",
+      "name": "Merchant Sovereignty Score",
+      "description": "A 0–100 measurement of a merchant's real commercial independence, assessed across eight dimensions of control and classifying every merchant into four tiers: Captured, Dependent, Emerging, OutMerchant.",
+      "url": "https://outmerchant.com/score/",
+      "inDefinedTermSet": { "@id": "https://outmerchant.com/#lexicon" }
+    },
+    {
       "@type": "WebApplication",
       "@id": "https://outmerchant.com/score/#app",
       "name": "Merchant Sovereignty Score",
@@ -150,6 +158,9 @@
   <div class="wrap">
     <p class="kicker">// The Instrument — Free Measurement</p>
     <h1>Merchant Sovereignty Score</h1>
+    <p class="lead" style="border-left:1px solid var(--signal); background:var(--signal-dim); padding:16px 20px; color:var(--text)">
+      <strong>Canonical definition:</strong> A 0–100 measurement of a merchant's real commercial independence, assessed across eight dimensions of control and classifying every merchant into four tiers: Captured, Dependent, Emerging, OutMerchant.
+    </p>
     <p class="lead">
       A 0–100 measurement of your real commercial independence, assessed across
       <strong>eight dimensions of control</strong>: platform dependency, customer ownership, reputation
@@ -225,6 +236,13 @@
         <a href="/levels/emerging/"><span>51–75</span>Emerging</a>
         <a href="/levels/outmerchant/"><span>76–100</span>OutMerchant</a>
       </div>
+      <p class="lead" style="margin-top:24px">Key terms the score measures are canonically defined in the lexicon:
+        <a href="/lexicon/merchant-sovereignty/">Merchant Sovereignty</a>,
+        <a href="/lexicon/platform-capture/">Platform Capture</a>,
+        <a href="/lexicon/ai-merchant-sovereignty/">AI Merchant Sovereignty</a>,
+        <a href="/lexicon/agent-selectable-merchant/">Agent-Selectable Merchant</a>
+        — <a href="/lexicon/">full lexicon</a>. The system is governed by <a href="/protocol/">the OutMerchant Protocol</a>.
+      </p>
     </section>
   </div>
 </main>

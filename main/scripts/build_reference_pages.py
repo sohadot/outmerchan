@@ -17,6 +17,8 @@ dims = json.loads((DATA / "score_dimensions.json").read_text())["dimensions"]
 levels = json.loads((DATA / "score_levels.json").read_text())["levels"]
 questions = [q for q in json.loads((DATA / "score_questions.json").read_text())["questions"]
              if q["status"] == "active"]
+glossary = json.loads((DATA / "glossary_terms.json").read_text())["terms"]
+TERM_BY_SLUG = {t["slug"]: t for t in glossary}
 
 # ---------------------------------------------------------------- editorial
 DIM_CONTENT = {
@@ -274,6 +276,7 @@ def build_dimension(dim):
       <p>{c['action']}</p>
     </div>
     <div class="crosslinks">
+      <p>Canonical term: <a href="{TERM_BY_SLUG[dim['lexicon_term']]['route']}">{TERM_BY_SLUG[dim['lexicon_term']]['term']}</a> in the OutMerchant Lexicon. This dimension is governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
       <p>Persistent low control on this dimension is characteristic of the <a href="{c['level']}">{level_name}</a> tier. High control across all eight dimensions defines the standard's protected highest rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
       <a class="cta" href="/score/">→ Measure This Dimension</a>
       <a class="cta-secondary" href="/">The Standard</a>

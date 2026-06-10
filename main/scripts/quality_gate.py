@@ -9,6 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+import validate_definitional
 import validate_glossary
 import validate_links
 import validate_reference
@@ -23,6 +24,7 @@ VALIDATORS = [
     ("internal links (ROUTE_GOVERNANCE.md)", validate_links),
     ("seo / ai-readability (AI_READABILITY_POLICY.md)", validate_seo),
     ("reference standard (DEC-013)", validate_reference),
+    ("definitional authority (DEC-014)", validate_definitional),
 ]
 
 
