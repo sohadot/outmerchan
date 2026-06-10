@@ -1,0 +1,399 @@
+{
+  "version": "1.0.0",
+  "governed_by": "ROUTE_GOVERNANCE.md",
+  "pages": [
+    {
+      "route": "/",
+      "type": "home",
+      "status": "active",
+      "purpose": "Carry the doctrine surface, the canonical lexicon, the eight-dimension architecture, and the entry point to the Sovereignty Score.",
+      "canonical_term": null,
+      "required_internal_links": [
+        "/score/",
+        "/protocol/",
+        "/lexicon/"
+      ],
+      "seo_cluster": "core",
+      "governance_owner": "home"
+    },
+    {
+      "route": "/score/",
+      "type": "score",
+      "status": "planned",
+      "purpose": "Host the Merchant Sovereignty Score diagnostic: 20 governed questions, eight dimension scores, tier classification.",
+      "canonical_term": "Merchant Sovereignty Score",
+      "required_internal_links": [
+        "/dimensions/platform-dependency/",
+        "/dimensions/customer-ownership/",
+        "/dimensions/reputation-portability/",
+        "/dimensions/payment-settlement-exposure/",
+        "/dimensions/fee-margin-leakage/",
+        "/dimensions/cross-border-trust/",
+        "/dimensions/ai-commerce-readiness/",
+        "/dimensions/governance-independence/"
+      ],
+      "seo_cluster": "score",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/protocol/",
+      "type": "protocol",
+      "status": "planned",
+      "purpose": "Formalize the Merchant Sovereignty Protocol: the doctrine governing how merchants exit single-point-of-control commerce.",
+      "canonical_term": null,
+      "required_internal_links": [
+        "/score/"
+      ],
+      "seo_cluster": "doctrine",
+      "governance_owner": "protocol"
+    },
+    {
+      "route": "/lexicon/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Index the canonical lexicon: every governed term of the merchant sovereignty vocabulary.",
+      "canonical_term": null,
+      "required_internal_links": [
+        "/score/"
+      ],
+      "seo_cluster": "lexicon",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/outmerchant/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define outmerchant as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "outmerchant",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/"
+      ],
+      "seo_cluster": "lexicon-doctrine",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/merchant-sovereignty/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Merchant Sovereignty as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Merchant Sovereignty",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/platform-capture/",
+        "/lexicon/outmerchant/"
+      ],
+      "seo_cluster": "lexicon-doctrine",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/route-to-buyer-control/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Route-to-Buyer Control as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Route-to-Buyer Control",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/"
+      ],
+      "seo_cluster": "lexicon-own",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/platform-capture/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Platform Capture as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Platform Capture",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/platform-dependency/"
+      ],
+      "seo_cluster": "lexicon-tier",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/platform-dependency/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Platform Dependency as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Platform Dependency",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/platform-capture/"
+      ],
+      "seo_cluster": "lexicon-dep",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/portable-reputation/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Portable Reputation as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Portable Reputation",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/machine-readable-trust/"
+      ],
+      "seo_cluster": "lexicon-rep",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/ai-merchant-sovereignty/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define AI Merchant Sovereignty as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "AI Merchant Sovereignty",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/agentic-commerce-readiness/"
+      ],
+      "seo_cluster": "lexicon-agt",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/agentic-commerce-readiness/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Agentic Commerce Readiness as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Agentic Commerce Readiness",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/ai-merchant-sovereignty/"
+      ],
+      "seo_cluster": "lexicon-agt",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/machine-readable-trust/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Machine-Readable Trust as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Machine-Readable Trust",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/portable-reputation/"
+      ],
+      "seo_cluster": "lexicon-agt",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/non-aligned-commerce/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Non-Aligned Commerce as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Non-Aligned Commerce",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/"
+      ],
+      "seo_cluster": "lexicon-xbr",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/settlement-exposure/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Settlement Exposure as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Settlement Exposure",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/non-aligned-commerce/"
+      ],
+      "seo_cluster": "lexicon-pay",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/lexicon/governance-independence/",
+      "type": "lexicon",
+      "status": "planned",
+      "purpose": "Define Governance Independence as part of the canonical merchant sovereignty lexicon.",
+      "canonical_term": "Governance Independence",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/"
+      ],
+      "seo_cluster": "lexicon-gov",
+      "governance_owner": "lexicon"
+    },
+    {
+      "route": "/dimensions/platform-dependency/",
+      "type": "dimension",
+      "status": "planned",
+      "purpose": "Define Platform Dependency (dimension 01/DEP) of the Merchant Sovereignty Score: criteria, failure modes, diagnostic logic.",
+      "canonical_term": "Platform Dependency",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/platform-dependency/",
+        "/levels/outmerchant/",
+        "/protocol/"
+      ],
+      "seo_cluster": "dep",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/dimensions/customer-ownership/",
+      "type": "dimension",
+      "status": "planned",
+      "purpose": "Define Customer Ownership (dimension 02/OWN) of the Merchant Sovereignty Score: criteria, failure modes, diagnostic logic.",
+      "canonical_term": "Customer Ownership",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/route-to-buyer-control/",
+        "/levels/outmerchant/",
+        "/protocol/"
+      ],
+      "seo_cluster": "own",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/dimensions/reputation-portability/",
+      "type": "dimension",
+      "status": "planned",
+      "purpose": "Define Reputation Portability (dimension 03/REP) of the Merchant Sovereignty Score: criteria, failure modes, diagnostic logic.",
+      "canonical_term": "Reputation Portability",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/portable-reputation/",
+        "/levels/outmerchant/",
+        "/protocol/"
+      ],
+      "seo_cluster": "rep",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/dimensions/payment-settlement-exposure/",
+      "type": "dimension",
+      "status": "planned",
+      "purpose": "Define Payment & Settlement Exposure (dimension 04/PAY) of the Merchant Sovereignty Score: criteria, failure modes, diagnostic logic.",
+      "canonical_term": "Payment & Settlement Exposure",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/settlement-exposure/",
+        "/levels/outmerchant/",
+        "/protocol/"
+      ],
+      "seo_cluster": "pay",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/dimensions/fee-margin-leakage/",
+      "type": "dimension",
+      "status": "planned",
+      "purpose": "Define Fee & Margin Leakage (dimension 05/FEE) of the Merchant Sovereignty Score: criteria, failure modes, diagnostic logic.",
+      "canonical_term": "Fee & Margin Leakage",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/route-to-buyer-control/",
+        "/levels/outmerchant/",
+        "/protocol/"
+      ],
+      "seo_cluster": "fee",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/dimensions/cross-border-trust/",
+      "type": "dimension",
+      "status": "planned",
+      "purpose": "Define Cross-Border Trust (dimension 06/XBR) of the Merchant Sovereignty Score: criteria, failure modes, diagnostic logic.",
+      "canonical_term": "Cross-Border Trust",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/non-aligned-commerce/",
+        "/levels/outmerchant/",
+        "/protocol/"
+      ],
+      "seo_cluster": "xbr",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/dimensions/ai-commerce-readiness/",
+      "type": "dimension",
+      "status": "planned",
+      "purpose": "Define AI Commerce Readiness (dimension 07/AGT) of the Merchant Sovereignty Score: criteria, failure modes, diagnostic logic.",
+      "canonical_term": "AI Commerce Readiness",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/agentic-commerce-readiness/",
+        "/levels/outmerchant/",
+        "/protocol/"
+      ],
+      "seo_cluster": "agt",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/dimensions/governance-independence/",
+      "type": "dimension",
+      "status": "planned",
+      "purpose": "Define Governance Independence (dimension 08/GOV) of the Merchant Sovereignty Score: criteria, failure modes, diagnostic logic.",
+      "canonical_term": "Governance Independence",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/governance-independence/",
+        "/levels/outmerchant/",
+        "/protocol/"
+      ],
+      "seo_cluster": "gov",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/levels/captured/",
+      "type": "level",
+      "status": "planned",
+      "purpose": "Define the Captured tier (0\u201325) of the Merchant Sovereignty Score.",
+      "canonical_term": "Captured",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/"
+      ],
+      "seo_cluster": "levels",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/levels/dependent/",
+      "type": "level",
+      "status": "planned",
+      "purpose": "Define the Dependent tier (26\u201350) of the Merchant Sovereignty Score.",
+      "canonical_term": "Dependent",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/"
+      ],
+      "seo_cluster": "levels",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/levels/emerging/",
+      "type": "level",
+      "status": "planned",
+      "purpose": "Define the Emerging tier (51\u201375) of the Merchant Sovereignty Score.",
+      "canonical_term": "Emerging",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/"
+      ],
+      "seo_cluster": "levels",
+      "governance_owner": "score"
+    },
+    {
+      "route": "/levels/outmerchant/",
+      "type": "level",
+      "status": "planned",
+      "purpose": "Define the OutMerchant tier (76\u2013100) of the Merchant Sovereignty Score.",
+      "canonical_term": "OutMerchant",
+      "required_internal_links": [
+        "/score/",
+        "/lexicon/merchant-sovereignty/"
+      ],
+      "seo_cluster": "levels",
+      "governance_owner": "score"
+    }
+  ]
+}

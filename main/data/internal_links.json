@@ -1,0 +1,516 @@
+{
+  "version": "1.0.0",
+  "governed_by": "ROUTE_GOVERNANCE.md",
+  "links": [
+    {
+      "from": "/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "home route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "home route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/",
+      "to": "/lexicon/",
+      "kind": "required",
+      "reason": "home route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/dimensions/platform-dependency/",
+      "kind": "required",
+      "reason": "score route must link into the dimension layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/dimensions/customer-ownership/",
+      "kind": "required",
+      "reason": "score route must link into the dimension layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/dimensions/reputation-portability/",
+      "kind": "required",
+      "reason": "score route must link into the dimension layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/dimensions/payment-settlement-exposure/",
+      "kind": "required",
+      "reason": "score route must link into the dimension layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/dimensions/fee-margin-leakage/",
+      "kind": "required",
+      "reason": "score route must link into the dimension layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/dimensions/cross-border-trust/",
+      "kind": "required",
+      "reason": "score route must link into the dimension layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/dimensions/ai-commerce-readiness/",
+      "kind": "required",
+      "reason": "score route must link into the dimension layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/dimensions/governance-independence/",
+      "kind": "required",
+      "reason": "score route must link into the dimension layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/protocol/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "protocol route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/outmerchant/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/outmerchant/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/merchant-sovereignty/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/merchant-sovereignty/",
+      "to": "/lexicon/platform-capture/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/merchant-sovereignty/",
+      "to": "/lexicon/outmerchant/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/route-to-buyer-control/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/route-to-buyer-control/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/platform-capture/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/platform-capture/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/platform-capture/",
+      "to": "/lexicon/platform-dependency/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/platform-dependency/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/platform-dependency/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/platform-dependency/",
+      "to": "/lexicon/platform-capture/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/portable-reputation/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/portable-reputation/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/portable-reputation/",
+      "to": "/lexicon/machine-readable-trust/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/ai-merchant-sovereignty/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/ai-merchant-sovereignty/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/ai-merchant-sovereignty/",
+      "to": "/lexicon/agentic-commerce-readiness/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/agentic-commerce-readiness/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/agentic-commerce-readiness/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/agentic-commerce-readiness/",
+      "to": "/lexicon/ai-merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/machine-readable-trust/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/machine-readable-trust/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/machine-readable-trust/",
+      "to": "/lexicon/portable-reputation/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/non-aligned-commerce/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/non-aligned-commerce/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/settlement-exposure/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/settlement-exposure/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/settlement-exposure/",
+      "to": "/lexicon/non-aligned-commerce/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/governance-independence/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "lexicon route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/governance-independence/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/platform-dependency/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "dimension route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/platform-dependency/",
+      "to": "/lexicon/platform-dependency/",
+      "kind": "required",
+      "reason": "dimension route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/platform-dependency/",
+      "to": "/levels/outmerchant/",
+      "kind": "required",
+      "reason": "dimension route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/platform-dependency/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "dimension route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/customer-ownership/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "dimension route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/customer-ownership/",
+      "to": "/lexicon/route-to-buyer-control/",
+      "kind": "required",
+      "reason": "dimension route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/customer-ownership/",
+      "to": "/levels/outmerchant/",
+      "kind": "required",
+      "reason": "dimension route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/customer-ownership/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "dimension route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/reputation-portability/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "dimension route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/reputation-portability/",
+      "to": "/lexicon/portable-reputation/",
+      "kind": "required",
+      "reason": "dimension route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/reputation-portability/",
+      "to": "/levels/outmerchant/",
+      "kind": "required",
+      "reason": "dimension route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/reputation-portability/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "dimension route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/payment-settlement-exposure/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "dimension route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/payment-settlement-exposure/",
+      "to": "/lexicon/settlement-exposure/",
+      "kind": "required",
+      "reason": "dimension route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/payment-settlement-exposure/",
+      "to": "/levels/outmerchant/",
+      "kind": "required",
+      "reason": "dimension route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/payment-settlement-exposure/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "dimension route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/fee-margin-leakage/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "dimension route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/fee-margin-leakage/",
+      "to": "/lexicon/route-to-buyer-control/",
+      "kind": "required",
+      "reason": "dimension route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/fee-margin-leakage/",
+      "to": "/levels/outmerchant/",
+      "kind": "required",
+      "reason": "dimension route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/fee-margin-leakage/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "dimension route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/cross-border-trust/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "dimension route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/cross-border-trust/",
+      "to": "/lexicon/non-aligned-commerce/",
+      "kind": "required",
+      "reason": "dimension route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/cross-border-trust/",
+      "to": "/levels/outmerchant/",
+      "kind": "required",
+      "reason": "dimension route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/cross-border-trust/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "dimension route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/ai-commerce-readiness/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "dimension route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/ai-commerce-readiness/",
+      "to": "/lexicon/agentic-commerce-readiness/",
+      "kind": "required",
+      "reason": "dimension route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/ai-commerce-readiness/",
+      "to": "/levels/outmerchant/",
+      "kind": "required",
+      "reason": "dimension route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/ai-commerce-readiness/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "dimension route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/governance-independence/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "dimension route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/governance-independence/",
+      "to": "/lexicon/governance-independence/",
+      "kind": "required",
+      "reason": "dimension route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/governance-independence/",
+      "to": "/levels/outmerchant/",
+      "kind": "required",
+      "reason": "dimension route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/governance-independence/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "dimension route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/levels/captured/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "level route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/levels/captured/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "level route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/levels/dependent/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "level route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/levels/dependent/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "level route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/levels/emerging/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "level route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/levels/emerging/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "level route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/levels/outmerchant/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "level route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/levels/outmerchant/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "level route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "version": "1.0.0",
+  "governed_by": "SCORE_GOVERNANCE.md",
+  "inviolable": true,
+  "levels": [
+    {
+      "order": 1,
+      "name": "Captured",
+      "min": 0,
+      "max": 25,
+      "route": "/levels/captured/",
+      "meaning": "Fully dependent. Platforms own the merchant's margin, reputation, and route to the buyer. Commerce continues only at the infrastructure's pleasure."
+    },
+    {
+      "order": 2,
+      "name": "Dependent",
+      "min": 26,
+      "max": 50,
+      "route": "/levels/dependent/",
+      "meaning": "Partially free. The merchant operates — but on borrowed infrastructure, with limited exit options and significant single-point-of-control exposure."
+    },
+    {
+      "order": 3,
+      "name": "Emerging",
+      "min": 51,
+      "max": 75,
+      "route": "/levels/emerging/",
+      "meaning": "Building sovereignty. The merchant sees the cage and is constructing the exit: direct channels, portable trust, settlement optionality."
+    },
+    {
+      "order": 4,
+      "name": "OutMerchant",
+      "min": 76,
+      "max": 100,
+      "route": "/levels/outmerchant/",
+      "meaning": "Sovereign. The merchant owns their channels, customers, reputation, settlement options, and margin. The framework's terminal state carries its name."
+    }
+  ]
+}

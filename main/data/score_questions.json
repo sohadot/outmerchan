@@ -1,0 +1,252 @@
+{
+  "version": "1.0.0",
+  "governed_by": "SCORE_GOVERNANCE.md",
+  "scoring_contract": {
+    "option_points": "integer, 0 = captured behavior, max = sovereign behavior",
+    "dimension_score": "(points earned / max points in dimension) * 100",
+    "total_score": "weighted average of dimension scores per score_dimensions.json",
+    "tier_mapping": "score_levels.json, boundaries inclusive"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "dimension": "DEP",
+      "status": "active",
+      "text": "What share of your revenue flows through your single largest platform or marketplace?",
+      "options": [
+        { "label": "More than 80%", "points": 0 },
+        { "label": "50–80%", "points": 1 },
+        { "label": "25–50%", "points": 2 },
+        { "label": "Less than 25%", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q02",
+      "dimension": "DEP",
+      "status": "active",
+      "text": "If your largest channel suspended your account today, how long could you keep selling?",
+      "options": [
+        { "label": "I could not keep selling", "points": 0 },
+        { "label": "Weeks of severe disruption", "points": 1 },
+        { "label": "Days of partial disruption", "points": 2 },
+        { "label": "Largely unaffected", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q03",
+      "dimension": "DEP",
+      "status": "active",
+      "text": "Do you operate a sales channel that no third party can switch off?",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes, but it produces almost no revenue", "points": 1 },
+        { "label": "Yes, producing meaningful revenue", "points": 2 },
+        { "label": "Yes, and it is my primary channel", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q04",
+      "dimension": "OWN",
+      "status": "active",
+      "text": "Can you contact your buyers directly, using contact data you store yourself?",
+      "options": [
+        { "label": "No — the platform mediates all contact", "points": 0 },
+        { "label": "Only a small fraction of buyers", "points": 1 },
+        { "label": "A substantial share of buyers", "points": 2 },
+        { "label": "Nearly all buyers", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q05",
+      "dimension": "OWN",
+      "status": "active",
+      "text": "If you left your main platform tomorrow, what share of your customers could follow you?",
+      "options": [
+        { "label": "Almost none", "points": 0 },
+        { "label": "A minority", "points": 1 },
+        { "label": "Around half", "points": 2 },
+        { "label": "Most of them", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q06",
+      "dimension": "OWN",
+      "status": "active",
+      "text": "Who owns the customer and transaction data your sales generate?",
+      "options": [
+        { "label": "The platform — I see only what it shows me", "points": 0 },
+        { "label": "Shared, but the platform holds the master record", "points": 1 },
+        { "label": "I hold my own copy of most of it", "points": 2 },
+        { "label": "I hold the master record", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q07",
+      "dimension": "REP",
+      "status": "active",
+      "text": "Are your reviews and ratings portable to another venue?",
+      "options": [
+        { "label": "No — they live and die inside one platform", "points": 0 },
+        { "label": "I can display them elsewhere but not verify them", "points": 1 },
+        { "label": "Partially portable through an independent service", "points": 2 },
+        { "label": "Yes — independently verifiable outside any platform", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q08",
+      "dimension": "REP",
+      "status": "active",
+      "text": "Does verifiable proof of your trading history exist outside any single platform's database?",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Informal proof only (screenshots, archives)", "points": 1 },
+        { "label": "Partial independent records", "points": 2 },
+        { "label": "Yes — systematic, independent, verifiable", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q09",
+      "dimension": "PAY",
+      "status": "active",
+      "text": "How many independent payment or settlement rails can you accept today?",
+      "options": [
+        { "label": "One", "points": 0 },
+        { "label": "Two, but one dominates", "points": 1 },
+        { "label": "Two or three genuinely usable rails", "points": 2 },
+        { "label": "Three or more, including cross-border options", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q10",
+      "dimension": "PAY",
+      "status": "active",
+      "text": "If your primary payment provider froze your payouts, what would happen?",
+      "options": [
+        { "label": "My operation stops", "points": 0 },
+        { "label": "Severe cash-flow crisis", "points": 1 },
+        { "label": "Painful but survivable rerouting", "points": 2 },
+        { "label": "I switch rails with minimal disruption", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q11",
+      "dimension": "PAY",
+      "status": "active",
+      "text": "Can you settle a cross-border sale without depending on one single intermediary?",
+      "options": [
+        { "label": "I cannot settle cross-border at all", "points": 0 },
+        { "label": "Only through one intermediary", "points": 1 },
+        { "label": "Through a small set of alternatives", "points": 2 },
+        { "label": "Yes — multiple independent settlement paths", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q12",
+      "dimension": "FEE",
+      "status": "active",
+      "text": "What share of your gross margin goes to intermediaries — commissions, ads, processing, fulfillment?",
+      "options": [
+        { "label": "More than half", "points": 0 },
+        { "label": "Roughly a third to a half", "points": 1 },
+        { "label": "Roughly a fifth to a third", "points": 2 },
+        { "label": "Less than a fifth", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q13",
+      "dimension": "FEE",
+      "status": "active",
+      "text": "Do you know your full route-to-buyer cost per sale?",
+      "options": [
+        { "label": "No — I have never calculated it", "points": 0 },
+        { "label": "A rough guess only", "points": 1 },
+        { "label": "Calculated, but not tracked over time", "points": 2 },
+        { "label": "Measured and monitored continuously", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q14",
+      "dimension": "XBR",
+      "status": "active",
+      "text": "Can a buyer in another country establish that you are trustworthy without a platform vouching for you?",
+      "options": [
+        { "label": "No — my trust signals exist only inside platforms", "points": 0 },
+        { "label": "Weakly — an independent site with no verifiable proof", "points": 1 },
+        { "label": "Partially — some independent, checkable signals", "points": 2 },
+        { "label": "Yes — strong independent, verifiable trust signals", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q15",
+      "dimension": "XBR",
+      "status": "active",
+      "text": "Can you operate across more than one trade or regulatory zone?",
+      "options": [
+        { "label": "No — one zone only", "points": 0 },
+        { "label": "Technically yes, practically untested", "points": 1 },
+        { "label": "Yes, in a second zone with friction", "points": 2 },
+        { "label": "Yes — structurally multi-zone", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q16",
+      "dimension": "AGT",
+      "status": "active",
+      "text": "Is your catalog machine-readable — structured data or feeds an AI agent could parse?",
+      "options": [
+        { "label": "No structured catalog data at all", "points": 0 },
+        { "label": "Only inside a platform's proprietary system", "points": 1 },
+        { "label": "Partially — some structured data on my own surface", "points": 2 },
+        { "label": "Yes — fully structured and openly accessible", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q17",
+      "dimension": "AGT",
+      "status": "active",
+      "text": "Are your commercial terms — pricing, shipping, returns — published in a structured form an AI agent could parse?",
+      "options": [
+        { "label": "Not published at all", "points": 0 },
+        { "label": "Published as unstructured prose only", "points": 1 },
+        { "label": "Partially structured", "points": 2 },
+        { "label": "Fully structured and machine-readable", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q18",
+      "dimension": "AGT",
+      "status": "active",
+      "text": "Could an AI buying agent verify your identity and trust signals today, without asking a platform?",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Only weak signals (domain age, basic site)", "points": 1 },
+        { "label": "Some verifiable independent signals", "points": 2 },
+        { "label": "Yes — structured, verifiable, independent", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q19",
+      "dimension": "GOV",
+      "status": "active",
+      "text": "Who can change the rules of your commerce without your consent?",
+      "options": [
+        { "label": "Several parties, at any time, with no notice", "points": 0 },
+        { "label": "One dominant party", "points": 1 },
+        { "label": "Limited parties, with contractual protections", "points": 2 },
+        { "label": "Effectively no one — I set my own terms", "points": 3 }
+      ]
+    },
+    {
+      "id": "Q20",
+      "dimension": "GOV",
+      "status": "active",
+      "text": "Do you have a documented exit path from each critical provider you depend on?",
+      "options": [
+        { "label": "No — I have never mapped my dependencies", "points": 0 },
+        { "label": "I know my dependencies but have no exit plans", "points": 1 },
+        { "label": "Exit paths exist for some critical providers", "points": 2 },
+        { "label": "Documented, tested exit paths for all of them", "points": 3 }
+      ]
+    }
+  ]
+}

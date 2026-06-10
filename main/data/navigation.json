@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "governed_by": "ROUTE_GOVERNANCE.md",
+  "primary": [
+    {
+      "label": "The Doctrine",
+      "target": "/#protocol",
+      "status": "active"
+    },
+    {
+      "label": "The Lexicon",
+      "target": "/#lexicon",
+      "status": "active"
+    },
+    {
+      "label": "The Architecture",
+      "target": "/#sovereignty",
+      "status": "active"
+    },
+    {
+      "label": "The Score",
+      "target": "/#score",
+      "status": "active"
+    }
+  ],
+  "planned": [
+    {
+      "label": "Sovereignty Score",
+      "target": "/score/"
+    },
+    {
+      "label": "Lexicon",
+      "target": "/lexicon/"
+    },
+    {
+      "label": "Protocol",
+      "target": "/protocol/"
+    }
+  ]
+}
