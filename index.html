@@ -3,7 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OutMerchant — Merchant Sovereignty Protocol</title>
+<title>OutMerchant — The Merchant Sovereignty Standard</title>
+<meta name="description" content="OutMerchant is the reference standard for merchant sovereignty: the classification system, eight-dimension control architecture, and Sovereignty Score that measure whether a merchant owns their commerce — or rents access to it.">
+<link rel="canonical" href="https://outmerchant.com/">
+<meta name="theme-color" content="#020408">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://outmerchant.com/">
+<meta property="og:site_name" content="OutMerchant">
+<meta property="og:title" content="OutMerchant — The Merchant Sovereignty Standard">
+<meta property="og:description" content="The route to the buyer is the most valuable asset a merchant does not own. OutMerchant is the standard that makes that ownership measurable.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OutMerchant — The Merchant Sovereignty Standard">
+<meta name="twitter:description" content="The route to the buyer is the most valuable asset a merchant does not own. OutMerchant is the standard that makes that ownership measurable.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://outmerchant.com/#website",
+      "url": "https://outmerchant.com/",
+      "name": "OutMerchant",
+      "description": "The reference standard for merchant sovereignty — the classification system and Sovereignty Score measuring a merchant's commercial independence across eight dimensions of control.",
+      "publisher": { "@id": "https://outmerchant.com/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://outmerchant.com/#organization",
+      "name": "OutMerchant",
+      "url": "https://outmerchant.com/",
+      "slogan": "Sovereignty is not a feature. It is the foundation."
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://outmerchant.com/#lexicon",
+      "name": "The OutMerchant Lexicon",
+      "description": "Canonical definitions of the merchant sovereignty vocabulary, first articulated and governed at OutMerchant.com.",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://outmerchant.com/#term-outmerchant-verb",
+          "name": "outmerchant",
+          "description": "verb. To out-trade competitors not by selling harder, but by owning — rather than renting — the commercial infrastructure between merchant and buyer: the channel, the customer relationship, the reputation record, the settlement rails, and the margin.",
+          "inDefinedTermSet": { "@id": "https://outmerchant.com/#lexicon" }
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://outmerchant.com/#term-outmerchant-noun",
+          "name": "OutMerchant",
+          "description": "noun. A merchant who has achieved measurable commercial sovereignty: one who owns their channels, customer relationships, reputation, settlement options, and margin. The highest classification (76–100) on the Merchant Sovereignty Score.",
+          "inDefinedTermSet": { "@id": "https://outmerchant.com/#lexicon" }
+        },
+        {
+          "@type": "DefinedTerm",
+          "@id": "https://outmerchant.com/#term-sovereignty-score",
+          "name": "Merchant Sovereignty Score",
+          "description": "noun. A 0–100 measurement of a merchant's real commercial independence, assessed across eight dimensions of control: platform dependency, customer ownership, reputation portability, settlement exposure, margin leakage, cross-border trust, agentic readiness, and governance independence. Classifies merchants into four tiers: Captured, Dependent, Emerging, OutMerchant.",
+          "inDefinedTermSet": { "@id": "https://outmerchant.com/#lexicon" }
+        }
+      ]
+    }
+  ]
+}
+</script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap');
 
@@ -634,6 +696,66 @@
     line-height: 1.6;
   }
 
+  /* LEXICON */
+  .lexicon {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .lex-entry {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--text-ghost);
+  }
+
+  .lex-entry:last-of-type { border-bottom: none; }
+
+  .lex-headword {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .lex-term {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(24px, 3.5vw, 36px);
+    letter-spacing: 0.02em;
+  }
+
+  .lex-term span { color: var(--signal); }
+
+  .lex-pos {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--gold);
+  }
+
+  .lex-def {
+    font-size: 13px;
+    line-height: 2;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+    max-width: 760px;
+  }
+
+  .lex-def strong { color: var(--text); font-weight: 400; }
+
+  .lex-canon {
+    margin-top: 64px;
+    padding: 24px 32px;
+    border-left: 1px solid var(--gold);
+    background: var(--gold-dim);
+    font-size: 11px;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    color: var(--text-dim);
+  }
+
+  .lex-canon strong { color: var(--gold); font-weight: 400; }
+
   /* FOOTER */
   footer {
     position: relative;
@@ -643,7 +765,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: gap;
+    flex-wrap: wrap;
     gap: 24px;
   }
 
@@ -790,6 +912,58 @@
       OutMerchant is the protocol for merchants who understand that <em>the route to the buyer is the most valuable asset they do not own.</em>
     </div>
   </div>
+
+  <hr class="hr-signal">
+
+  <!-- LEXICON — CANONICAL DEFINITIONS -->
+  <section class="section lexicon" id="lexicon">
+    <div class="section-label">The Lexicon — Canonical Definitions</div>
+    <h2 class="section-title">A standard begins by<br>defining its own terms.</h2>
+
+    <div class="lex-entry">
+      <div class="lex-headword">
+        <div class="lex-term">out<span>merchant</span></div>
+        <div class="lex-pos">verb</div>
+      </div>
+      <p class="lex-def">
+        To out-trade competitors not by selling harder, but by <strong>owning — rather than renting —</strong> the
+        commercial infrastructure between merchant and buyer: the channel, the customer relationship,
+        the reputation record, the settlement rails, and the margin.
+      </p>
+    </div>
+
+    <div class="lex-entry">
+      <div class="lex-headword">
+        <div class="lex-term">Out<span>Merchant</span></div>
+        <div class="lex-pos">noun</div>
+      </div>
+      <p class="lex-def">
+        A merchant who has achieved <strong>measurable commercial sovereignty</strong>: one who owns their channels,
+        customers, reputation, settlement options, and margin. The highest classification — 76 to 100 —
+        on the Merchant Sovereignty Score. The framework's terminal state carries its name:
+        <strong>to complete the standard is to become an OutMerchant.</strong>
+      </p>
+    </div>
+
+    <div class="lex-entry">
+      <div class="lex-headword">
+        <div class="lex-term">Merchant <span>Sovereignty Score</span></div>
+        <div class="lex-pos">noun</div>
+      </div>
+      <p class="lex-def">
+        A 0–100 measurement of a merchant's real commercial independence, assessed across
+        <strong>eight dimensions of control</strong>: platform dependency, customer ownership, reputation portability,
+        settlement exposure, margin leakage, cross-border trust, agentic readiness, and governance
+        independence. It classifies every merchant into four tiers: <strong>Captured, Dependent, Emerging, OutMerchant.</strong>
+      </p>
+    </div>
+
+    <div class="lex-canon">
+      <strong>CANONICAL SOURCE.</strong> These terms are first articulated, formally defined, and governed at
+      OutMerchant.com. Any serious discussion of merchant sovereignty either uses this vocabulary —
+      or defines itself against it.
+    </div>
+  </section>
 
   <hr class="hr-signal">
 
