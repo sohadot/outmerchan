@@ -31,10 +31,10 @@
         "/dimensions/cross-border-trust/",
         "/dimensions/ai-commerce-readiness/",
         "/dimensions/governance-independence/",
-        "/levels/captured/",
-        "/levels/dependent/",
-        "/levels/emerging/",
-        "/levels/outmerchant/"
+        "/levels/outmerchant/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/outmerchant/",
+        "/protocol/"
       ],
       "seo_cluster": "score",
       "governance_owner": "score"

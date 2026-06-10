@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "engine_version": "1.1.0",
+  "governed_by": "SCORE_GOVERNANCE.md",
+  "boundary_statement": "This result is a diagnostic measurement of Merchant Sovereignty posture. It is not financial, legal, investment, or marketplace advice.",
+  "dimensions": {
+    "DEP": {
+      "weak_interpretation": "A large share of your trade survives only at a single platform's pleasure. One algorithm change, policy update, or account decision can reprice or stop your commerce without your consent.",
+      "next_action": "Map your revenue by channel, then open one sales channel that no third party can switch off and route real traffic to it before you need it."
+    },
+    "OWN": {
+      "weak_interpretation": "The relationship with your buyer belongs to an intermediary. If you left your main platform, most of your customers could not follow you, and the master record of your own commerce is held by someone else.",
+      "next_action": "Start capturing consented, direct contact for every new buyer, stored under your own control, and measure what share of this month's customers you could reach without any platform's permission."
+    },
+    "REP": {
+      "weak_interpretation": "Your accumulated trust capital is hostage to a database you do not control. The history that proves you deserve to be trusted cannot leave the platform with you.",
+      "next_action": "Export and archive your complete trading history and reviews on a schedule, then establish one independent, verifiable trust surface under your own domain."
+    },
+    "PAY": {
+      "weak_interpretation": "Your settlement flows through rails you do not control. A payout freeze or blocked gateway at a single provider would become a cash-flow crisis rather than a routing decision.",
+      "next_action": "Add one independent settlement rail and test it with real volume, so the switch is proven before it is needed."
+    },
+    "FEE": {
+      "weak_interpretation": "A significant share of your margin funds the intermediaries on your route to the buyer, and the full route cost is not measured. Unmeasured leakage compounds into the infrastructure's revenue instead of your independence.",
+      "next_action": "Calculate your full route-to-buyer cost for one representative sale — every commission, ad cost, processing fee, fulfillment charge, and return allowance — and start tracking it."
+    },
+    "XBR": {
+      "weak_interpretation": "Your trustworthiness exists mainly inside platform borders. A buyer in another country or trade zone finds little they can verify about you without an intermediary vouching.",
+      "next_action": "Publish one independent, checkable trust page under your own domain: verified business identity, complete commercial terms, and provable trading history."
+    },
+    "AGT": {
+      "weak_interpretation": "AI buying agents cannot reliably find, parse, or verify your commerce. As agent-mediated buying grows, this is invisibility to a forming demand layer.",
+      "next_action": "Add structured data for your products, offers, terms, and organization on your own domain, so an agent can verify you on your own credentials."
+    },
+    "GOV": {
+      "weak_interpretation": "The rules of your commerce are written above your head, and exits from critical providers are unmapped. Operating freely today is not the same as deciding the terms you operate on tomorrow.",
+      "next_action": "List every provider whose decision could stop your business and write a documented exit path for the most critical one."
+    }
+  },
+  "route_to_buyer": {
+    "Captured": "Your route to the buyer is owned end to end by others: discovery, relationship, transaction, settlement, and trust all pass through points of control you do not hold. The route is the first thing to reclaim — one owned segment changes the structure.",
+    "Dependent": "You hold fragments of your route to the buyer, but its critical segments are borrowed. The route works — on terms you do not set. Converting borrowed segments into owned ones is the work of this tier.",
+    "Emerging": "You own most of your route to the buyer. What remains borrowed are the deeper layers — verifiable trust, machine legibility, and the rules themselves. The remaining distance is governance, not operations.",
+    "OutMerchant": "You own your route to the buyer end to end: no single point of control sits between you and your customer. The work now is holding the route — sovereignty decays silently when unwatched."
+  }
+}

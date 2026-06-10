@@ -10,6 +10,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import validate_definitional
+import validate_engine
 import validate_glossary
 import validate_links
 import validate_reference
@@ -25,6 +26,7 @@ VALIDATORS = [
     ("seo / ai-readability (AI_READABILITY_POLICY.md)", validate_seo),
     ("reference standard (DEC-013)", validate_reference),
     ("definitional authority (DEC-014)", validate_definitional),
+    ("score engine governance (DEC-015)", validate_engine),
 ]
 
 

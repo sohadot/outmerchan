@@ -132,6 +132,20 @@
   .ref-grid a span { color: var(--signal); margin-right: 10px; font-size: 10px; letter-spacing: 0.15em; }
   @media (max-width: 640px) { .ref-grid { grid-template-columns: 1fr; } }
 
+  .weak { margin-top: 28px; border-top: 1px solid var(--text-ghost); padding-top: 20px; }
+  .weak h2 { font-family: var(--display); font-size: 15px; margin-bottom: 12px; }
+  .weak-block { border: 1px solid var(--text-ghost); background: var(--grid); padding: 16px 20px; margin-bottom: 10px; }
+  .weak-block h3 { font-family: var(--display); font-size: 13px; color: var(--gold); margin-bottom: 6px; }
+  .weak-block p { font-size: 12px; color: var(--text-dim); margin: 0 0 8px; }
+  .weak-block .na { color: var(--text); font-size: 12px; margin: 0; }
+  .weak-block .na span { color: var(--signal); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; margin-right: 8px; }
+  .route-interp { border-left: 1px solid var(--signal); background: var(--signal-dim); padding: 14px 18px; margin-top: 20px; font-size: 12px; color: var(--text); }
+  .boundary-note { font-size: 11px; color: var(--text-dim); border-top: 1px solid var(--text-ghost); margin-top: 24px; padding-top: 16px; }
+  .boundary { margin-top: 56px; border: 1px solid var(--text-ghost); background: var(--deep); padding: 28px; }
+  .boundary ul { list-style: none; margin-top: 12px; }
+  .boundary li { font-size: 12px; color: var(--text-dim); padding: 6px 0 6px 18px; border-left: 1px solid var(--text-ghost); margin-bottom: 4px; }
+  .boundary li strong { color: var(--text); font-weight: 400; }
+
   .machine { margin-top: 28px; border-top: 1px solid var(--text-ghost); padding-top: 20px; }
   .machine p { font-size: 11px; color: var(--text-dim); margin-bottom: 12px; }
   #error { display: none; color: var(--danger); font-size: 12px; border: 1px solid var(--danger); padding: 16px; margin: 24px 0; }
@@ -183,7 +197,7 @@
       The model is governed: dimensions, questions, weights, and tiers are fixed under public
       score governance and protected by an automated quality gate. The instrument reads exclusively
       from the governed model — the same model machines read. The terminal tier carries the
-      standard's name: <a href="/#lexicon">to complete the standard is to become an OutMerchant</a>.
+      standard's name: <a href="/lexicon/outmerchant/">to complete the standard is to become an OutMerchant</a>.
     </p>
 
     <noscript>
@@ -201,13 +215,17 @@
       <button type="button" class="btn-primary" id="computeBtn" disabled>→ Compute My Score</button>
       <span class="progress" id="progress"></span>
     </div>
+    <p class="progress" id="neutralState">Result appears after completing the diagnostic.</p>
 
     <section id="results" aria-live="polite">
-      <p class="kicker">// Result</p>
-      <div class="result-total" id="resultTotal">0</div>
+      <p class="kicker">// Result — Diagnostic Output</p>
+      <div class="result-total" id="resultTotal">—</div>
       <div class="result-tier" id="resultTier"></div>
       <p class="result-meaning" id="resultMeaning"></p>
       <div id="resultBars"></div>
+      <div class="weak" id="weakest"></div>
+      <div class="route-interp" id="routeInterp"></div>
+      <p class="boundary-note" id="boundaryNote"></p>
       <div class="machine">
         <p>Machine-readable result — structured output for your records, your advisors, or your agents:</p>
         <div class="actions" style="margin:0">
@@ -217,9 +235,21 @@
       </div>
     </section>
 
+    <section class="boundary" aria-label="Engine boundary">
+      <p class="kicker">// Engine Boundary</p>
+      <ul>
+        <li><strong>The engine measures Merchant Sovereignty posture.</strong> That is its entire function.</li>
+        <li>It does <strong>not predict revenue</strong>, growth, or commercial outcomes.</li>
+        <li>It does <strong>not certify a merchant</strong> — a score is a diagnostic reading, not a credential.</li>
+        <li>It does <strong>not create a marketplace listing</strong>, profile, or directory entry of any kind.</li>
+        <li>It does <strong>not store your answers</strong> — there is no database behind this page.</li>
+        <li>It does <strong>not transmit your answers</strong> — the measurement runs entirely in your browser and nothing leaves it.</li>
+      </ul>
+    </section>
+
     <section class="ref" aria-label="The reference standard">
       <p class="kicker">// The Reference Standard</p>
-      <p class="lead">Every dimension and tier of the score is formally defined in the reference standard:</p>
+      <p class="lead">Each dimension the engine measures is formally defined in the reference standard:</p>
       <div class="ref-grid">
         <a href="/dimensions/platform-dependency/"><span>01 / DEP</span>Platform Dependency</a>
         <a href="/dimensions/customer-ownership/"><span>02 / OWN</span>Customer Ownership</a>
@@ -230,18 +260,11 @@
         <a href="/dimensions/ai-commerce-readiness/"><span>07 / AGT</span>AI Commerce Readiness</a>
         <a href="/dimensions/governance-independence/"><span>08 / GOV</span>Governance Independence</a>
       </div>
-      <div class="ref-grid" style="margin-top:2px">
-        <a href="/levels/captured/"><span>00–25</span>Captured</a>
-        <a href="/levels/dependent/"><span>26–50</span>Dependent</a>
-        <a href="/levels/emerging/"><span>51–75</span>Emerging</a>
-        <a href="/levels/outmerchant/"><span>76–100</span>OutMerchant</a>
-      </div>
-      <p class="lead" style="margin-top:24px">Key terms the score measures are canonically defined in the lexicon:
-        <a href="/lexicon/merchant-sovereignty/">Merchant Sovereignty</a>,
-        <a href="/lexicon/platform-capture/">Platform Capture</a>,
-        <a href="/lexicon/ai-merchant-sovereignty/">AI Merchant Sovereignty</a>,
-        <a href="/lexicon/agent-selectable-merchant/">Agent-Selectable Merchant</a>
-        — <a href="/lexicon/">full lexicon</a>. The system is governed by <a href="/protocol/">the OutMerchant Protocol</a>.
+      <p class="lead" style="margin-top:24px">
+        The condition measured is <a href="/lexicon/merchant-sovereignty/">Merchant Sovereignty</a>;
+        the terminal rank is <a href="/levels/outmerchant/">OutMerchant</a>
+        (<a href="/lexicon/outmerchant/">the verb and the rank</a>);
+        the system is governed by <a href="/protocol/">the OutMerchant Protocol</a>.
       </p>
     </section>
   </div>
@@ -269,16 +292,19 @@
     errorBox.style.display = 'block';
   }
 
-  // The instrument reads exclusively from the governed model (SCORE_GOVERNANCE.md, DEC-012)
+  // The instrument reads exclusively from the governed model and the governed
+  // guidance layer (SCORE_GOVERNANCE.md, DEC-012) — no interpretive copy lives in code.
   Promise.all([
     fetch('/main/data/score_dimensions.json').then(function (r) { return r.json(); }),
     fetch('/main/data/score_questions.json').then(function (r) { return r.json(); }),
-    fetch('/main/data/score_levels.json').then(function (r) { return r.json(); })
+    fetch('/main/data/score_levels.json').then(function (r) { return r.json(); }),
+    fetch('/main/data/engine_guidance.json').then(function (r) { return r.json(); })
   ]).then(function (data) {
     MODEL.dimensions = data[0].dimensions.slice().sort(function (a, b) { return a.order - b.order; });
     MODEL.questions = data[1].questions.filter(function (q) { return q.status === 'active'; });
     MODEL.levels = data[2].levels.slice().sort(function (a, b) { return a.min - b.min; });
     MODEL.version = data[0].version;
+    MODEL.guidance = data[3];
     render();
   }).catch(function () {
     fail('The governed score model could not be loaded. Refresh the page, or read the model directly under /main/data/.');
@@ -351,9 +377,11 @@
 
   computeBtn.addEventListener('click', function () {
     var r = compute();
+    var g = MODEL.guidance;
     document.getElementById('resultTotal').textContent = r.total;
-    document.getElementById('resultTier').textContent = 'Tier: ' + r.tier.name + ' (' + r.tier.min + '–' + r.tier.max + ')';
+    document.getElementById('resultTier').textContent = 'Sovereignty level: ' + r.tier.name + ' (' + r.tier.min + '–' + r.tier.max + ')';
     document.getElementById('resultMeaning').textContent = r.tier.meaning;
+
     var bars = document.getElementById('resultBars');
     bars.innerHTML = '';
     r.dimensions.forEach(function (d) {
@@ -367,16 +395,42 @@
         row.querySelector('.bar-fill').style.width = Math.round(d.score) + '%';
       });
     });
+
+    // Three weakest dimensions, with governed interpretation and one controlled next action each
+    var weakest = r.dimensions.slice().sort(function (a, b) { return a.score - b.score; }).slice(0, 3);
+    var weakBox = document.getElementById('weakest');
+    weakBox.innerHTML = '<h2>Weakest Dimensions — Governed Guidance</h2>';
+    weakest.forEach(function (d) {
+      var gd = g.dimensions[d.code];
+      var block = document.createElement('div');
+      block.className = 'weak-block';
+      block.innerHTML = '<h3>' + d.code + ' — ' + d.name + ' (' + Math.round(d.score) + '/100)</h3>' +
+        '<p>' + gd.weak_interpretation + '</p>' +
+        '<p class="na"><span>Next action</span>' + gd.next_action + '</p>';
+      weakBox.appendChild(block);
+    });
+
+    document.getElementById('routeInterp').textContent = 'Route-to-Buyer Control: ' + g.route_to_buyer[r.tier.name];
+    document.getElementById('boundaryNote').textContent = g.boundary_statement;
+    document.getElementById('neutralState').style.display = 'none';
+
     lastResult = {
       standard: 'Merchant Sovereignty Score',
-      source: 'https://outmerchant.com/score/',
+      engine_version: g.engine_version,
       model_version: MODEL.version,
-      generated: new Date().toISOString(),
+      generated_at: new Date().toISOString(),
       total_score: r.total,
-      tier: { name: r.tier.name, min: r.tier.min, max: r.tier.max },
-      dimensions: r.dimensions.map(function (d) {
+      level_id: r.tier.name.toLowerCase(),
+      level_name: r.tier.name,
+      level_range: { min: r.tier.min, max: r.tier.max },
+      dimension_scores: r.dimensions.map(function (d) {
         return { code: d.code, name: d.name, score: Math.round(d.score) };
-      })
+      }),
+      weakest_dimensions: weakest.map(function (d) { return d.code; }),
+      canonical_terms_used: ['Merchant Sovereignty', 'Merchant Sovereignty Score', 'Route-to-Buyer Control', r.tier.name],
+      protocol_url: 'https://outmerchant.com/protocol/',
+      score_url: 'https://outmerchant.com/score/',
+      boundary_statement: g.boundary_statement
     };
     var panel = document.getElementById('results');
     panel.style.display = 'block';
