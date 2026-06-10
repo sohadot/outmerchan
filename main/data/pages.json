@@ -42,11 +42,13 @@
     {
       "route": "/protocol/",
       "type": "protocol",
-      "status": "planned",
+      "status": "active",
       "purpose": "Formalize the Merchant Sovereignty Protocol: the doctrine governing how merchants exit single-point-of-control commerce.",
       "canonical_term": null,
       "required_internal_links": [
-        "/score/"
+        "/score/",
+        "/lexicon/",
+        "/levels/outmerchant/"
       ],
       "seo_cluster": "doctrine",
       "governance_owner": "protocol"
@@ -54,11 +56,24 @@
     {
       "route": "/lexicon/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Index the canonical lexicon: every governed term of the merchant sovereignty vocabulary.",
       "canonical_term": null,
       "required_internal_links": [
-        "/score/"
+        "/score/",
+        "/lexicon/agent-selectable-merchant/",
+        "/lexicon/agentic-commerce-readiness/",
+        "/lexicon/ai-merchant-sovereignty/",
+        "/lexicon/governance-independence/",
+        "/lexicon/machine-readable-trust/",
+        "/lexicon/merchant-sovereignty/",
+        "/lexicon/non-aligned-commerce/",
+        "/lexicon/outmerchant/",
+        "/lexicon/platform-capture/",
+        "/lexicon/platform-dependency/",
+        "/lexicon/portable-reputation/",
+        "/lexicon/route-to-buyer-control/",
+        "/lexicon/settlement-exposure/"
       ],
       "seo_cluster": "lexicon",
       "governance_owner": "lexicon"
@@ -66,7 +81,7 @@
     {
       "route": "/lexicon/outmerchant/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define outmerchant as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "outmerchant",
       "required_internal_links": [
@@ -79,7 +94,7 @@
     {
       "route": "/lexicon/merchant-sovereignty/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Merchant Sovereignty as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Merchant Sovereignty",
       "required_internal_links": [
@@ -93,7 +108,7 @@
     {
       "route": "/lexicon/route-to-buyer-control/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Route-to-Buyer Control as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Route-to-Buyer Control",
       "required_internal_links": [
@@ -106,7 +121,7 @@
     {
       "route": "/lexicon/platform-capture/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Platform Capture as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Platform Capture",
       "required_internal_links": [
@@ -120,7 +135,7 @@
     {
       "route": "/lexicon/platform-dependency/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Platform Dependency as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Platform Dependency",
       "required_internal_links": [
@@ -134,7 +149,7 @@
     {
       "route": "/lexicon/portable-reputation/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Portable Reputation as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Portable Reputation",
       "required_internal_links": [
@@ -148,7 +163,7 @@
     {
       "route": "/lexicon/ai-merchant-sovereignty/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define AI Merchant Sovereignty as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "AI Merchant Sovereignty",
       "required_internal_links": [
@@ -162,7 +177,7 @@
     {
       "route": "/lexicon/agentic-commerce-readiness/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Agentic Commerce Readiness as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Agentic Commerce Readiness",
       "required_internal_links": [
@@ -176,7 +191,7 @@
     {
       "route": "/lexicon/machine-readable-trust/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Machine-Readable Trust as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Machine-Readable Trust",
       "required_internal_links": [
@@ -190,7 +205,7 @@
     {
       "route": "/lexicon/non-aligned-commerce/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Non-Aligned Commerce as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Non-Aligned Commerce",
       "required_internal_links": [
@@ -203,7 +218,7 @@
     {
       "route": "/lexicon/settlement-exposure/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Settlement Exposure as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Settlement Exposure",
       "required_internal_links": [
@@ -217,7 +232,7 @@
     {
       "route": "/lexicon/governance-independence/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Governance Independence as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Governance Independence",
       "required_internal_links": [
@@ -409,7 +424,7 @@
     {
       "route": "/lexicon/agent-selectable-merchant/",
       "type": "lexicon",
-      "status": "planned",
+      "status": "active",
       "purpose": "Define Agent-Selectable Merchant as part of the canonical merchant sovereignty lexicon.",
       "canonical_term": "Agent-Selectable Merchant",
       "required_internal_links": [

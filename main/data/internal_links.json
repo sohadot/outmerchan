@@ -595,6 +595,96 @@
       "to": "/levels/emerging/",
       "kind": "required",
       "reason": "dimension route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/protocol/",
+      "to": "/lexicon/",
+      "kind": "required",
+      "reason": "protocol route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/protocol/",
+      "to": "/levels/outmerchant/",
+      "kind": "required",
+      "reason": "protocol route must link into the level layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/agent-selectable-merchant/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/agentic-commerce-readiness/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/ai-merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/governance-independence/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/machine-readable-trust/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/non-aligned-commerce/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/outmerchant/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/platform-capture/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/platform-dependency/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/portable-reputation/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/route-to-buyer-control/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/lexicon/",
+      "to": "/lexicon/settlement-exposure/",
+      "kind": "required",
+      "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
     }
   ]
 }

@@ -50,7 +50,7 @@
       ],
       "route": "/lexicon/merchant-sovereignty/",
       "score_relation": "doctrine",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "merchant-sovereignty-score",
@@ -81,7 +81,7 @@
       ],
       "route": "/lexicon/route-to-buyer-control/",
       "score_relation": "OWN",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "platform-capture",
@@ -96,7 +96,7 @@
       ],
       "route": "/lexicon/platform-capture/",
       "score_relation": "tier",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "platform-dependency",
@@ -111,7 +111,7 @@
       ],
       "route": "/lexicon/platform-dependency/",
       "score_relation": "DEP",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "portable-reputation",
@@ -126,7 +126,7 @@
       ],
       "route": "/lexicon/portable-reputation/",
       "score_relation": "REP",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "ai-merchant-sovereignty",
@@ -142,7 +142,7 @@
       ],
       "route": "/lexicon/ai-merchant-sovereignty/",
       "score_relation": "AGT",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "agentic-commerce-readiness",
@@ -157,7 +157,7 @@
       ],
       "route": "/lexicon/agentic-commerce-readiness/",
       "score_relation": "AGT",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "machine-readable-trust",
@@ -173,7 +173,7 @@
       ],
       "route": "/lexicon/machine-readable-trust/",
       "score_relation": "AGT",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "non-aligned-commerce",
@@ -188,7 +188,7 @@
       ],
       "route": "/lexicon/non-aligned-commerce/",
       "score_relation": "XBR",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "settlement-exposure",
@@ -203,7 +203,7 @@
       ],
       "route": "/lexicon/settlement-exposure/",
       "score_relation": "PAY",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "governance-independence",
@@ -218,7 +218,7 @@
       ],
       "route": "/lexicon/governance-independence/",
       "score_relation": "GOV",
-      "in_jsonld": false
+      "in_jsonld": true
     },
     {
       "slug": "agent-selectable-merchant",
@@ -234,7 +234,7 @@
       ],
       "route": "/lexicon/agent-selectable-merchant/",
       "score_relation": "AGT",
-      "in_jsonld": false
+      "in_jsonld": true
     }
   ]
 }
