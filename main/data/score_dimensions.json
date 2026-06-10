@@ -1,0 +1,78 @@
+{
+  "version": "1.0.0",
+  "governed_by": "SCORE_GOVERNANCE.md",
+  "dimensions": [
+    {
+      "code": "DEP",
+      "order": 1,
+      "name": "Platform Dependency",
+      "question": "How exposed are you to a single platform's decisions?",
+      "weight": 12.5,
+      "lexicon_term": "platform-dependency",
+      "route": "/dimensions/platform-dependency/"
+    },
+    {
+      "code": "OWN",
+      "order": 2,
+      "name": "Customer Ownership",
+      "question": "Do you own the relationship with your buyer — or does the marketplace?",
+      "weight": 12.5,
+      "lexicon_term": "route-to-buyer-control",
+      "route": "/dimensions/customer-ownership/"
+    },
+    {
+      "code": "REP",
+      "order": 3,
+      "name": "Reputation Portability",
+      "question": "Are your reviews, ratings, and trading history portable — or hostage?",
+      "weight": 12.5,
+      "lexicon_term": "portable-reputation",
+      "route": "/dimensions/reputation-portability/"
+    },
+    {
+      "code": "PAY",
+      "order": 4,
+      "name": "Payment & Settlement Exposure",
+      "question": "How many settlement rails do you control?",
+      "weight": 12.5,
+      "lexicon_term": "settlement-exposure",
+      "route": "/dimensions/payment-settlement-exposure/"
+    },
+    {
+      "code": "FEE",
+      "order": 5,
+      "name": "Fee & Margin Leakage",
+      "question": "How much of your margin funds intermediaries on the route to the buyer?",
+      "weight": 12.5,
+      "lexicon_term": "route-to-buyer-control",
+      "route": "/dimensions/fee-margin-leakage/"
+    },
+    {
+      "code": "XBR",
+      "order": 6,
+      "name": "Cross-Border Trust",
+      "question": "Can a foreign buyer trust you without a platform vouching for you?",
+      "weight": 12.5,
+      "lexicon_term": "non-aligned-commerce",
+      "route": "/dimensions/cross-border-trust/"
+    },
+    {
+      "code": "AGT",
+      "order": 7,
+      "name": "AI Commerce Readiness",
+      "question": "Can an AI buying agent find, parse, and trust your commerce?",
+      "weight": 12.5,
+      "lexicon_term": "agentic-commerce-readiness",
+      "route": "/dimensions/ai-commerce-readiness/"
+    },
+    {
+      "code": "GOV",
+      "order": 8,
+      "name": "Governance Independence",
+      "question": "Who writes the rules of your commerce?",
+      "weight": 12.5,
+      "lexicon_term": "governance-independence",
+      "route": "/dimensions/governance-independence/"
+    }
+  ]
+}
