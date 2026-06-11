@@ -90,6 +90,12 @@ The governed dimension and level pages are activated: eight dimension reference 
 
 The canonical lexicon and the protocol are activated: a `/lexicon/` index carrying the full DefinedTermSet, thirteen canonical term pages generated verbatim from `glossary_terms.json` by `build_lexicon_pages.py` (the headword page `/lexicon/outmerchant/` presents the verb and the rank as two senses of one entry), and `/protocol/` as the binding page — standards register, not epic register — stating how Merchant Sovereignty is named, measured, explained, and protected as one system. Dimension pages are regenerated to link their canonical terms and the protocol, making the meaning network bidirectional: dimension ⇄ term ⇄ score ⇄ tier ⇄ protocol. The gate gains a seventh validator (`validate_definitional.py`) enforcing that every active term has a live page carrying its governed definition **verbatim** with its DefinedTerm JSON-LD — a published definition can never differ from the governed record. All 15 terms are now machine-published (`in_jsonld: true`). **Why it matters:** the asset now owns its category's language in indexed, citable, machine-readable form; with 29 active routes the surface is complete enough for the first external test — Search Console.
 
+## DEC-015 — Category Gravity Before Value Extraction
+
+**Date:** 2026-06-10 · **Layer:** Constitutional / Commercial Posture
+
+OutMerchant will not pursue buyer outreach, public sale posture, marketplace claims, or premature monetization before external value proof. The asset will first strengthen indexation visibility, definitional authority, engine explainability, protocol trust, and category inevitability. Strategic value must be maximized before value extraction is activated. Doctrine codified in `CATEGORY_GRAVITY.md`; governing sentence: *"OutMerchant does not ask the market to buy it. It builds the category gravity that makes ignoring it strategically expensive."* Any future proposal for outreach, sale posture, monetization, or marketplace claims must supersede this decision on the record first.
+
 ---
 
 *Maintained under the OutMerchant Governance Operating System. New entries require: ID, date, layer, decision, rationale.*

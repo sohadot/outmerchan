@@ -532,24 +532,6 @@
     },
     {
       "from": "/score/",
-      "to": "/levels/captured/",
-      "kind": "required",
-      "reason": "score route must link into the level layer per ROUTE_GOVERNANCE.md topology."
-    },
-    {
-      "from": "/score/",
-      "to": "/levels/dependent/",
-      "kind": "required",
-      "reason": "score route must link into the level layer per ROUTE_GOVERNANCE.md topology."
-    },
-    {
-      "from": "/score/",
-      "to": "/levels/emerging/",
-      "kind": "required",
-      "reason": "score route must link into the level layer per ROUTE_GOVERNANCE.md topology."
-    },
-    {
-      "from": "/score/",
       "to": "/levels/outmerchant/",
       "kind": "required",
       "reason": "score route must link into the level layer per ROUTE_GOVERNANCE.md topology."
@@ -685,6 +667,24 @@
       "to": "/lexicon/settlement-exposure/",
       "kind": "required",
       "reason": "lexicon route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/lexicon/merchant-sovereignty/",
+      "kind": "required",
+      "reason": "score route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/lexicon/outmerchant/",
+      "kind": "required",
+      "reason": "score route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/score/",
+      "to": "/protocol/",
+      "kind": "required",
+      "reason": "score route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
     }
   ]
 }
