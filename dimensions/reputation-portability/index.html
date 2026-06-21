@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reputation Portability — Dimension 03 of the Merchant Sovereignty Score | OutMerchant</title>
-<meta name="description" content="Reputation Portability is dimension 03 (REP) of the Merchant Sovereignty Score: Are your reviews, ratings, and trading history portable — or hostage? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta name="description" content="Reputation Portability (REP) is dimension 03 of the Merchant Sovereignty Score: are your reviews, ratings, and trading history portable — or hostage? What it means, the hostage lock, and how AI agents verify merchant reputation.">
 <link rel="canonical" href="https://outmerchant.com/dimensions/reputation-portability/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#020408">
@@ -12,10 +12,10 @@
 <meta property="og:url" content="https://outmerchant.com/dimensions/reputation-portability/">
 <meta property="og:site_name" content="OutMerchant">
 <meta property="og:title" content="Reputation Portability — Dimension 03 of the Merchant Sovereignty Score | OutMerchant">
-<meta property="og:description" content="Reputation Portability is dimension 03 (REP) of the Merchant Sovereignty Score: Are your reviews, ratings, and trading history portable — or hostage? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta property="og:description" content="Reputation Portability (REP) is dimension 03 of the Merchant Sovereignty Score: are your reviews, ratings, and trading history portable — or hostage? What it means, the hostage lock, and how AI agents verify merchant reputation.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Reputation Portability — Dimension 03 of the Merchant Sovereignty Score | OutMerchant">
-<meta name="twitter:description" content="Reputation Portability is dimension 03 (REP) of the Merchant Sovereignty Score: Are your reviews, ratings, and trading history portable — or hostage? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta name="twitter:description" content="Reputation Portability (REP) is dimension 03 of the Merchant Sovereignty Score: are your reviews, ratings, and trading history portable — or hostage? What it means, the hostage lock, and how AI agents verify merchant reputation.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -24,38 +24,70 @@
       "@type": "Article",
       "@id": "https://outmerchant.com/dimensions/reputation-portability/#article",
       "headline": "Reputation Portability",
-      "description": "Reputation Portability is dimension 03 (REP) of the Merchant Sovereignty Score: Are your reviews, ratings, and trading history portable \u2014 or hostage? What it means, why it matters to merchant sovereignty, and what low and high control look like.",
+      "description": "Reputation Portability is dimension 03 (REP) of the Merchant Sovereignty Score: Are your reviews, ratings, and trading history portable — or hostage? What it means, why it matters to merchant sovereignty, and what low and high control look like.",
       "url": "https://outmerchant.com/dimensions/reputation-portability/",
-      "isPartOf": {
-        "@id": "https://outmerchant.com/#website"
-      },
-      "publisher": {
-        "@id": "https://outmerchant.com/#organization"
-      },
-      "about": {
-        "@id": "https://outmerchant.com/#term-sovereignty-score"
-      }
+      "isPartOf": {"@id": "https://outmerchant.com/#website"},
+      "publisher": {"@id": "https://outmerchant.com/#organization"},
+      "about": {"@id": "https://outmerchant.com/#term-sovereignty-score"}
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "OutMerchant", "item": "https://outmerchant.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Merchant Sovereignty Score", "item": "https://outmerchant.com/score/"},
+        {"@type": "ListItem", "position": 3, "name": "Reputation Portability", "item": "https://outmerchant.com/dimensions/reputation-portability/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "OutMerchant",
-          "item": "https://outmerchant.com/"
+          "@type": "Question",
+          "name": "What is portable reputation for merchants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Portable reputation is a merchant's verifiable trading history and trust record that exists independently of any single platform's database. It means reviews, ratings, and fulfilled order history that can be verified by a buyer, business counterparty, or AI agent without asking the platform's permission. The opposite of portable reputation is hostage reputation: trust capital locked in a proprietary system that cannot be transferred, exported, or independently verified."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Merchant Sovereignty Score",
-          "item": "https://outmerchant.com/score/"
+          "@type": "Question",
+          "name": "What happens to my reviews if Amazon suspends my account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When Amazon suspends a seller's account, the seller loses access to their storefront, listings, and the ability to display or reference their reviews through Amazon's interface. The reviews remain on Amazon's platform but the seller cannot use them to establish credibility elsewhere — they are not exported, not portable, and not independently verifiable. Years of five-star trading history built on Amazon belongs to Amazon's database. The seller cannot carry it to another venue or use it as independently verifiable proof of reliability."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Reputation Portability",
-          "item": "https://outmerchant.com/dimensions/reputation-portability/"
+          "@type": "Question",
+          "name": "How can merchants make their reputation portable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Merchants make reputation portable through three approaches: (1) Independent review platforms — collecting reviews on third-party services like Trustpilot, Google Business, or industry-specific platforms that exist outside any marketplace ecosystem. (2) Archived trading history — regularly exporting and archiving transaction records in formats that provide independently verifiable proof of fulfilled orders. (3) Structured trust data on the merchant's own domain — publishing Organization, AggregateRating, and trading history in schema.org structured data that search engines and AI agents can parse independently."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is independent merchant verification?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Independent merchant verification is a buyer's or agent's ability to confirm a merchant's identity, business legitimacy, and trading history without asking a marketplace platform's permission or using its interface. It requires the merchant to have published verifiable business identity (legal name, registration, address), a provable trading history outside platform silos, and independently checkable trust signals. Independent verification is what allows a foreign buyer — or an AI agent — to trust a merchant they find outside a marketplace context."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI buying agents verify merchant reputation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — but only if the merchant's reputation is structured and independently accessible. AI buying agents evaluate merchants using machine-readable data: schema.org structured markup, independently crawlable review data, and verifiable identity signals. A merchant whose entire reputation lives inside Amazon's proprietary system provides no independently parseable trust data for an AI agent to work with. A merchant with structured data on their own domain, independent reviews, and archived trading history is verifiable by an AI agent without platform mediation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is reputation portability measured in the Merchant Sovereignty Score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reputation Portability is dimension 03 (REP) of the Merchant Sovereignty Score, weighted at 12.5% of the total. It is assessed through two governed questions: (1) Are your reviews and ratings portable to another venue? (2) Does verifiable proof of your trading history exist outside any single platform's database? Each is scored from captured behavior (0 points, reputation fully platform-held) to sovereign behavior (maximum points, reputation independently verifiable)."
+          }
         }
       ]
     }
@@ -97,7 +129,6 @@
   .action { border-left:1px solid var(--gold); background:rgba(200,169,110,0.06); padding:18px 22px; margin:20px 0; }
   .action p { margin:0; font-size:13px; }
   .action .label { color:var(--gold); font-size:10px; letter-spacing:0.3em; text-transform:uppercase; display:block; margin-bottom:8px; }
-  .range { font-family:var(--display); font-weight:800; font-size:40px; color:var(--signal); margin:8px 0 24px; }
   .crosslinks { border-top:1px solid var(--text-ghost); margin-top:48px; padding-top:24px; }
   .crosslinks p { font-size:12px; }
   .cta { display:inline-block; background:var(--signal); color:var(--void); font-weight:700; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; padding:14px 32px; text-decoration:none; margin:8px 16px 8px 0; }
@@ -105,7 +136,17 @@
   .cta-secondary:hover { border-color:var(--signal-mid); color:var(--signal); }
   footer { border-top:1px solid var(--text-ghost); padding:32px 0; font-size:10px; color:var(--text-dim); letter-spacing:0.15em; }
   footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
-  @media (max-width:640px) { .compare { grid-template-columns:1fr; } }
+  .rep-forms { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin:20px 0; }
+  .rep-forms > div { border:1px solid var(--text-ghost); padding:16px; background:var(--deep); }
+  .rep-forms h3 { font-family:var(--display); font-size:11px; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:8px; color:var(--signal); }
+  .rep-forms p { font-size:12px; margin:0; }
+  .warning { border:1px solid var(--danger); background:rgba(255,61,61,0.06); padding:20px 24px; margin:20px 0; }
+  .warning .label { color:var(--danger); font-size:10px; letter-spacing:0.3em; text-transform:uppercase; display:block; margin-bottom:10px; }
+  .warning p { font-size:13px; margin:0; }
+  .faq-block { border-left:2px solid var(--signal-mid); padding:16px 20px; margin-bottom:16px; background:var(--signal-dim); }
+  .faq-block h3 { font-family:var(--display); font-size:13px; margin-bottom:8px; color:var(--text); }
+  .faq-block p { font-size:12px; margin:0; }
+  @media (max-width:640px) { .compare { grid-template-columns:1fr; } .rep-forms { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -117,40 +158,94 @@
 </header>
 <main>
   <div class="wrap">
-    <p class="kicker">// Dimension 03 / REP — 12.5% of the score</p>
+    <p class="kicker">// Dimension 03 / REP &mdash; 12.5% of the score</p>
     <h1>Reputation Portability</h1>
+
     <h2>What This Dimension Means</h2>
-    <p>Reputation Portability measures whether your reviews, ratings, and trading history are an asset you can carry — or a hostage held in a platform's proprietary database. It asks whether verifiable proof of your reliability exists anywhere a platform does not control.</p>
+    <p>Reputation Portability measures whether your reviews, ratings, and trading history are an asset you can carry &mdash; or a hostage held in a platform's proprietary database. It asks whether verifiable proof of your reliability exists anywhere a platform does not control.</p>
+
+    <h2>Why Platform Reviews Are Not Your Asset</h2>
+    <p>A seller with 5,000 five-star Amazon reviews has not built a reputation. They have built Amazon's reputation. The reviews are displayed on Amazon's platform, stored in Amazon's database, governed by Amazon's review policy, and subject to Amazon's decision about whether to show, hide, or remove them. The trust capital exists &mdash; but it belongs to the platform's system, not to the merchant who earned it.</p>
+    <p><strong>This is not an edge case.</strong> Every marketplace review, every platform rating, every in-system trust badge is owned by the platform that issued it. The seller can reference it while they are on the platform. The day the account closes, the trust capital stays behind.</p>
+
     <h2>Why It Matters to Merchant Sovereignty</h2>
     <p>Reputation is the merchant's accumulated trust capital, often built over years of flawless trade. When that capital is locked in one platform's system, it silently converts into the platform's strongest retention weapon: the merchant cannot leave without abandoning the very proof that they deserve to be trusted. Portable reputation reverses that lock.</p>
+
+    <h2>The Hostage Lock: How Reputation Capture Works</h2>
+    <p>The mechanism is structural, not malicious. Platforms build trust systems to reduce friction for their buyers &mdash; not to trap their sellers. But the effect is the same: years of trading history that cannot leave. The longer the merchant has been on a platform, and the better their record, the more their reputation holds them in place. The five-star seller with 10,000 reviews is the merchant most captured by their own success.</p>
+    <div class="warning">
+      <span class="label">The Reputation Hostage Mechanism</span>
+      <p>The better your platform reputation, the more it costs you to leave. A merchant with 10,000 five-star reviews is more captured than one with 100 &mdash; because more of their credibility is held in the platform's system. Reputation lock is not proportional to dependence; it is proportional to excellence.</p>
+    </div>
+
     <h2>How the Score Measures It</h2>
-    <p>The Merchant Sovereignty Score assesses this dimension through 2 governed questions, weighted at 12.5% of the total score. The questions are fixed under public score governance — they change only through a recorded decision, never silently:</p>
+    <p>The Merchant Sovereignty Score assesses this dimension through 2 governed questions, weighted at 12.5% of the total score. The questions are fixed under public score governance &mdash; they change only through a recorded decision, never silently:</p>
     <ul class="qs">
       <li>Are your reviews and ratings portable to another venue?</li>
       <li>Does verifiable proof of your trading history exist outside any single platform's database?</li>
     </ul>
     <p>Each answer is scored from captured behavior (0 points) to sovereign behavior (maximum points). The dimension score is the share of sovereign points earned, from 0 to 100.</p>
+
     <h2>Low Control vs. High Control</h2>
     <div class="compare">
       <div class="low"><h3>What low control looks like</h3><p>Years of five-star history that evaporates the day the account closes. No independent record of fulfilled orders. Trust exists only where the platform displays it, in the format the platform allows.</p></div>
-      <div class="high"><h3>What high control looks like</h3><p>Trading history archived and provable outside any single venue. Reviews and trust signals verifiable through independent services. A buyer — or an AI agent — can confirm your record without asking the platform's permission.</p></div>
+      <div class="high"><h3>What high control looks like</h3><p>Trading history archived and provable outside any single venue. Reviews and trust signals verifiable through independent services. A buyer &mdash; or an AI agent &mdash; can confirm your record without asking the platform's permission.</p></div>
     </div>
+
+    <h2>Three Forms of Independent Reputation</h2>
+    <div class="rep-forms">
+      <div><h3>Independent Review Platforms</h3><p>Reviews on Trustpilot, Google Business, or industry-specific platforms that exist outside any marketplace ecosystem. These survive marketplace account closures and can be referenced independently.</p></div>
+      <div><h3>Archived Trading History</h3><p>Regularly exported and archived transaction records that provide independently verifiable proof of fulfilled orders &mdash; volume, completion rate, dispute rate. Not a dashboard screenshot: actual exportable data.</p></div>
+      <div><h3>Structured Trust Data</h3><p>schema.org Organization, AggregateRating, and review markup published on the merchant's own domain. Independently crawlable by search engines and AI agents without platform mediation.</p></div>
+    </div>
+
+    <h2>Reputation Portability and AI Agents</h2>
+    <p>As <a href="/agentic-commerce/">agentic commerce</a> develops, AI buying agents evaluate merchants using machine-readable data: structured markup, independently crawlable review data, and verifiable identity signals. A merchant whose entire reputation lives inside a platform's proprietary system provides no independently parseable trust data for an AI agent evaluating options outside that platform's context.</p>
+    <p>A merchant with structured data on their own domain, independent reviews, and archived trading history is verifiable by an AI agent without platform mediation. In the agentic commerce era, <a href="/lexicon/portable-reputation/">portable reputation</a> is also agent-readable reputation &mdash; the prerequisite for being evaluated and selected by AI agents acting on behalf of buyers who are not starting their search on a platform.</p>
+
     <div class="action">
       <span class="label">One Next Action</span>
-      <p>Export and archive your complete trading history and reviews from every platform you sell on — this quarter, and on a schedule. Then establish one independent, verifiable trust surface under your own control.</p>
+      <p>Export and archive your complete trading history and reviews from every platform you sell on &mdash; this quarter, and on a schedule. Then establish one independent, verifiable trust surface under your own control: a Trustpilot profile, a Google Business page, or schema.org structured data on your own domain.</p>
     </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-block">
+      <h3>What is portable reputation for merchants?</h3>
+      <p>Portable reputation is a merchant's verifiable trading history and trust record that exists independently of any single platform's database &mdash; reviews, ratings, and fulfilled order history that can be verified by a buyer or AI agent without asking a platform's permission. The opposite is hostage reputation: trust capital locked in a proprietary system that cannot be transferred, exported, or independently verified.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What happens to my reviews if Amazon suspends my account?</h3>
+      <p>When Amazon suspends a seller's account, the seller loses access to their storefront and the ability to use their reviews to establish credibility elsewhere. The reviews remain on Amazon's platform but the seller cannot carry them to another venue. Years of five-star trading history built on Amazon belongs to Amazon's database &mdash; not to the merchant who earned it.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How can merchants make their reputation portable?</h3>
+      <p>Three approaches: (1) Collect reviews on independent platforms (Trustpilot, Google Business) that exist outside any marketplace ecosystem. (2) Regularly export and archive transaction records as verifiable proof of fulfilled orders. (3) Publish schema.org structured data &mdash; Organization, AggregateRating &mdash; on the merchant's own domain, independently crawlable by search engines and AI agents.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What is independent merchant verification?</h3>
+      <p>Independent merchant verification is a buyer's or agent's ability to confirm a merchant's identity, business legitimacy, and trading history without using a marketplace platform's interface. It requires published verifiable business identity, a provable trading history outside platform silos, and independently checkable trust signals. This is what allows a foreign buyer &mdash; or an AI agent &mdash; to trust a merchant they find outside a marketplace context.</p>
+    </div>
+    <div class="faq-block">
+      <h3>Can AI buying agents verify merchant reputation?</h3>
+      <p>Yes &mdash; but only if the merchant's reputation is structured and independently accessible. AI buying agents evaluate merchants using machine-readable data: schema.org structured markup, independently crawlable review data, and verifiable identity signals. A merchant whose entire reputation lives inside a platform's proprietary system provides no independently parseable trust data. A merchant with structured data on their own domain is verifiable without platform mediation.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How is reputation portability measured in the Merchant Sovereignty Score?</h3>
+      <p>Reputation Portability is dimension 03 (REP), weighted at 12.5% of the total. Two governed questions assess it: (1) Are your reviews and ratings portable to another venue? (2) Does verifiable proof of your trading history exist outside any single platform's database? Each is scored from captured behavior (reputation fully platform-held) to sovereign behavior (reputation independently verifiable).</p>
+    </div>
+
     <div class="crosslinks">
-      <p>Canonical term: <a href="/lexicon/portable-reputation/">Portable Reputation</a> in the OutMerchant Lexicon. This dimension is governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
-      <p>Persistent low control on this dimension is characteristic of the <a href="/levels/emerging/">Emerging</a> tier. High control across all eight dimensions defines the standard's protected highest rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
-      <a class="cta" href="/score/">→ Measure This Dimension</a>
-      <a class="cta-secondary" href="/">The Standard</a>
+      <p>Canonical term: <a href="/lexicon/portable-reputation/">Portable Reputation</a> in the OutMerchant Lexicon. Governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
+      <p>Low control here is characteristic of the <a href="/levels/emerging/">Emerging</a> tier. High control across all eight dimensions defines the terminal rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
+      <a class="cta" href="/score/">&rarr; Measure This Dimension</a>
+      <a class="cta-secondary" href="/agentic-commerce/">Agentic Commerce</a>
     </div>
   </div>
 </main>
 <footer>
   <div class="wrap">
-    <div>MERCHANT SOVEREIGNTY SCORE — REFERENCE STANDARD</div>
-    <div><a href="/">OUTMERCHANT.COM</a> — EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
+    <div>MERCHANT SOVEREIGNTY SCORE &mdash; REFERENCE STANDARD</div>
+    <div><a href="/">OUTMERCHANT.COM</a> &mdash; EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
   </div>
 </footer>
 </body>
