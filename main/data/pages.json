@@ -349,7 +349,8 @@
         "/lexicon/agentic-commerce-readiness/",
         "/levels/outmerchant/",
         "/protocol/",
-        "/levels/emerging/"
+        "/levels/emerging/",
+        "/agentic-commerce/"
       ],
       "seo_cluster": "agt",
       "governance_owner": "score"
@@ -373,7 +374,7 @@
       "route": "/levels/captured/",
       "type": "level",
       "status": "active",
-      "purpose": "Define the Captured tier (0\u201325) of the Merchant Sovereignty Score.",
+      "purpose": "Define the Captured tier (0–25) of the Merchant Sovereignty Score.",
       "canonical_term": "Captured",
       "required_internal_links": [
         "/score/",
@@ -386,7 +387,7 @@
       "route": "/levels/dependent/",
       "type": "level",
       "status": "active",
-      "purpose": "Define the Dependent tier (26\u201350) of the Merchant Sovereignty Score.",
+      "purpose": "Define the Dependent tier (26–50) of the Merchant Sovereignty Score.",
       "canonical_term": "Dependent",
       "required_internal_links": [
         "/score/",
@@ -399,7 +400,7 @@
       "route": "/levels/emerging/",
       "type": "level",
       "status": "active",
-      "purpose": "Define the Emerging tier (51\u201375) of the Merchant Sovereignty Score.",
+      "purpose": "Define the Emerging tier (51–75) of the Merchant Sovereignty Score.",
       "canonical_term": "Emerging",
       "required_internal_links": [
         "/score/",
@@ -412,7 +413,7 @@
       "route": "/levels/outmerchant/",
       "type": "level",
       "status": "active",
-      "purpose": "Define the OutMerchant tier (76\u2013100) of the Merchant Sovereignty Score.",
+      "purpose": "Define the OutMerchant tier (76–100) of the Merchant Sovereignty Score.",
       "canonical_term": "OutMerchant",
       "required_internal_links": [
         "/score/",
@@ -434,6 +435,20 @@
       ],
       "seo_cluster": "lexicon-agt",
       "governance_owner": "lexicon"
+    },
+    {
+      "route": "/agentic-commerce/",
+      "type": "lexicon",
+      "status": "active",
+      "purpose": "Define Agentic Commerce and its implications for merchant sovereignty: how AI agents intermediate discovery, evaluation, trust, and routing, and what makes a merchant agent-selectable.",
+      "canonical_term": "Agentic Commerce",
+      "required_internal_links": [
+        "/score/",
+        "/dimensions/ai-commerce-readiness/",
+        "/lexicon/agentic-commerce-readiness/"
+      ],
+      "seo_cluster": "agt",
+      "governance_owner": "doctrine"
     }
   ]
 }
