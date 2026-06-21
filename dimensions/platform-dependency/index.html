@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Platform Dependency — Dimension 01 of the Merchant Sovereignty Score | OutMerchant</title>
-<meta name="description" content="Platform Dependency is dimension 01 (DEP) of the Merchant Sovereignty Score: How exposed are you to a single platform's decisions? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta name="description" content="Platform Dependency (DEP) is dimension 01 of the Merchant Sovereignty Score. It measures how much of your trade is exposed to a single platform's unilateral decisions — the primary vector through which platform capture begins.">
 <link rel="canonical" href="https://outmerchant.com/dimensions/platform-dependency/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#020408">
@@ -12,10 +12,10 @@
 <meta property="og:url" content="https://outmerchant.com/dimensions/platform-dependency/">
 <meta property="og:site_name" content="OutMerchant">
 <meta property="og:title" content="Platform Dependency — Dimension 01 of the Merchant Sovereignty Score | OutMerchant">
-<meta property="og:description" content="Platform Dependency is dimension 01 (DEP) of the Merchant Sovereignty Score: How exposed are you to a single platform's decisions? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta property="og:description" content="Platform Dependency measures how exposed your commerce is to a single platform's unilateral decisions. One algorithm change. One policy update. One suspension.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Platform Dependency — Dimension 01 of the Merchant Sovereignty Score | OutMerchant">
-<meta name="twitter:description" content="Platform Dependency is dimension 01 (DEP) of the Merchant Sovereignty Score: How exposed are you to a single platform's decisions? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta name="twitter:description" content="Platform Dependency measures how exposed your commerce is to a single platform's unilateral decisions. One algorithm change. One policy update. One suspension.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -24,39 +24,79 @@
       "@type": "Article",
       "@id": "https://outmerchant.com/dimensions/platform-dependency/#article",
       "headline": "Platform Dependency",
-      "description": "Platform Dependency is dimension 01 (DEP) of the Merchant Sovereignty Score: How exposed are you to a single platform's decisions? What it means, why it matters to merchant sovereignty, and what low and high control look like.",
+      "description": "Platform Dependency is dimension 01 (DEP) of the Merchant Sovereignty Score. It measures concentration risk: how exposed a merchant is to a single platform's unilateral decisions across revenue, reputation, and route to the buyer.",
       "url": "https://outmerchant.com/dimensions/platform-dependency/",
-      "isPartOf": {
-        "@id": "https://outmerchant.com/#website"
-      },
-      "publisher": {
-        "@id": "https://outmerchant.com/#organization"
-      },
-      "about": {
-        "@id": "https://outmerchant.com/#term-sovereignty-score"
-      }
+      "isPartOf": { "@id": "https://outmerchant.com/#website" },
+      "publisher": { "@id": "https://outmerchant.com/#organization" },
+      "about": { "@id": "https://outmerchant.com/#term-sovereignty-score" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is platform dependency in ecommerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Platform dependency in ecommerce is the condition in which a meaningful share of a merchant's revenue, customer relationships, or reputation is concentrated in a single platform or marketplace — to the degree that the platform's unilateral decisions (algorithm changes, policy updates, fee increases, account suspensions) can materially harm or end the merchant's commerce. It is the primary vector through which platform capture begins. OutMerchant defines and measures it as Dimension 01 (DEP) of the Merchant Sovereignty Score."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What percentage of revenue from one platform is too high?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Merchant Sovereignty Score measures platform dependency across graduated thresholds. Above 80% of revenue from a single platform places a merchant in the Captured tier (0–25). Between 51–80% indicates high dependency within the Dependent tier. Between 26–50% is moderate dependency. Control begins to emerge below 25% from any single channel. The OutMerchant rank (76–100) requires that no single channel carry more than roughly a quarter of revenue and that at least one owned channel — one no third party can switch off — produces meaningful income."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between platform dependency and platform capture?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Platform dependency is the condition; platform capture is the end-state. Dependency is a measurable posture — a percentage of revenue or reach concentrated in one platform. Capture is what dependency becomes when the concentration is so complete that the merchant's commerce continues only at the platform's pleasure: the platform owns the margin, the customer relationship, the reputation, and the route to the buyer. Platform dependency is reversible. Platform capture describes the condition in which the merchant has lost the practical ability to exit or resist the platform's decisions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce my platform dependency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reducing platform dependency requires three parallel moves: (1) Open at least one owned channel — a storefront on your own domain that no third party can suspend — and route real traffic to it before you need it. (2) Build consented direct buyer contact: email lists, SMS consent, or owned communication channels that survive any platform exit. (3) Measure your full dependency profile across all eight dimensions of merchant sovereignty using the free diagnostic at outmerchant.com/score/ to understand which specific controls are weakest and in which order to address them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does platform dependency affect business valuation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "High platform dependency is a material risk factor in business valuations. Buyers and investors apply discount multiples to businesses where more than 50% of revenue flows through a single platform because that revenue is structurally contingent — it can be impaired by a decision the seller cannot make, appeal, or predict. A business with 80% marketplace revenue and no owned channel trades at a lower multiple than one with diversified channels and direct customer relationships, because the acquirer is buying platform access, not a durable business. Sovereign commerce — owned channels, owned customer relationships, owned route to the buyer — commands premium valuation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do AI shopping agents change platform dependency risk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI shopping agents are becoming an intermediate layer in commerce: systems that search, compare, evaluate, and route purchase decisions on behalf of buyers. A merchant who exists only inside a single platform's catalog is visible only to agents that query that platform. A merchant with a machine-readable, canonical presence outside any single platform is discoverable by any agent regardless of which data source it queries. This creates a new layer of dependency risk: catalog dependency. The OutMerchant framework addresses this through Dimension 07 (AGT — AI Commerce Readiness), which measures whether a merchant's catalog, terms, reputation, and identity are structured for independent agent discovery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the Merchant Sovereignty Score measure platform dependency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Merchant Sovereignty Score measures platform dependency through three governed questions in Dimension 01 (DEP), weighted at 12.5% of the total score. The questions assess: (1) what share of your revenue flows through your single largest platform; (2) how long you could continue selling if that platform suspended your account today; and (3) whether you operate a sales channel that no third party can switch off. Each answer is scored from captured behavior (0 points) to sovereign behavior (maximum points). The model is governed and changes only through a recorded decision. The measurement is free at outmerchant.com/score/."
+          }
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "OutMerchant",
-          "item": "https://outmerchant.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Merchant Sovereignty Score",
-          "item": "https://outmerchant.com/score/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Platform Dependency",
-          "item": "https://outmerchant.com/dimensions/platform-dependency/"
-        }
+        { "@type": "ListItem", "position": 1, "name": "OutMerchant", "item": "https://outmerchant.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Merchant Sovereignty Score", "item": "https://outmerchant.com/score/" },
+        { "@type": "ListItem", "position": 3, "name": "Platform Dependency", "item": "https://outmerchant.com/dimensions/platform-dependency/" }
       ]
     }
   ]
@@ -84,11 +124,12 @@
   .kicker { font-size:10px; letter-spacing:0.4em; color:var(--signal); text-transform:uppercase; margin-bottom:16px; }
   h1 { font-family:var(--display); font-weight:800; font-size:clamp(28px,5vw,44px); line-height:1.15; margin-bottom:20px; }
   h2 { font-family:var(--display); font-weight:700; font-size:18px; margin:40px 0 12px; letter-spacing:0.03em; }
+  h3 { font-family:var(--display); font-weight:700; font-size:14px; margin:24px 0 8px; letter-spacing:0.05em; }
   p { font-size:13px; color:var(--text-dim); margin-bottom:14px; max-width:680px; }
   p strong { color:var(--text); font-weight:400; }
   .compare { display:grid; grid-template-columns:1fr 1fr; gap:2px; margin:20px 0; }
   .compare > div { border:1px solid var(--text-ghost); padding:20px; background:var(--deep); }
-  .compare h3 { font-family:var(--display); font-size:13px; margin-bottom:10px; }
+  .compare h3 { font-family:var(--display); font-size:13px; margin-bottom:10px; margin-top:0; }
   .compare .low h3 { color:var(--danger); }
   .compare .high h3 { color:var(--signal); }
   .compare p { font-size:12px; margin:0; }
@@ -97,7 +138,6 @@
   .action { border-left:1px solid var(--gold); background:rgba(200,169,110,0.06); padding:18px 22px; margin:20px 0; }
   .action p { margin:0; font-size:13px; }
   .action .label { color:var(--gold); font-size:10px; letter-spacing:0.3em; text-transform:uppercase; display:block; margin-bottom:8px; }
-  .range { font-family:var(--display); font-weight:800; font-size:40px; color:var(--signal); margin:8px 0 24px; }
   .crosslinks { border-top:1px solid var(--text-ghost); margin-top:48px; padding-top:24px; }
   .crosslinks p { font-size:12px; }
   .cta { display:inline-block; background:var(--signal); color:var(--void); font-weight:700; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; padding:14px 32px; text-decoration:none; margin:8px 16px 8px 0; }
@@ -105,7 +145,19 @@
   .cta-secondary:hover { border-color:var(--signal-mid); color:var(--signal); }
   footer { border-top:1px solid var(--text-ghost); padding:32px 0; font-size:10px; color:var(--text-dim); letter-spacing:0.15em; }
   footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
-  @media (max-width:640px) { .compare { grid-template-columns:1fr; } }
+  .threshold-table { width:100%; border-collapse:collapse; margin:20px 0; font-size:12px; }
+  .threshold-table th { text-align:left; padding:10px 14px; border-bottom:1px solid var(--signal-mid); color:var(--signal); font-size:10px; letter-spacing:0.2em; text-transform:uppercase; font-weight:700; }
+  .threshold-table td { padding:10px 14px; border-bottom:1px solid var(--text-ghost); color:var(--text-dim); }
+  .threshold-table tr:last-child td { border-bottom:none; }
+  .threshold-table td:first-child { color:var(--text); font-weight:700; }
+  .vectors { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; margin:20px 0; }
+  .vectors > div { border:1px solid var(--text-ghost); padding:18px; background:var(--deep); }
+  .vectors h3 { font-family:var(--display); font-size:13px; color:var(--signal); margin-bottom:8px; margin-top:0; }
+  .vectors p { font-size:12px; margin:0; }
+  .faq-block { border:1px solid var(--text-ghost); background:var(--deep); padding:24px; margin-bottom:12px; }
+  .faq-block h3 { font-family:var(--display); font-size:14px; color:var(--text); margin-bottom:10px; margin-top:0; }
+  .faq-block p { font-size:13px; margin:0; }
+  @media (max-width:640px) { .compare { grid-template-columns:1fr; } .vectors { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -119,10 +171,56 @@
   <div class="wrap">
     <p class="kicker">// Dimension 01 / DEP — 12.5% of the score</p>
     <h1>Platform Dependency</h1>
+
     <h2>What This Dimension Means</h2>
     <p>Platform Dependency measures how much of your trade is exposed to a single platform's unilateral decisions. One algorithm change, one policy update, one account suspension — the dimension asks how much of your commerce survives a decision you did not make and cannot appeal in time.</p>
+    <p>It is the first dimension of the Merchant Sovereignty Score because it is the primary vector through which <a href="/lexicon/platform-capture/">platform capture</a> begins. Every other dimension of sovereignty is weaker when this one is weak: a platform that controls your route to the buyer can override your decisions on all of them.</p>
+
+    <h2>Why Platform Dependency Is Getting Worse</h2>
+    <p>The structure of global commerce is not moving toward distributed sovereignty. It is moving toward consolidation. Two forces are accelerating the dependency condition for most merchants.</p>
+    <p><strong>Fee compression over time.</strong> Platform fees do not trend downward. Marketplace commission rates, fulfillment costs, and the cost of paid visibility on platforms have all increased year over year for the past decade. A merchant who was comfortably profitable at 30% platform dependency five years ago may be in a structurally different position today — not because their business changed, but because the terms of access changed above their head.</p>
+    <p><strong>The AI layer changes the reach equation.</strong> As AI shopping agents emerge as an intermediate layer in commerce — systems that search, compare, evaluate, and route purchases on behalf of buyers — a merchant who exists only inside a single platform's catalog is discoverable only by agents that query that platform. Catalog dependency becomes a new form of platform dependency: invisible to any discovery that doesn't pass through the platform's database.</p>
+    <p>These two forces together mean that the cost of dependency rises over time, while the strategic cost of ignoring it also rises. The merchants who move now are buying optionality; those who wait are narrowing it.</p>
+
+    <h2>The Three Vectors of Capture</h2>
+    <p>Platform dependency does not work through one mechanism. It operates through three distinct vectors, each of which can be addressed independently — but all of which must be addressed for genuine sovereignty.</p>
+    <div class="vectors">
+      <div>
+        <h3>Revenue Concentration</h3>
+        <p>The most visible form: what percentage of your sales flows through a single marketplace or channel. This is what most merchants measure when they think about dependency. It is necessary but not sufficient.</p>
+      </div>
+      <div>
+        <h3>Reputation Hostage</h3>
+        <p>Your reviews, ratings, and transaction history exist inside the platform's proprietary database. They are not portable. A merchant who leaves — or is removed — takes nothing with them. Their credibility resets to zero anywhere the platform does not operate.</p>
+      </div>
+      <div>
+        <h3>Route Capture</h3>
+        <p>The buyer relationship is mediated entirely by the platform. The merchant does not know who bought from them, cannot contact them, and cannot serve them outside the platform's ecosystem. The customer belongs to the platform, not to the merchant.</p>
+      </div>
+    </div>
+    <p>A merchant can reduce revenue concentration but remain fully captured through reputation hostage and route capture. Sovereignty requires addressing all three vectors — which is why the Merchant Sovereignty Score measures <a href="/lexicon/route-to-buyer-control/">Route-to-Buyer Control</a>, <a href="/lexicon/portable-reputation/">Portable Reputation</a>, and <a href="/dimensions/customer-ownership/">Customer Ownership</a> as separate dimensions alongside platform dependency.</p>
+
     <h2>Why It Matters to Merchant Sovereignty</h2>
-    <p>Dependency is where capture begins. A merchant whose revenue flows through one marketplace is not a business partner of that marketplace; they are a tenant. The platform sets the rent (fees), the visibility (ranking), and the right to exist (account status). Every other dimension of sovereignty is weakened when this one is weak, because the platform that controls your route to the buyer can override your decisions on all of them.</p>
+    <p>Dependency is where capture begins. A merchant whose revenue flows through one marketplace is not a business partner of that marketplace; they are a tenant. The platform sets the rent (fees), the visibility (ranking), and the right to exist (account status).</p>
+    <p>The practical consequence is not theoretical. Platform account suspensions, fee increases, and algorithm changes are not rare events distributed evenly across millions of merchants. They are systematic, frequent, and largely non-negotiable. A merchant who has not built alternative routes before one of these events arrives is negotiating from a position where the only option is compliance or exit — with exit meaning the end of the business.</p>
+
+    <h2>What Trigger Events Look Like</h2>
+    <p>Platform dependency reveals itself in events, not in gradual trends. These are the common triggers that convert a dependency posture into an acute crisis:</p>
+    <ul class="qs">
+      <li><strong>Account suspension</strong> — policy violation, intellectual property complaint, review manipulation allegation, or simply algorithmic flag. Often non-negotiable, often without appeal.</li>
+      <li><strong>Algorithm change</strong> — organic visibility collapses overnight. What ranked on page one is now buried. Ad costs increase to compensate, compressing margin.</li>
+      <li><strong>Fee increase</strong> — retroactive margin compression. The merchant cannot renegotiate; they can only absorb or exit.</li>
+      <li><strong>Platform market exit</strong> — a platform leaves a country, shuts down a category, or closes entirely. The merchant's commerce in that market ends on the platform's schedule.</li>
+      <li><strong>Terms of service change</strong> — new rules rewrite what the merchant is allowed to sell, how they can communicate with buyers, and what fulfillment options they can use.</li>
+      <li><strong>Platform acquisition</strong> — new ownership rewrites the terms of access with different commercial interests.</li>
+    </ul>
+    <p>In each case, the merchant who has alternative routes, owned customer contact, and portable reputation absorbs the event as an inconvenience. The merchant who has none of these absorbs it as an extinction event. Profitable captured merchants are the most vulnerable: they have the most to lose and often the least urgency to build alternatives before they need them.</p>
+
+    <h2>Platform Dependency in the AI Era</h2>
+    <p>AI systems are entering commerce as active participants, not just search tools. Shopping agents, research agents, and purchase-routing systems now intermediate a growing portion of commercial discovery. These agents query catalogs, evaluate merchants, and route buyers — and they do not treat all merchants as equally accessible.</p>
+    <p>A merchant whose entire commercial identity lives inside a single platform's proprietary database is accessible to AI agents only when those agents query that specific platform. A merchant with a canonical, machine-readable presence — structured product data, governed reputation signals, stable canonical URLs, and identity records that exist outside any single platform — is accessible to any agent, through any query path.</p>
+    <p>This is the principle behind <a href="/agentic-commerce/">Agentic Commerce Readiness</a> as a distinct sovereignty dimension: the route to the buyer is becoming agent-mediated, and a merchant whose route only runs through one platform is no less captured than they were before AI — they are more captured, because the agents consolidate discovery rather than distribute it.</p>
+
     <h2>How the Score Measures It</h2>
     <p>The Merchant Sovereignty Score assesses this dimension through 3 governed questions, weighted at 12.5% of the total score. The questions are fixed under public score governance — they change only through a recorded decision, never silently:</p>
     <ul class="qs">
@@ -131,19 +229,66 @@
       <li>Do you operate a sales channel that no third party can switch off?</li>
     </ul>
     <p>Each answer is scored from captured behavior (0 points) to sovereign behavior (maximum points). The dimension score is the share of sovereign points earned, from 0 to 100.</p>
+
+    <h2>The Measurement Thresholds</h2>
+    <table class="threshold-table">
+      <thead><tr><th>Revenue Share (Single Platform)</th><th>Control Signal</th><th>Score Range</th></tr></thead>
+      <tbody>
+        <tr><td>&gt; 80%</td><td>Captured — commerce continues at the platform's pleasure</td><td>0 – 25</td></tr>
+        <tr><td>51% – 80%</td><td>High dependency — material vulnerability to platform decisions</td><td>26 – 40</td></tr>
+        <tr><td>26% – 50%</td><td>Moderate dependency — Dependent tier, path to Emerging visible</td><td>41 – 55</td></tr>
+        <tr><td>10% – 25%</td><td>Controlled dependency — Emerging tier, sovereignty building</td><td>56 – 75</td></tr>
+        <tr><td>&lt; 10% (any single channel)</td><td>Distributed control — OutMerchant range across this dimension</td><td>76 – 100</td></tr>
+      </tbody>
+    </table>
+    <p>Revenue share alone does not determine the dimension score. The owned-channel question and the suspension-resilience question are weighted alongside it. A merchant at 40% dependency who has a functioning owned channel and 90 days of selling resilience may score significantly higher than one at 30% who has neither.</p>
+
     <h2>Low Control vs. High Control</h2>
     <div class="compare">
-      <div class="low"><h3>What low control looks like</h3><p>More than 80% of revenue through one platform. No sales channel that a third party cannot switch off. An account suspension means the business stops the same day. Channel strategy is whatever the platform's algorithm rewards this quarter.</p></div>
-      <div class="high"><h3>What high control looks like</h3><p>No single channel carries more than a quarter of revenue. At least one owned channel — a property no third party can switch off — produces meaningful income. A suspension on any one platform is an inconvenience, not an extinction event.</p></div>
+      <div class="low"><h3>What low control looks like</h3><p>More than 80% of revenue through one platform. No sales channel that a third party cannot switch off. An account suspension means the business stops the same day. Channel strategy is whatever the platform's algorithm rewards this quarter. Customer data belongs to the platform; the merchant has no direct contact with buyers outside the platform's system.</p></div>
+      <div class="high"><h3>What high control looks like</h3><p>No single channel carries more than a quarter of revenue. At least one owned channel — a property no third party can switch off — produces meaningful income. A suspension on any one platform is an inconvenience, not an extinction event. The merchant holds direct buyer contact that survives any platform exit. Reputation exists in forms that are portable across platforms.</p></div>
     </div>
+
     <div class="action">
       <span class="label">One Next Action</span>
-      <p>Map your revenue by channel this week. If one platform carries more than half, open one channel that no third party can switch off — your own storefront on your own domain — and route real traffic to it before you need it.</p>
+      <p>Map your revenue by channel this week. If one platform carries more than half, open one channel that no third party can switch off — your own storefront on your own domain — and route real traffic to it before you need it. That single move begins the transition from Dependent to Emerging on this dimension.</p>
     </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-block">
+      <h3>What is platform dependency in ecommerce?</h3>
+      <p>Platform dependency is the condition in which a meaningful share of a merchant's revenue, customer relationships, or reputation is concentrated in a single platform — to the degree that the platform's unilateral decisions can materially harm or end the merchant's commerce. It is the primary vector through which <a href="/lexicon/platform-capture/">platform capture</a> begins.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What percentage of revenue from one platform is too high?</h3>
+      <p>Above 80% of revenue from a single platform places a merchant in the Captured tier. Between 51–80% is high dependency. Control begins to emerge below 25% from any single channel. The OutMerchant rank requires no single channel to carry more than roughly a quarter of revenue, combined with at least one owned channel that no third party controls.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What is the difference between platform dependency and platform capture?</h3>
+      <p>Dependency is the condition (measurable concentration); capture is the end-state (the platform controls the merchant's commercial existence). Platform dependency is reversible. <a href="/lexicon/platform-capture/">Platform capture</a> describes the condition in which the merchant has lost the practical ability to exit or resist the platform's decisions.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How do I reduce my platform dependency?</h3>
+      <p>Three parallel moves: (1) Open at least one owned channel — a storefront on your own domain that no third party can suspend. (2) Build consented direct buyer contact: email lists, SMS consent, or owned communication that survives a platform exit. (3) Measure your full dependency profile using the free <a href="/score/">Merchant Sovereignty Score</a> to understand which specific controls are weakest.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How does platform dependency affect business valuation?</h3>
+      <p>High platform dependency is a material risk factor in valuations. Buyers apply discount multiples to businesses where more than 50% of revenue flows through a single platform because that revenue is contingent on a decision the seller cannot control. Sovereign commerce — owned channels, owned customer relationships, portable reputation — commands premium valuation because it is less exposed to unilateral platform risk.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How do AI shopping agents change platform dependency risk?</h3>
+      <p>AI agents intermediate discovery and purchase routing for buyers. A merchant who exists only inside a single platform's catalog is visible only to agents querying that platform. A machine-readable presence outside any single platform is discoverable by any agent. This creates a new dimension of dependency: catalog dependency. The OutMerchant framework addresses this through <a href="/dimensions/ai-commerce-readiness/">Dimension 07 (AI Commerce Readiness)</a>.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How does the Merchant Sovereignty Score measure platform dependency?</h3>
+      <p>Through three governed questions in Dimension 01 (DEP), weighted at 12.5% of the total score, assessing: revenue concentration in the largest platform, suspension resilience, and whether an owned channel exists. The model is fixed under public governance and changes only through a recorded decision. Measurement is free at <a href="/score/">outmerchant.com/score/</a>.</p>
+    </div>
+
     <div class="crosslinks">
       <p>Canonical term: <a href="/lexicon/platform-dependency/">Platform Dependency</a> in the OutMerchant Lexicon. This dimension is governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
       <p>Persistent low control on this dimension is characteristic of the <a href="/levels/captured/">Captured</a> tier. High control across all eight dimensions defines the standard's protected highest rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
-      <a class="cta" href="/score/">→ Measure This Dimension</a>
+      <p>Related dimensions: <a href="/dimensions/customer-ownership/">Customer Ownership</a> — <a href="/dimensions/reputation-portability/">Reputation Portability</a> — <a href="/dimensions/ai-commerce-readiness/">AI Commerce Readiness</a></p>
+      <a class="cta" href="/score/">&rarr; Measure This Dimension</a>
       <a class="cta-secondary" href="/">The Standard</a>
     </div>
   </div>
