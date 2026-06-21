@@ -23,39 +23,79 @@
     {
       "@type": "Article",
       "@id": "https://outmerchant.com/levels/outmerchant/#article",
-      "headline": "OutMerchant: Sovereignty Tier 76\u2013100",
-      "description": "OutMerchant is the Merchant Sovereignty Score tier covering 76\u2013100: Sovereign. The merchant owns their channels, customers, reputation, settlement options, and margin. The framework's terminal state carries its name.",
+      "headline": "OutMerchant: Sovereignty Tier 76–00",
+      "description": "OutMerchant is the Merchant Sovereignty Score tier covering 76–100: Sovereign. The merchant owns their channels, customers, reputation, settlement options, and margin. The framework's terminal state carries its name.",
       "url": "https://outmerchant.com/levels/outmerchant/",
-      "isPartOf": {
-        "@id": "https://outmerchant.com/#website"
-      },
-      "publisher": {
-        "@id": "https://outmerchant.com/#organization"
-      },
-      "about": {
-        "@id": "https://outmerchant.com/#term-sovereignty-score"
-      }
+      "isPartOf": {"@id": "https://outmerchant.com/#website"},
+      "publisher": {"@id": "https://outmerchant.com/#organization"},
+      "about": {"@id": "https://outmerchant.com/#term-sovereignty-score"}
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "OutMerchant", "item": "https://outmerchant.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Merchant Sovereignty Score", "item": "https://outmerchant.com/score/"},
+        {"@type": "ListItem", "position": 3, "name": "OutMerchant", "item": "https://outmerchant.com/levels/outmerchant/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "OutMerchant",
-          "item": "https://outmerchant.com/"
+          "@type": "Question",
+          "name": "What is the OutMerchant tier?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OutMerchant is the highest tier of the Merchant Sovereignty Score, covering scores of 76–100. It represents a merchant who has achieved structural sovereignty across all eight dimensions: they own their channels, customer relationships, reputation, settlement options, and the rules of their own commerce. The tier's name and boundaries are fixed under public score governance and cannot change without a recorded decision."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Merchant Sovereignty Score",
-          "item": "https://outmerchant.com/score/"
+          "@type": "Question",
+          "name": "What score is required to reach the OutMerchant rank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Merchant Sovereignty Score of 76 or above places a merchant in the OutMerchant tier. The score is a weighted average across eight equally weighted dimensions — Platform Dependency, Customer Ownership, Reputation Portability, Payment & Settlement Exposure, Fee & Margin Leakage, Cross-Border Trust, AI Commerce Readiness, and Governance Independence, each at 12.5%. Reaching 76 requires genuine high control across most of these dimensions simultaneously."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "OutMerchant",
-          "item": "https://outmerchant.com/levels/outmerchant/"
+          "@type": "Question",
+          "name": "Does the OutMerchant rank mean you cannot use platforms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The OutMerchant rank does not require abandoning platforms — it requires that no platform can capture you. A merchant at this tier uses infrastructure everywhere but is owned by it nowhere. They sell on marketplaces without the marketplace holding the customer relationship. They use payment providers without a freeze stopping cash flow. The rank is about structural optionality, not abstinence from platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you lose the OutMerchant rank after achieving it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Sovereignty decays silently. A channel can grow past its safe share without triggering any alarm. A new tool introduces a dependency that was not there before. An acquisition changes who owns a critical rail. The OutMerchant rank is a current condition, not a permanent certificate — it requires active maintenance, periodic re-measurement, and annual testing of documented exit paths."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between the OutMerchant and Emerging tiers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Emerging tier (51–75) represents operational freedom: diversified channels, real direct relationships, multiple settlement rails. The OutMerchant tier (76–100) adds structural sovereignty: reputation independently verifiable, commerce legible to AI agents without platform mediation, and every critical dependency covered by a documented, tested exit path. Emerging is operational freedom; OutMerchant is structural sovereignty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does merchant sovereignty mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Merchant sovereignty is a merchant's structural ability to control their own route to the buyer across all critical dimensions: channel ownership, customer relationship ownership, reputation portability, settlement optionality, margin control, cross-border trust, AI legibility, and governance independence. The Merchant Sovereignty Score measures this from 0 to 100. A score above 76 earns the terminal rank: OutMerchant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to reach the OutMerchant rank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no fixed timeline. Merchants starting in the Captured tier (0–25) typically require 12–36 months of deliberate structural work to progress through Dependent and Emerging. The path from Emerging to OutMerchant is often the longest because the remaining dimensions — portable reputation, machine-readable trust, AI commerce readiness, governance independence — require deeper architectural changes than simply diversifying channels."
+          }
         }
       ]
     }
@@ -105,7 +145,17 @@
   .cta-secondary:hover { border-color:var(--signal-mid); color:var(--signal); }
   footer { border-top:1px solid var(--text-ghost); padding:32px 0; font-size:10px; color:var(--text-dim); letter-spacing:0.15em; }
   footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
-  @media (max-width:640px) { .compare { grid-template-columns:1fr; } }
+  .dim-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:20px 0; }
+  .dim-grid > div { border:1px solid var(--text-ghost); padding:16px; background:var(--deep); }
+  .dim-grid h3 { font-family:var(--display); font-size:11px; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:8px; color:var(--signal); }
+  .dim-grid p { font-size:12px; margin:0; }
+  .faq-block { border-left:2px solid var(--signal-mid); padding:16px 20px; margin-bottom:16px; background:var(--signal-dim); }
+  .faq-block h3 { font-family:var(--display); font-size:13px; margin-bottom:8px; color:var(--text); }
+  .faq-block p { font-size:12px; margin:0; }
+  .warning { border:1px solid var(--danger); background:rgba(255,61,61,0.06); padding:20px 24px; margin:20px 0; }
+  .warning .label { color:var(--danger); font-size:10px; letter-spacing:0.3em; text-transform:uppercase; display:block; margin-bottom:10px; }
+  .warning p { font-size:13px; margin:0; }
+  @media (max-width:640px) { .compare { grid-template-columns:1fr; } .dim-grid { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -117,29 +167,97 @@
 </header>
 <main>
   <div class="wrap">
-    <p class="kicker">// Tier 4 of 4 — Merchant Sovereignty Score</p>
-    <h1>OutMerchant: Sovereignty Tier 76–100</h1>
+    <p class="kicker">// Tier 4 of 4 &mdash; Merchant Sovereignty Score</p>
+    <h1>OutMerchant: Sovereignty Tier 76&ndash;100</h1>
     <div class="range">76 — 100</div>
+
     <h2>What This Level Means</h2>
-    <p>OutMerchant is the highest tier of the Merchant Sovereignty Score — and it is a protected rank, not a brand name used decoratively. Under the standard's public governance, the terminal tier permanently carries the name OutMerchant (decisions DEC-001 and DEC-006), and an automated quality gate rejects any change to its name or boundaries. The rank defines the standard's terminal state: a merchant who owns their channels, customers, reputation, settlement options, margin, and the rules of their own commerce. To complete the standard is to become an OutMerchant — the noun is the destination of the verb.</p>
-    <h2>A Protected Rank, Not a Brand Label</h2>
-    <p><strong>OutMerchant is the standard's terminal classification.</strong> The tier's name and boundaries (76–100) are inviolable under public score governance: they are fixed by recorded decisions (DEC-001, DEC-006) and protected by an automated quality gate that rejects any change. This closure is deliberate — the framework cannot be used without its highest tier being the destination, and the destination permanently carries the standard's name. <em>to outmerchant</em> is the verb; <em>an OutMerchant</em> is the rank at the end of it.</p>
+    <p>OutMerchant is the highest tier of the Merchant Sovereignty Score &mdash; and it is a protected rank, not a brand name used decoratively. Under the standard's public governance, the terminal tier permanently carries the name OutMerchant (decisions DEC-001 and DEC-006), and an automated quality gate rejects any change to its name or boundaries. The rank defines the standard's terminal state: a merchant who owns their channels, customers, reputation, settlement options, margin, and the rules of their own commerce. To complete the standard is to become an OutMerchant &mdash; the noun is the destination of the verb.</p>
+
+    <h2>The Name Is the Standard's Terminal State</h2>
+    <p><em>To outmerchant</em> means to systematically eliminate the control layers that sit between a merchant and their buyer. <em>An OutMerchant</em> is the rank earned by a merchant who has made that elimination structural. The duality is constitutional to the standard: the process and its outcome share the same name. This is why the tier's name cannot be changed &mdash; it is not a label applied to a rank; it is the rank named after the standard itself.</p>
+    <p>Under public score governance, the boundaries of this tier &mdash; 76 to 100 &mdash; are fixed by recorded decision DEC-006 and enforced by an automated quality gate. Any modification that alters the tier's name, score range, or tier count is automatically rejected. <strong>The terminal rank is inviolable: the standard cannot exist without OutMerchant being the destination.</strong></p>
+
+    <h2>What Sovereignty Means Across All Eight Dimensions</h2>
+    <p>Reaching the OutMerchant tier does not require perfection in any single dimension &mdash; it requires meaningful control across all eight simultaneously. This is what high control looks like at this rank:</p>
+    <div class="dim-grid">
+      <div><h3>DEP &mdash; Platform Dependency</h3><p>No single channel carries more than 25% of revenue. Distribution is genuinely multi-channel, with the owned channel primary.</p></div>
+      <div><h3>OWN &mdash; Customer Ownership</h3><p>Direct, consented contact data for the vast majority of buyers. The merchant can reach customers without any platform's permission.</p></div>
+      <div><h3>REP &mdash; Reputation Portability</h3><p>Trading history archived and independently verifiable outside any platform's proprietary database.</p></div>
+      <div><h3>PAY &mdash; Payment &amp; Settlement</h3><p>Three or more usable settlement rails, including cross-border options. A provider freeze routes around, not through, the business.</p></div>
+      <div><h3>FEE &mdash; Fee &amp; Margin Leakage</h3><p>Intermediaries take less than 20% of gross margin. Full route-to-buyer cost is measured per sale and monitored continuously.</p></div>
+      <div><h3>XBR &mdash; Cross-Border Trust</h3><p>Foreign buyers can verify identity, terms, and trading history without an intermediary. Operations span more than one regulatory zone.</p></div>
+      <div><h3>AGT &mdash; AI Commerce Readiness</h3><p>Catalog, terms, identity, and trust signals are machine-readable and independently accessible. The merchant is agent-selectable without platform mediation.</p></div>
+      <div><h3>GOV &mdash; Governance Independence</h3><p>No single party can rewrite the rules of commerce unilaterally. A documented, tested exit path exists for every critical provider.</p></div>
+    </div>
+
+    <h2>Using Platforms vs. Being Owned By Them</h2>
+    <p>The most common misconception about the OutMerchant rank is that it requires abstinence from platforms. It does not. The distinction the standard draws is structural, not behavioral: <strong>a merchant at this tier uses infrastructure everywhere and is owned by it nowhere.</strong></p>
+    <p>They sell on marketplaces &mdash; but the marketplace does not hold the customer relationship; the merchant does. They use payment providers &mdash; but a freeze triggers a routing procedure, not a cash-flow emergency. They use fulfillment networks &mdash; but an alternative exists and has been tested. They publish their catalog on platforms &mdash; but it is also structured, owned, and independently accessible. Every tool serves the merchant. No tool owns them.</p>
+    <p>The question is never &ldquo;do you use Amazon?&rdquo; The question is: if Amazon suspended you tomorrow, what would survive? At the OutMerchant tier, the answer is: most of it.</p>
+
     <h2>Who Falls Into This Tier</h2>
-    <p>Merchants who have made sovereignty structural: no single point of control can terminate or capture their trade. Their commerce is legible to buyers, to other markets, and to AI agents — on their own credentials, without any platform vouching for them. They use infrastructure everywhere and are owned by it nowhere.</p>
-    <h2>The Common Control Pattern</h2>
-    <p>All eight dimensions in high control: distributed channels with owned primary revenue; direct consented customer relationships; independently verifiable portable reputation; multi-rail settlement including cross-border; measured and minimized route-to-buyer leakage; structured machine-readable catalog, terms, and trust; documented, tested exit paths from every critical provider. Every layer serves the merchant. No layer owns the merchant.</p>
+    <p>Merchants who have made sovereignty structural: no single point of control can terminate or capture their trade. Their commerce is legible to buyers, to other markets, and to AI agents &mdash; on their own credentials, without any platform vouching for them. They use infrastructure everywhere and are owned by it nowhere. The AI commerce era adds a new dimension: an OutMerchant is <a href="/agentic-commerce/">agent-selectable</a> &mdash; discoverable and verifiable by AI buying agents operating without platform intermediation.</p>
+
+    <h2>Sovereignty Decays Silently</h2>
+    <p>The OutMerchant rank is a current condition, not a permanent certificate. Sovereignty erodes in ways that are difficult to detect without active measurement:</p>
+    <ul class="qs">
+      <li>A new marketplace grows from secondary channel to primary revenue over 18 months without triggering any alarm</li>
+      <li>A convenient fulfillment tool creates a new data dependency that did not exist at last measurement</li>
+      <li>A payment provider acquires the backup rail, effectively reducing independent options to one</li>
+      <li>An AI platform's product feed becomes the primary source of discovery, without structured catalog data on the merchant's own domain</li>
+      <li>A CRM migration means direct contact data is now in a vendor's database, not the merchant's</li>
+    </ul>
+    <div class="warning">
+      <span class="label">Sovereignty Decay Warning</span>
+      <p>Re-measure on a schedule. Re-test exit paths annually. Treat every new provider as a governance decision before it becomes a dependency. The rank measures current structural state &mdash; not historical achievement.</p>
+    </div>
+
     <h2>Holding the Rank</h2>
-    <p>The movement at this tier is holding the rank. Sovereignty decays silently — a channel quietly grows past its share, a rail consolidates, a new dependency arrives inside a convenient tool. Re-measure on a schedule, re-test exit paths annually, and treat every new provider as a governance decision before it becomes a dependency.</p>
+    <p>The active work at this tier is holding the rank. Sovereignty decays silently &mdash; a channel quietly grows past its share, a rail consolidates, a new dependency arrives inside a convenient tool. Re-measure on a schedule, re-test exit paths annually, and treat every new provider as a governance decision before it becomes a dependency.</p>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-block">
+      <h3>What is the OutMerchant tier?</h3>
+      <p>OutMerchant is the highest tier of the Merchant Sovereignty Score, covering scores of 76&ndash;100. It represents a merchant who has achieved structural sovereignty across all eight dimensions: they own their channels, customer relationships, reputation, settlement options, and the rules of their own commerce. The tier's name and boundaries are fixed under public score governance and cannot change without a recorded decision.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What score is required to reach the OutMerchant rank?</h3>
+      <p>A Merchant Sovereignty Score of 76 or above places a merchant in the OutMerchant tier. The score is a weighted average across eight equally weighted dimensions (Platform Dependency, Customer Ownership, Reputation Portability, Payment &amp; Settlement Exposure, Fee &amp; Margin Leakage, Cross-Border Trust, AI Commerce Readiness, and Governance Independence &mdash; each at 12.5%). Reaching 76 requires genuine high control across most of these dimensions simultaneously.</p>
+    </div>
+    <div class="faq-block">
+      <h3>Does the OutMerchant rank mean you cannot use platforms?</h3>
+      <p>No. The OutMerchant rank does not require abandoning platforms &mdash; it requires that no platform can capture you. A merchant at this tier uses infrastructure everywhere but is owned by it nowhere. They sell on marketplaces without the marketplace holding the customer relationship. They use payment providers without a freeze stopping cash flow. The rank is about structural optionality, not abstinence from platforms.</p>
+    </div>
+    <div class="faq-block">
+      <h3>Can you lose the OutMerchant rank after achieving it?</h3>
+      <p>Yes. Sovereignty decays silently. A channel can grow past its safe share without triggering any alarm. A new tool introduces a dependency that was not there before. An acquisition changes who owns a critical rail. The OutMerchant rank is a current condition, not a permanent certificate &mdash; it requires active maintenance, periodic re-measurement, and annual testing of documented exit paths.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What is the difference between the OutMerchant and Emerging tiers?</h3>
+      <p>The Emerging tier (51&ndash;75) represents operational freedom: diversified channels, real direct relationships, multiple settlement rails. The OutMerchant tier (76&ndash;100) adds structural sovereignty: reputation independently verifiable, commerce legible to AI agents without platform mediation, and every critical dependency covered by a documented, tested exit path. Emerging is operational freedom; OutMerchant is structural sovereignty.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What does merchant sovereignty mean?</h3>
+      <p>Merchant sovereignty is a merchant's structural ability to control their own route to the buyer across all critical dimensions: channel ownership, customer relationship ownership, reputation portability, settlement optionality, margin control, cross-border trust, AI legibility, and governance independence. The Merchant Sovereignty Score measures this from 0 to 100. A score above 76 earns the terminal rank: OutMerchant.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How long does it take to reach the OutMerchant rank?</h3>
+      <p>There is no fixed timeline. Merchants starting in the Captured tier (0&ndash;25) typically require 12&ndash;36 months of deliberate structural work to progress through Dependent and Emerging. The path from Emerging to OutMerchant is often the longest because the remaining dimensions &mdash; portable reputation, machine-readable trust, AI commerce readiness, governance independence &mdash; require deeper architectural changes than simply diversifying channels.</p>
+    </div>
+
     <div class="crosslinks">
-      <a class="cta" href="/score/">→ Measure Your Tier</a>
-      <a class="cta-secondary" href="/levels/outmerchant/">The OutMerchant Rank</a>
+      <p>The <a href="/levels/outmerchant/">OutMerchant rank</a> is the terminal state of the Merchant Sovereignty Score, protected by DEC-006. The path to it runs through <a href="/levels/emerging/">Emerging (51&ndash;75)</a> &rarr; OutMerchant.</p>
+      <a class="cta" href="/score/">&rarr; Measure Your Tier</a>
+      <a class="cta-secondary" href="/levels/emerging/">Emerging Tier (51&ndash;75)</a>
+      <a class="cta-secondary" href="/agentic-commerce/">Agentic Commerce</a>
     </div>
   </div>
 </main>
 <footer>
   <div class="wrap">
-    <div>MERCHANT SOVEREIGNTY SCORE — REFERENCE STANDARD</div>
-    <div><a href="/">OUTMERCHANT.COM</a> — EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
+    <div>MERCHANT SOVEREIGNTY SCORE &mdash; REFERENCE STANDARD</div>
+    <div><a href="/">OUTMERCHANT.COM</a> &mdash; EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
   </div>
 </footer>
 </body>

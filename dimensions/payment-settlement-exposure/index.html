@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Payment & Settlement Exposure — Dimension 04 of the Merchant Sovereignty Score | OutMerchant</title>
-<meta name="description" content="Payment & Settlement Exposure is dimension 04 (PAY) of the Merchant Sovereignty Score: How many settlement rails do you control? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<title>Payment &amp; Settlement Exposure — Dimension 04 of the Merchant Sovereignty Score | OutMerchant</title>
+<meta name="description" content="Payment &amp; Settlement Exposure (PAY) is dimension 04 of the Merchant Sovereignty Score: how many independent rails can move your money — and what happens when one refuses? Multi-rail settlement, payout freeze risk, and cross-border settlement explained.">
 <link rel="canonical" href="https://outmerchant.com/dimensions/payment-settlement-exposure/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#020408">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://outmerchant.com/dimensions/payment-settlement-exposure/">
 <meta property="og:site_name" content="OutMerchant">
-<meta property="og:title" content="Payment & Settlement Exposure — Dimension 04 of the Merchant Sovereignty Score | OutMerchant">
-<meta property="og:description" content="Payment & Settlement Exposure is dimension 04 (PAY) of the Merchant Sovereignty Score: How many settlement rails do you control? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta property="og:title" content="Payment &amp; Settlement Exposure — Dimension 04 of the Merchant Sovereignty Score | OutMerchant">
+<meta property="og:description" content="Payment &amp; Settlement Exposure (PAY) is dimension 04 of the Merchant Sovereignty Score: how many independent rails can move your money — and what happens when one refuses?">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Payment & Settlement Exposure — Dimension 04 of the Merchant Sovereignty Score | OutMerchant">
-<meta name="twitter:description" content="Payment & Settlement Exposure is dimension 04 (PAY) of the Merchant Sovereignty Score: How many settlement rails do you control? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta name="twitter:title" content="Payment &amp; Settlement Exposure — Dimension 04 of the Merchant Sovereignty Score | OutMerchant">
+<meta name="twitter:description" content="Payment &amp; Settlement Exposure (PAY) is dimension 04 of the Merchant Sovereignty Score: how many independent rails can move your money — and what happens when one refuses?">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -26,36 +26,68 @@
       "headline": "Payment & Settlement Exposure",
       "description": "Payment & Settlement Exposure is dimension 04 (PAY) of the Merchant Sovereignty Score: How many settlement rails do you control? What it means, why it matters to merchant sovereignty, and what low and high control look like.",
       "url": "https://outmerchant.com/dimensions/payment-settlement-exposure/",
-      "isPartOf": {
-        "@id": "https://outmerchant.com/#website"
-      },
-      "publisher": {
-        "@id": "https://outmerchant.com/#organization"
-      },
-      "about": {
-        "@id": "https://outmerchant.com/#term-sovereignty-score"
-      }
+      "isPartOf": {"@id": "https://outmerchant.com/#website"},
+      "publisher": {"@id": "https://outmerchant.com/#organization"},
+      "about": {"@id": "https://outmerchant.com/#term-sovereignty-score"}
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "OutMerchant", "item": "https://outmerchant.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Merchant Sovereignty Score", "item": "https://outmerchant.com/score/"},
+        {"@type": "ListItem", "position": 3, "name": "Payment & Settlement Exposure", "item": "https://outmerchant.com/dimensions/payment-settlement-exposure/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "OutMerchant",
-          "item": "https://outmerchant.com/"
+          "@type": "Question",
+          "name": "What is payment and settlement exposure for merchants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Payment and settlement exposure is a merchant's vulnerability to disruption of their money movement: how many independent rails can move their revenue, what happens when one of those rails is blocked or frozen, and whether cross-border sales can settle without a single intermediary's control. High exposure means one rail failure stops the business. Low exposure means multiple independent options exist, tested and proven."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Merchant Sovereignty Score",
-          "item": "https://outmerchant.com/score/"
+          "@type": "Question",
+          "name": "What happens if my payment processor freezes my merchant account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If a payment processor freezes a merchant account with no alternative rail in place, the merchant cannot accept new payments and may have existing funds held in reserve or pending review. For a merchant with a single payment provider processing all volume, this creates an immediate cash-flow crisis. Processors can freeze accounts for fraud detection, chargeback thresholds, compliance reviews, or policy violations — often with no advance notice. The outage duration can range from days to months while disputes are resolved."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Payment & Settlement Exposure",
-          "item": "https://outmerchant.com/dimensions/payment-settlement-exposure/"
+          "@type": "Question",
+          "name": "How many payment rails should a merchant have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Merchant Sovereignty Score considers three or more genuinely usable settlement rails to be the threshold for high control. Each rail must be genuinely independent (different processors, different underlying networks) and actively processing real volume — not just enabled and idle. Two rails provide meaningful redundancy. One rail is full exposure. The goal is not maximum rails but minimum single points of failure: enough alternatives that no one provider's decision is existential."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is multi-rail settlement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Multi-rail settlement is a payment architecture in which a merchant routes transactions across multiple independent payment processors, networks, or settlement mechanisms. When one rail is disrupted — frozen, rate-changed, network failure — transaction volume routes to others. 'Independent' means genuinely separate: different processors, different acquiring banks, different networks. Two accounts at the same processor are not multi-rail; a freeze on the processor freezes both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is cross-border settlement exposure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cross-border settlement exposure is the risk of being unable to complete international sales due to dependency on a single intermediary for currency conversion, cross-border transfer, or international payment acceptance. A merchant relying on one intermediary for all cross-border settlement is subject to that intermediary's geopolitical coverage, fee structure, compliance requirements, and account terms. Reducing cross-border settlement exposure means having at least two independent paths to settle international transactions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is payment and settlement exposure measured in the Merchant Sovereignty Score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Payment & Settlement Exposure is dimension 04 (PAY) of the Merchant Sovereignty Score, weighted at 12.5% of the total. Three governed questions assess it: (1) How many independent payment or settlement rails can you accept today? (2) If your primary payment provider froze your payouts, what would happen? (3) Can you settle a cross-border sale without depending on one single intermediary? Each is scored from captured behavior to sovereign behavior."
+          }
         }
       ]
     }
@@ -97,7 +129,6 @@
   .action { border-left:1px solid var(--gold); background:rgba(200,169,110,0.06); padding:18px 22px; margin:20px 0; }
   .action p { margin:0; font-size:13px; }
   .action .label { color:var(--gold); font-size:10px; letter-spacing:0.3em; text-transform:uppercase; display:block; margin-bottom:8px; }
-  .range { font-family:var(--display); font-weight:800; font-size:40px; color:var(--signal); margin:8px 0 24px; }
   .crosslinks { border-top:1px solid var(--text-ghost); margin-top:48px; padding-top:24px; }
   .crosslinks p { font-size:12px; }
   .cta { display:inline-block; background:var(--signal); color:var(--void); font-weight:700; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; padding:14px 32px; text-decoration:none; margin:8px 16px 8px 0; }
@@ -105,6 +136,16 @@
   .cta-secondary:hover { border-color:var(--signal-mid); color:var(--signal); }
   footer { border-top:1px solid var(--text-ghost); padding:32px 0; font-size:10px; color:var(--text-dim); letter-spacing:0.15em; }
   footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  .threshold-table { width:100%; border-collapse:collapse; margin:20px 0; font-size:12px; }
+  .threshold-table th { background:var(--grid); color:var(--signal); text-align:left; padding:10px 14px; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; }
+  .threshold-table td { padding:10px 14px; border-bottom:1px solid var(--text-ghost); color:var(--text-dim); }
+  .threshold-table tr:last-child td { border-bottom:none; }
+  .warning { border:1px solid var(--danger); background:rgba(255,61,61,0.06); padding:20px 24px; margin:20px 0; }
+  .warning .label { color:var(--danger); font-size:10px; letter-spacing:0.3em; text-transform:uppercase; display:block; margin-bottom:10px; }
+  .warning p { font-size:13px; margin:0; }
+  .faq-block { border-left:2px solid var(--signal-mid); padding:16px 20px; margin-bottom:16px; background:var(--signal-dim); }
+  .faq-block h3 { font-family:var(--display); font-size:13px; margin-bottom:8px; color:var(--text); }
+  .faq-block p { font-size:12px; margin:0; }
   @media (max-width:640px) { .compare { grid-template-columns:1fr; } }
 </style>
 </head>
@@ -117,41 +158,106 @@
 </header>
 <main>
   <div class="wrap">
-    <p class="kicker">// Dimension 04 / PAY — 12.5% of the score</p>
-    <h1>Payment & Settlement Exposure</h1>
+    <p class="kicker">// Dimension 04 / PAY &mdash; 12.5% of the score</p>
+    <h1>Payment &amp; Settlement Exposure</h1>
+
     <h2>What This Dimension Means</h2>
-    <p>Payment & Settlement Exposure measures how many independent rails can move your money — and what happens when one of them refuses. It asks how many ways you can be paid, how you survive a payout freeze, and whether you can settle across borders without one intermediary's consent.</p>
+    <p>Payment &amp; Settlement Exposure measures how many independent rails can move your money &mdash; and what happens when one of them refuses. It asks how many ways you can be paid, how you survive a payout freeze, and whether you can settle across borders without one intermediary's consent.</p>
+
+    <h2>The Bloodstream Problem</h2>
+    <p>Settlement is the bloodstream of commerce. A blocked payment rail does not just slow the business &mdash; it stops it. Unlike a channel disruption, which reduces revenue, a settlement disruption prevents revenue from arriving at all: existing sales may not pay out, new sales cannot process, and cash-flow that was expected simply does not arrive.</p>
+    <p><strong>The mechanics of a freeze are fast; the resolution is slow.</strong> A payment processor can freeze an account within hours based on automated risk signals &mdash; a chargeback threshold crossed, a compliance flag triggered, an algorithm pattern matched. Resolving the freeze typically requires manual review that can take days to months. A merchant with a single rail has no alternative during that window.</p>
+
     <h2>Why It Matters to Merchant Sovereignty</h2>
-    <p>Settlement is the bloodstream of commerce, and a single blocked gateway is the fastest way an otherwise healthy merchant dies. Fee structures, payout schedules, reserve policies, and account freezes are all decisions made above the merchant's head when only one rail exists. Multi-rail settlement is what turns those decisions from existential threats into routing choices.</p>
+    <p>Fee structures, payout schedules, reserve policies, and account freezes are all decisions made above the merchant's head when only one rail exists. Multi-rail settlement is what turns those decisions from existential threats into routing choices.</p>
+
+    <h2>Five Trigger Events for Rail Failure</h2>
+    <ul class="qs">
+      <li><strong>Account freeze:</strong> Automated or manual hold triggered by chargeback rate, fraud flag, or compliance review &mdash; often with no advance notice</li>
+      <li><strong>Reserve increase:</strong> Processor unilaterally increases the rolling reserve percentage, reducing accessible working capital</li>
+      <li><strong>Network outage:</strong> Technical failure at the processor or underlying network, preventing transaction processing</li>
+      <li><strong>Cross-border restriction:</strong> Processor restricts or reprices settlement to a specific country or currency zone following regulatory or risk changes</li>
+      <li><strong>Provider acquisition or policy change:</strong> An acquisition changes ownership of the processor; new ownership reprices, restricts, or exits the merchant's category</li>
+    </ul>
+    <div class="warning">
+      <span class="label">Single-Rail Risk</span>
+      <p>A single payment provider processing 100% of volume means any one of these five events stops all revenue. There is no routing alternative, no processing fallback, and no negotiating leverage &mdash; because there is no alternative to negotiate with.</p>
+    </div>
+
     <h2>How the Score Measures It</h2>
-    <p>The Merchant Sovereignty Score assesses this dimension through 3 governed questions, weighted at 12.5% of the total score. The questions are fixed under public score governance — they change only through a recorded decision, never silently:</p>
+    <p>The Merchant Sovereignty Score assesses this dimension through 3 governed questions, weighted at 12.5% of the total score. The questions are fixed under public score governance &mdash; they change only through a recorded decision, never silently:</p>
     <ul class="qs">
       <li>How many independent payment or settlement rails can you accept today?</li>
       <li>If your primary payment provider froze your payouts, what would happen?</li>
       <li>Can you settle a cross-border sale without depending on one single intermediary?</li>
     </ul>
     <p>Each answer is scored from captured behavior (0 points) to sovereign behavior (maximum points). The dimension score is the share of sovereign points earned, from 0 to 100.</p>
+
     <h2>Low Control vs. High Control</h2>
     <div class="compare">
       <div class="low"><h3>What low control looks like</h3><p>One payment provider processes everything. A payout freeze means a cash-flow crisis within days. Cross-border sales are impossible, or pass through a single intermediary whose terms are non-negotiable.</p></div>
       <div class="high"><h3>What high control looks like</h3><p>Three or more genuinely usable rails, including cross-border options. A frozen provider triggers a rerouting procedure, not an emergency. Settlement terms are compared and negotiated, because alternatives are real.</p></div>
     </div>
+
+    <h2>The Measurement Thresholds</h2>
+    <table class="threshold-table">
+      <thead><tr><th>Settlement configuration</th><th>Control level</th><th>Score range</th></tr></thead>
+      <tbody>
+        <tr><td>1 rail, no cross-border capability</td><td>Captured &mdash; full single-point exposure</td><td>0&ndash;20</td></tr>
+        <tr><td>1 primary + 1 enabled-but-untested backup</td><td>Low &mdash; nominal redundancy only</td><td>20&ndash;40</td></tr>
+        <tr><td>2 rails, both actively processing real volume</td><td>Moderate &mdash; genuine redundancy exists</td><td>40&ndash;65</td></tr>
+        <tr><td>3 rails including cross-border, all tested</td><td>High &mdash; settlement disruption is manageable</td><td>65&ndash;85</td></tr>
+        <tr><td>3+ rails, documented routing procedure, cross-border independent</td><td>OutMerchant range</td><td>85&ndash;100</td></tr>
+      </tbody>
+    </table>
+
+    <h2>What Multi-Rail Settlement Looks Like in Practice</h2>
+    <p>Multi-rail settlement requires genuinely independent providers &mdash; different processors, different acquiring banks, different underlying networks. Two accounts at the same processor are not multi-rail: a freeze on the processor affects both simultaneously. The standard for independence is: could both rails be disrupted by the same single event? If yes, they are not independent.</p>
+    <p>Each rail must also be actively processing real volume to be genuinely tested. A backup that has been set up but never used has unknown failure modes. A backup that processes 10% of volume regularly has proven it works, the routing works, and the reconciliation works.</p>
+
     <div class="action">
       <span class="label">One Next Action</span>
-      <p>Add and fully test one independent payment rail this quarter — not as a backup in name, but processing a real share of volume so the switch is proven before it is needed.</p>
+      <p>Add and fully test one independent payment rail this quarter &mdash; not as a backup in name, but processing a real share of volume so the switch is proven before it is needed. The goal is a live, tested alternative &mdash; not a configured-but-idle option.</p>
     </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-block">
+      <h3>What is payment and settlement exposure for merchants?</h3>
+      <p>Payment and settlement exposure is a merchant's vulnerability to disruption of their money movement: how many independent rails can move their revenue, what happens when one is blocked or frozen, and whether cross-border sales can settle without a single intermediary's control. High exposure means one rail failure stops the business. Low exposure means multiple independent options exist, tested and proven.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What happens if my payment processor freezes my merchant account?</h3>
+      <p>A processor freeze with no alternative rail in place means the merchant cannot accept new payments and may have existing funds held. Processors can freeze accounts for fraud detection, chargeback thresholds, compliance reviews, or policy violations &mdash; often with no advance notice. Resolution can take days to months. A merchant with a single provider processing all volume faces an immediate cash-flow crisis with no alternative while the dispute is resolved.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How many payment rails should a merchant have?</h3>
+      <p>The Merchant Sovereignty Score considers three or more genuinely usable settlement rails to be the threshold for high control. Each must be genuinely independent (different processors, different underlying networks) and actively processing real volume &mdash; not just enabled and idle. Two rails provide meaningful redundancy. One rail is full exposure. The goal is minimum single points of failure, not maximum rails.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What is multi-rail settlement?</h3>
+      <p>Multi-rail settlement is a payment architecture in which a merchant routes transactions across multiple independent payment processors or networks. When one rail is disrupted, volume routes to others. 'Independent' means genuinely separate: different processors, different acquiring banks, different networks. Two accounts at the same processor are not multi-rail &mdash; a freeze on the processor freezes both simultaneously.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What is cross-border settlement exposure?</h3>
+      <p>Cross-border settlement exposure is the risk of being unable to complete international sales due to dependency on a single intermediary for currency conversion, cross-border transfer, or international payment acceptance. Reducing this exposure means having at least two independent paths to settle international transactions &mdash; so that a single provider's coverage gaps, fee changes, or compliance restrictions do not block international commerce entirely.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How is payment and settlement exposure measured in the Merchant Sovereignty Score?</h3>
+      <p>Payment &amp; Settlement Exposure is dimension 04 (PAY), weighted at 12.5% of the total. Three governed questions assess it: (1) How many independent rails can you accept today? (2) If your primary provider froze payouts, what would happen? (3) Can you settle a cross-border sale without one intermediary's sole control? Each is scored from captured to sovereign behavior.</p>
+    </div>
+
     <div class="crosslinks">
-      <p>Canonical term: <a href="/lexicon/settlement-exposure/">Settlement Exposure</a> in the OutMerchant Lexicon. This dimension is governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
-      <p>Persistent low control on this dimension is characteristic of the <a href="/levels/dependent/">Dependent</a> tier. High control across all eight dimensions defines the standard's protected highest rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
-      <a class="cta" href="/score/">→ Measure This Dimension</a>
+      <p>Canonical term: <a href="/lexicon/settlement-exposure/">Settlement Exposure</a> in the OutMerchant Lexicon. Governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
+      <p>Low control here is characteristic of the <a href="/levels/dependent/">Dependent</a> tier. High control across all eight dimensions defines the terminal rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
+      <a class="cta" href="/score/">&rarr; Measure This Dimension</a>
       <a class="cta-secondary" href="/">The Standard</a>
     </div>
   </div>
 </main>
 <footer>
   <div class="wrap">
-    <div>MERCHANT SOVEREIGNTY SCORE — REFERENCE STANDARD</div>
-    <div><a href="/">OUTMERCHANT.COM</a> — EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
+    <div>MERCHANT SOVEREIGNTY SCORE &mdash; REFERENCE STANDARD</div>
+    <div><a href="/">OUTMERCHANT.COM</a> &mdash; EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
   </div>
 </footer>
 </body>

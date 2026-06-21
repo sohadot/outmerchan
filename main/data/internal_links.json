@@ -685,6 +685,30 @@
       "to": "/protocol/",
       "kind": "required",
       "reason": "score route must link into the protocol layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/agentic-commerce/",
+      "to": "/score/",
+      "kind": "required",
+      "reason": "agentic commerce route must link into the score layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/agentic-commerce/",
+      "to": "/dimensions/ai-commerce-readiness/",
+      "kind": "required",
+      "reason": "agentic commerce route must link into the dimension layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/agentic-commerce/",
+      "to": "/lexicon/agentic-commerce-readiness/",
+      "kind": "required",
+      "reason": "agentic commerce route must link into the lexicon layer per ROUTE_GOVERNANCE.md topology."
+    },
+    {
+      "from": "/dimensions/ai-commerce-readiness/",
+      "to": "/agentic-commerce/",
+      "kind": "required",
+      "reason": "dimension route must link into the agentic commerce cluster per ROUTE_GOVERNANCE.md topology."
     }
   ]
 }

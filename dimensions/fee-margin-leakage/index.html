@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fee & Margin Leakage — Dimension 05 of the Merchant Sovereignty Score | OutMerchant</title>
-<meta name="description" content="Fee & Margin Leakage is dimension 05 (FEE) of the Merchant Sovereignty Score: How much of your margin funds intermediaries on the route to the buyer? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<title>Fee &amp; Margin Leakage — Dimension 05 of the Merchant Sovereignty Score | OutMerchant</title>
+<meta name="description" content="Fee &amp; Margin Leakage (FEE) is dimension 05 of the Merchant Sovereignty Score: how much of your gross margin funds intermediaries on the route to the buyer? The six channels of leakage, the route-to-buyer cost audit, and measurement thresholds.">
 <link rel="canonical" href="https://outmerchant.com/dimensions/fee-margin-leakage/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#020408">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://outmerchant.com/dimensions/fee-margin-leakage/">
 <meta property="og:site_name" content="OutMerchant">
-<meta property="og:title" content="Fee & Margin Leakage — Dimension 05 of the Merchant Sovereignty Score | OutMerchant">
-<meta property="og:description" content="Fee & Margin Leakage is dimension 05 (FEE) of the Merchant Sovereignty Score: How much of your margin funds intermediaries on the route to the buyer? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta property="og:title" content="Fee &amp; Margin Leakage — Dimension 05 of the Merchant Sovereignty Score | OutMerchant">
+<meta property="og:description" content="Fee &amp; Margin Leakage (FEE) is dimension 05 of the Merchant Sovereignty Score: how much of your gross margin funds intermediaries on the route to the buyer?">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Fee & Margin Leakage — Dimension 05 of the Merchant Sovereignty Score | OutMerchant">
-<meta name="twitter:description" content="Fee & Margin Leakage is dimension 05 (FEE) of the Merchant Sovereignty Score: How much of your margin funds intermediaries on the route to the buyer? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta name="twitter:title" content="Fee &amp; Margin Leakage — Dimension 05 of the Merchant Sovereignty Score | OutMerchant">
+<meta name="twitter:description" content="Fee &amp; Margin Leakage (FEE) is dimension 05 of the Merchant Sovereignty Score: how much of your gross margin funds intermediaries on the route to the buyer?">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -26,36 +26,68 @@
       "headline": "Fee & Margin Leakage",
       "description": "Fee & Margin Leakage is dimension 05 (FEE) of the Merchant Sovereignty Score: How much of your margin funds intermediaries on the route to the buyer? What it means, why it matters to merchant sovereignty, and what low and high control look like.",
       "url": "https://outmerchant.com/dimensions/fee-margin-leakage/",
-      "isPartOf": {
-        "@id": "https://outmerchant.com/#website"
-      },
-      "publisher": {
-        "@id": "https://outmerchant.com/#organization"
-      },
-      "about": {
-        "@id": "https://outmerchant.com/#term-sovereignty-score"
-      }
+      "isPartOf": {"@id": "https://outmerchant.com/#website"},
+      "publisher": {"@id": "https://outmerchant.com/#organization"},
+      "about": {"@id": "https://outmerchant.com/#term-sovereignty-score"}
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "OutMerchant", "item": "https://outmerchant.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Merchant Sovereignty Score", "item": "https://outmerchant.com/score/"},
+        {"@type": "ListItem", "position": 3, "name": "Fee & Margin Leakage", "item": "https://outmerchant.com/dimensions/fee-margin-leakage/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "OutMerchant",
-          "item": "https://outmerchant.com/"
+          "@type": "Question",
+          "name": "What is fee and margin leakage for merchants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fee and margin leakage is the cumulative share of a merchant's gross margin that funds intermediaries on the route to the buyer: marketplace commissions, advertising costs, payment processing fees, fulfillment charges, return allowances, and the hidden costs that span multiple invoices. Leakage is measured as a percentage of gross margin, not of revenue — because revenue-percentage disguises the true impact on profitability. A 30% commission on revenue is a much larger share of a 40% margin product's actual profit."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Merchant Sovereignty Score",
-          "item": "https://outmerchant.com/score/"
+          "@type": "Question",
+          "name": "What is the total cost of selling on a marketplace like Amazon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The total cost of selling on Amazon or similar marketplaces typically includes: referral fees (6–45% of sale price depending on category), fulfillment fees if using FBA, advertising spend required to maintain visibility, return processing costs, storage fees, and any promotional discounting to maintain conversion rates. When all channels of cost are aggregated, the total route-to-buyer cost for a fully-platform-dependent merchant commonly ranges from 35% to 65% of gross margin, depending on category and competition level."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Fee & Margin Leakage",
-          "item": "https://outmerchant.com/dimensions/fee-margin-leakage/"
+          "@type": "Question",
+          "name": "How do I calculate my route-to-buyer cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The route-to-buyer cost calculation starts with one representative sale. Add up: the marketplace commission or referral fee, the advertising cost allocated to that sale (total ad spend divided by orders), the payment processing fee, the fulfillment and shipping cost, the return allowance (total returns cost divided by total orders), and any other per-sale platform cost. Divide the total by the gross margin on that sale — not the revenue. The result is your leakage rate: the share of gross margin that funded intermediaries rather than the merchant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What percentage of margin should go to intermediaries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Merchant Sovereignty Score considers under 20% of gross margin going to intermediaries to be high control, and over 50% to be the captured range. The specific threshold that matters is whether the leakage rate is known, measured, and chosen — or unknown and simply absorbed. A merchant who knows their 35% leakage rate and has made a deliberate decision about it is in a materially different position than one who has never calculated it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when marketplace fees increase?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a merchant fully dependent on a single marketplace, a fee increase is absorbed silently because there is no alternative route to compare against. The full increase passes to the merchant's margin with no negotiating position. For a merchant with real alternative channels, a fee increase creates a routing decision: accept the new rate or shift volume to the channel where margins are better. The difference between these two situations is not the fee increase — it is whether alternatives exist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is fee and margin leakage measured in the Merchant Sovereignty Score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fee & Margin Leakage is dimension 05 (FEE) of the Merchant Sovereignty Score, weighted at 12.5% of the total. Two governed questions assess it: (1) What share of your gross margin goes to intermediaries — commissions, ads, processing, fulfillment? (2) Do you know your full route-to-buyer cost per sale? Each is scored from captured behavior (high unknown leakage) to sovereign behavior (low measured leakage with alternatives)."
+          }
         }
       ]
     }
@@ -97,7 +129,6 @@
   .action { border-left:1px solid var(--gold); background:rgba(200,169,110,0.06); padding:18px 22px; margin:20px 0; }
   .action p { margin:0; font-size:13px; }
   .action .label { color:var(--gold); font-size:10px; letter-spacing:0.3em; text-transform:uppercase; display:block; margin-bottom:8px; }
-  .range { font-family:var(--display); font-weight:800; font-size:40px; color:var(--signal); margin:8px 0 24px; }
   .crosslinks { border-top:1px solid var(--text-ghost); margin-top:48px; padding-top:24px; }
   .crosslinks p { font-size:12px; }
   .cta { display:inline-block; background:var(--signal); color:var(--void); font-weight:700; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; padding:14px 32px; text-decoration:none; margin:8px 16px 8px 0; }
@@ -105,7 +136,18 @@
   .cta-secondary:hover { border-color:var(--signal-mid); color:var(--signal); }
   footer { border-top:1px solid var(--text-ghost); padding:32px 0; font-size:10px; color:var(--text-dim); letter-spacing:0.15em; }
   footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
-  @media (max-width:640px) { .compare { grid-template-columns:1fr; } }
+  .threshold-table { width:100%; border-collapse:collapse; margin:20px 0; font-size:12px; }
+  .threshold-table th { background:var(--grid); color:var(--signal); text-align:left; padding:10px 14px; font-size:10px; letter-spacing:0.2em; text-transform:uppercase; }
+  .threshold-table td { padding:10px 14px; border-bottom:1px solid var(--text-ghost); color:var(--text-dim); }
+  .threshold-table tr:last-child td { border-bottom:none; }
+  .leakage-channels { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:20px 0; }
+  .leakage-channels > div { border:1px solid var(--text-ghost); padding:16px; background:var(--deep); }
+  .leakage-channels h3 { font-family:var(--display); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:6px; color:var(--danger); }
+  .leakage-channels p { font-size:12px; margin:0; }
+  .faq-block { border-left:2px solid var(--signal-mid); padding:16px 20px; margin-bottom:16px; background:var(--signal-dim); }
+  .faq-block h3 { font-family:var(--display); font-size:13px; margin-bottom:8px; color:var(--text); }
+  .faq-block p { font-size:12px; margin:0; }
+  @media (max-width:640px) { .compare { grid-template-columns:1fr; } .leakage-channels { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -117,40 +159,98 @@
 </header>
 <main>
   <div class="wrap">
-    <p class="kicker">// Dimension 05 / FEE — 12.5% of the score</p>
-    <h1>Fee & Margin Leakage</h1>
+    <p class="kicker">// Dimension 05 / FEE &mdash; 12.5% of the score</p>
+    <h1>Fee &amp; Margin Leakage</h1>
+
     <h2>What This Dimension Means</h2>
-    <p>Fee & Margin Leakage measures how much of your gross margin funds the intermediaries on your route to the buyer: commissions, advertising, processing, fulfillment, returns, and the costs that never appear on one invoice. It asks whether you know your full route-to-buyer cost per sale — and whether that route is profitable at all.</p>
+    <p>Fee &amp; Margin Leakage measures how much of your gross margin funds the intermediaries on your route to the buyer: commissions, advertising, processing, fulfillment, returns, and the costs that never appear on one invoice. It asks whether you know your full route-to-buyer cost per sale &mdash; and whether that route is profitable at all.</p>
+
     <h2>Why It Matters to Merchant Sovereignty</h2>
-    <p>A product can be profitable while its route to market is not. Leakage is the quiet form of capture: the merchant keeps operating, keeps selling, keeps growing volume — while the margin that should compound into their independence compounds into the infrastructure's revenue instead. Unmeasured leakage is not a cost; it is a transfer of ownership in slow motion.</p>
+    <p>A product can be profitable while its route to market is not. Leakage is the quiet form of capture: the merchant keeps operating, keeps selling, keeps growing volume &mdash; while the margin that should compound into their independence compounds into the infrastructure's revenue instead. <strong>Unmeasured leakage is not a cost; it is a transfer of ownership in slow motion.</strong></p>
+
+    <h2>The Six Channels of Margin Leakage</h2>
+    <div class="leakage-channels">
+      <div><h3>01 / Marketplace Commission</h3><p>Referral fee, selling fee, or category commission. Often the most visible cost, but rarely the largest as a share of margin when all other channels are summed.</p></div>
+      <div><h3>02 / Advertising</h3><p>Paid discovery cost: search ads, sponsored listings, display spend. The most elastic channel &mdash; and the one that most reliably escalates as competition increases on a platform.</p></div>
+      <div><h3>03 / Payment Processing</h3><p>Transaction fee, payment gateway cost, currency conversion spread. Small per-transaction, large at volume. Often overlooked because it appears on a separate invoice from the marketplace commission.</p></div>
+      <div><h3>04 / Fulfillment &amp; Logistics</h3><p>Pick, pack, ship, last-mile delivery, and returns handling. The most variable channel &mdash; and the one most affected by product size, weight, and return rate.</p></div>
+      <div><h3>05 / Returns</h3><p>Return rate multiplied by the full cost of a return: shipping both ways, restocking, processing, and any value recovery loss. At high return rates, this single channel can eliminate profitability entirely.</p></div>
+      <div><h3>06 / Platform-Specific Costs</h3><p>Storage fees, subscription fees, compliance costs, promotional requirements, and any cost that exists only because of the platform's rules &mdash; not the underlying economics of the sale.</p></div>
+    </div>
+
     <h2>How the Score Measures It</h2>
-    <p>The Merchant Sovereignty Score assesses this dimension through 2 governed questions, weighted at 12.5% of the total score. The questions are fixed under public score governance — they change only through a recorded decision, never silently:</p>
+    <p>The Merchant Sovereignty Score assesses this dimension through 2 governed questions, weighted at 12.5% of the total score. The questions are fixed under public score governance &mdash; they change only through a recorded decision, never silently:</p>
     <ul class="qs">
-      <li>What share of your gross margin goes to intermediaries — commissions, ads, processing, fulfillment?</li>
+      <li>What share of your gross margin goes to intermediaries &mdash; commissions, ads, processing, fulfillment?</li>
       <li>Do you know your full route-to-buyer cost per sale?</li>
     </ul>
     <p>Each answer is scored from captured behavior (0 points) to sovereign behavior (maximum points). The dimension score is the share of sovereign points earned, from 0 to 100.</p>
+
     <h2>Low Control vs. High Control</h2>
     <div class="compare">
       <div class="low"><h3>What low control looks like</h3><p>More than half of gross margin goes to intermediaries. The full route-to-buyer cost has never been calculated. Fee increases are absorbed silently because no alternative route exists to compare against.</p></div>
-      <div class="high"><h3>What high control looks like</h3><p>Intermediaries take less than a fifth of gross margin. Route-to-buyer cost is measured per sale and monitored continuously. Every fee on the route is a known, compared, and chosen cost.</p></div>
+      <div class="high"><h3>What high control looks like</h3><p>Intermediaries take less than a fifth of gross margin. Route-to-buyer cost is measured per sale and monitored continuously. Every fee on the route is a known, compared, and chosen cost &mdash; not an absorbed tax.</p></div>
     </div>
+
+    <h2>The Measurement Thresholds</h2>
+    <table class="threshold-table">
+      <thead><tr><th>Intermediary share of gross margin</th><th>Control level</th><th>Score range</th></tr></thead>
+      <tbody>
+        <tr><td>&gt;50% of gross margin to intermediaries</td><td>Captured &mdash; the route costs more than the merchant keeps</td><td>0&ndash;20</td></tr>
+        <tr><td>35&ndash;50% of gross margin to intermediaries</td><td>Low &mdash; significant leakage, limited alternatives</td><td>20&ndash;40</td></tr>
+        <tr><td>20&ndash;35% of gross margin to intermediaries</td><td>Moderate &mdash; leakage measured, partially controlled</td><td>40&ndash;65</td></tr>
+        <tr><td>10&ndash;20% of gross margin to intermediaries</td><td>High &mdash; route costs optimized and monitored</td><td>65&ndash;85</td></tr>
+        <tr><td>&lt;10% of gross margin to intermediaries, full cost known</td><td>OutMerchant range</td><td>85&ndash;100</td></tr>
+      </tbody>
+    </table>
+
+    <h2>The Route-to-Buyer Cost Audit</h2>
+    <p>The route-to-buyer cost audit is the foundational analysis this dimension requires. For one representative sale: add the marketplace commission, the advertising cost allocated to that sale (total ad spend / orders), the payment processing fee, the fulfillment and shipping cost, the return allowance (total returns cost / total orders), and any other per-sale platform cost. Divide the total by the gross margin on that sale &mdash; not the revenue. This ratio is the leakage rate.</p>
+    <p>Most merchants who do this calculation for the first time find a number they cannot unsee. The audit does not change the economics &mdash; it makes them visible. Visibility is the prerequisite for sovereignty: you cannot choose a different route if you do not know what the current route costs.</p>
+
     <div class="action">
       <span class="label">One Next Action</span>
-      <p>Calculate your full route-to-buyer cost for one representative sale this week — every commission, ad cost, processing fee, fulfillment charge, and return allowance. Most merchants who do this for the first time find a number they cannot unsee.</p>
+      <p>Calculate your full route-to-buyer cost for one representative sale this week &mdash; every commission, ad cost, processing fee, fulfillment charge, and return allowance. Divide by the gross margin, not the revenue. That number is your current leakage rate.</p>
     </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-block">
+      <h3>What is fee and margin leakage for merchants?</h3>
+      <p>Fee and margin leakage is the cumulative share of a merchant's gross margin that funds intermediaries on the route to the buyer: marketplace commissions, advertising costs, payment processing fees, fulfillment charges, return allowances, and hidden costs across multiple invoices. Leakage is measured against gross margin, not revenue, because revenue-percentage disguises the true impact on profitability.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What is the total cost of selling on a marketplace like Amazon?</h3>
+      <p>The total route-to-buyer cost on a marketplace typically includes: referral fees (6&ndash;45% of sale price by category), fulfillment fees, advertising spend to maintain visibility, return processing costs, storage fees, and promotional discounting. When all channels are aggregated, the total commonly ranges from 35% to 65% of gross margin for a fully platform-dependent merchant, depending on category and competition level.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How do I calculate my route-to-buyer cost?</h3>
+      <p>For one representative sale: add the marketplace commission, advertising cost allocated to that sale (total ad spend &divide; orders), payment processing fee, fulfillment and shipping cost, return allowance (total returns cost &divide; orders), and any other per-sale platform cost. Divide the total by the gross margin on that sale &mdash; not the revenue. The result is the leakage rate: the share of gross margin that funded intermediaries rather than the merchant.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What percentage of margin should go to intermediaries?</h3>
+      <p>The Merchant Sovereignty Score considers under 20% of gross margin going to intermediaries to be high control, and over 50% to be the captured range. But the most critical variable is not the specific percentage &mdash; it is whether the leakage rate is known, measured, and chosen. A merchant who knows their 35% leakage rate is in a materially different position than one who has never calculated it.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What happens when marketplace fees increase?</h3>
+      <p>For a merchant fully dependent on a single marketplace, a fee increase is absorbed silently &mdash; no alternative route, no negotiating position. For a merchant with real alternative channels, a fee increase creates a routing decision: accept the new rate or shift volume where margins are better. The difference is not the fee increase itself &mdash; it is whether alternatives exist.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How is fee and margin leakage measured in the Merchant Sovereignty Score?</h3>
+      <p>Fee &amp; Margin Leakage is dimension 05 (FEE), weighted at 12.5% of the total. Two governed questions assess it: (1) What share of your gross margin goes to intermediaries? (2) Do you know your full route-to-buyer cost per sale? Each is scored from captured behavior (high unknown leakage) to sovereign behavior (low measured leakage with real routing alternatives).</p>
+    </div>
+
     <div class="crosslinks">
-      <p>Canonical term: <a href="/lexicon/route-to-buyer-control/">Route-to-Buyer Control</a> in the OutMerchant Lexicon. This dimension is governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
-      <p>Persistent low control on this dimension is characteristic of the <a href="/levels/captured/">Captured</a> tier. High control across all eight dimensions defines the standard's protected highest rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
-      <a class="cta" href="/score/">→ Measure This Dimension</a>
+      <p>Canonical term: <a href="/lexicon/route-to-buyer-control/">Route-to-Buyer Control</a> in the OutMerchant Lexicon. Governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
+      <p>Persistent high leakage is characteristic of the <a href="/levels/captured/">Captured</a> tier. Low leakage across all eight dimensions defines the terminal rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
+      <a class="cta" href="/score/">&rarr; Measure This Dimension</a>
       <a class="cta-secondary" href="/">The Standard</a>
     </div>
   </div>
 </main>
 <footer>
   <div class="wrap">
-    <div>MERCHANT SOVEREIGNTY SCORE — REFERENCE STANDARD</div>
-    <div><a href="/">OUTMERCHANT.COM</a> — EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
+    <div>MERCHANT SOVEREIGNTY SCORE &mdash; REFERENCE STANDARD</div>
+    <div><a href="/">OUTMERCHANT.COM</a> &mdash; EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
   </div>
 </footer>
 </body>

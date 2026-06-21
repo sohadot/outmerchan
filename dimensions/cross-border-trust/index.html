@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cross-Border Trust — Dimension 06 of the Merchant Sovereignty Score | OutMerchant</title>
-<meta name="description" content="Cross-Border Trust is dimension 06 (XBR) of the Merchant Sovereignty Score: Can a foreign buyer trust you without a platform vouching for you? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta name="description" content="Cross-Border Trust (XBR) is dimension 06 of the Merchant Sovereignty Score: can a foreign buyer trust you without a platform vouching for you? Independent verification, global trade fragmentation, and AI agent trust explained.">
 <link rel="canonical" href="https://outmerchant.com/dimensions/cross-border-trust/">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#020408">
@@ -12,10 +12,10 @@
 <meta property="og:url" content="https://outmerchant.com/dimensions/cross-border-trust/">
 <meta property="og:site_name" content="OutMerchant">
 <meta property="og:title" content="Cross-Border Trust — Dimension 06 of the Merchant Sovereignty Score | OutMerchant">
-<meta property="og:description" content="Cross-Border Trust is dimension 06 (XBR) of the Merchant Sovereignty Score: Can a foreign buyer trust you without a platform vouching for you? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta property="og:description" content="Cross-Border Trust (XBR) is dimension 06 of the Merchant Sovereignty Score: can a foreign buyer trust you without a platform vouching for you?">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cross-Border Trust — Dimension 06 of the Merchant Sovereignty Score | OutMerchant">
-<meta name="twitter:description" content="Cross-Border Trust is dimension 06 (XBR) of the Merchant Sovereignty Score: Can a foreign buyer trust you without a platform vouching for you? What it means, why it matters to merchant sovereignty, and what low and high control look like.">
+<meta name="twitter:description" content="Cross-Border Trust (XBR) is dimension 06 of the Merchant Sovereignty Score: can a foreign buyer trust you without a platform vouching for you?">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -26,36 +26,68 @@
       "headline": "Cross-Border Trust",
       "description": "Cross-Border Trust is dimension 06 (XBR) of the Merchant Sovereignty Score: Can a foreign buyer trust you without a platform vouching for you? What it means, why it matters to merchant sovereignty, and what low and high control look like.",
       "url": "https://outmerchant.com/dimensions/cross-border-trust/",
-      "isPartOf": {
-        "@id": "https://outmerchant.com/#website"
-      },
-      "publisher": {
-        "@id": "https://outmerchant.com/#organization"
-      },
-      "about": {
-        "@id": "https://outmerchant.com/#term-sovereignty-score"
-      }
+      "isPartOf": {"@id": "https://outmerchant.com/#website"},
+      "publisher": {"@id": "https://outmerchant.com/#organization"},
+      "about": {"@id": "https://outmerchant.com/#term-sovereignty-score"}
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "OutMerchant", "item": "https://outmerchant.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Merchant Sovereignty Score", "item": "https://outmerchant.com/score/"},
+        {"@type": "ListItem", "position": 3, "name": "Cross-Border Trust", "item": "https://outmerchant.com/dimensions/cross-border-trust/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "OutMerchant",
-          "item": "https://outmerchant.com/"
+          "@type": "Question",
+          "name": "What is cross-border trust for merchants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cross-border trust is a merchant's ability to be verified as trustworthy by a foreign buyer without requiring a platform to vouch for them. It measures whether the merchant's identity, commercial terms, and trading history can be confirmed by a buyer or AI agent operating in a different country, regulatory zone, or payment ecosystem &mdash; independently of any marketplace platform."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Merchant Sovereignty Score",
-          "item": "https://outmerchant.com/score/"
+          "@type": "Question",
+          "name": "How can merchants sell internationally without relying on Amazon or similar marketplaces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Independent international selling requires three things a platform normally provides: (1) Trust verification &mdash; the foreign buyer needs a way to confirm the merchant is legitimate without a marketplace vouching for them. This requires published, independently verifiable business identity, commercial terms, and trading history. (2) Cross-border payment capacity &mdash; settlement rails that work across the target markets. (3) Shipping and logistics infrastructure that operates in the target zones. Of these, trust verification is the hardest to establish independently, because it was always the platform's core product."
+          }
         },
         {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Cross-Border Trust",
-          "item": "https://outmerchant.com/dimensions/cross-border-trust/"
+          "@type": "Question",
+          "name": "What trust signals do foreign buyers need to trust a merchant independently?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Foreign buyers evaluating a merchant outside a marketplace context need: (1) Verified business identity &mdash; legal name, business registration, registered address, and a provable history of operation. (2) Published commercial terms &mdash; pricing, shipping timelines, return and refund policy, and dispute resolution process. (3) Independently verifiable trading history &mdash; proof of fulfilled orders that exists outside any platform's proprietary database. Together these three constitute the minimum conditions for cross-border trust without platform vouching."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do AI agents verify merchant trustworthiness for cross-border transactions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI buying agents verify merchant trustworthiness by parsing structured data: schema.org Organization markup for verified business identity, schema.org Offer and ShippingDetails for commercial terms, AggregateRating and Review structured data for independently verifiable reputation. A merchant whose trust signals exist only inside a platform's proprietary system provides nothing for an AI agent to parse when evaluating cross-border options. A merchant with structured data published under their own domain is verifiable by an AI agent without platform mediation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is non-aligned commerce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non-aligned commerce is trade that does not depend on alignment with any single platform ecosystem, regulatory zone, or political-economic bloc. As global trade fragments into zones with diverging regulations, payment systems, and platform ecosystems, a merchant aligned exclusively with one bloc inherits all of that bloc's limitations and exposure. Non-aligned commerce means operating across fragments: trust, settlement, and identity structured to be verifiable and usable in multiple zones without requiring any single one's infrastructure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is cross-border trust measured in the Merchant Sovereignty Score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cross-Border Trust is dimension 06 (XBR) of the Merchant Sovereignty Score, weighted at 12.5% of the total. Two governed questions assess it: (1) Can a buyer in another country establish that you are trustworthy without a platform vouching for you? (2) Can you operate across more than one trade or regulatory zone? Each is scored from captured behavior (trust fully platform-dependent) to sovereign behavior (trust independently verifiable, multi-zone operations)."
+          }
         }
       ]
     }
@@ -97,7 +129,6 @@
   .action { border-left:1px solid var(--gold); background:rgba(200,169,110,0.06); padding:18px 22px; margin:20px 0; }
   .action p { margin:0; font-size:13px; }
   .action .label { color:var(--gold); font-size:10px; letter-spacing:0.3em; text-transform:uppercase; display:block; margin-bottom:8px; }
-  .range { font-family:var(--display); font-weight:800; font-size:40px; color:var(--signal); margin:8px 0 24px; }
   .crosslinks { border-top:1px solid var(--text-ghost); margin-top:48px; padding-top:24px; }
   .crosslinks p { font-size:12px; }
   .cta { display:inline-block; background:var(--signal); color:var(--void); font-weight:700; font-size:11px; letter-spacing:0.2em; text-transform:uppercase; padding:14px 32px; text-decoration:none; margin:8px 16px 8px 0; }
@@ -105,7 +136,14 @@
   .cta-secondary:hover { border-color:var(--signal-mid); color:var(--signal); }
   footer { border-top:1px solid var(--text-ghost); padding:32px 0; font-size:10px; color:var(--text-dim); letter-spacing:0.15em; }
   footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
-  @media (max-width:640px) { .compare { grid-template-columns:1fr; } }
+  .trust-layers { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin:20px 0; }
+  .trust-layers > div { border:1px solid var(--text-ghost); padding:16px; background:var(--deep); }
+  .trust-layers h3 { font-family:var(--display); font-size:11px; letter-spacing:0.15em; text-transform:uppercase; margin-bottom:8px; color:var(--signal); }
+  .trust-layers p { font-size:12px; margin:0; }
+  .faq-block { border-left:2px solid var(--signal-mid); padding:16px 20px; margin-bottom:16px; background:var(--signal-dim); }
+  .faq-block h3 { font-family:var(--display); font-size:13px; margin-bottom:8px; color:var(--text); }
+  .faq-block p { font-size:12px; margin:0; }
+  @media (max-width:640px) { .compare { grid-template-columns:1fr; } .trust-layers { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -117,40 +155,87 @@
 </header>
 <main>
   <div class="wrap">
-    <p class="kicker">// Dimension 06 / XBR — 12.5% of the score</p>
+    <p class="kicker">// Dimension 06 / XBR &mdash; 12.5% of the score</p>
     <h1>Cross-Border Trust</h1>
+
     <h2>What This Dimension Means</h2>
-    <p>Cross-Border Trust measures whether a buyer in another country — or another trade zone — can establish that you are trustworthy without a platform vouching for you. It asks whether your commerce can cross the borders of a fragmenting global market on its own credentials.</p>
+    <p>Cross-Border Trust measures whether a buyer in another country &mdash; or another trade zone &mdash; can establish that you are trustworthy without a platform vouching for you. It asks whether your commerce can cross the borders of a fragmenting global market on its own credentials.</p>
+
+    <h2>The Platform Border Problem</h2>
+    <p>Marketplaces create trust within their own ecosystems &mdash; and only within them. An Amazon seller with 5,000 five-star reviews is highly trusted inside Amazon's ecosystem. Outside it, a foreign buyer who finds that seller through a web search finds no independently verifiable identity, no published commercial terms, and no provable trading history. The platform border is not a geographic boundary; it is a trust boundary.</p>
+    <p><strong>As global trade fragments into zones</strong> &mdash; diverging regulations, regional payment systems, separated platform ecosystems &mdash; the merchant whose trustworthiness exists only inside one platform's borders inherits all of that platform's geopolitical limits. A US-China trade restriction that affects Amazon's seller ecosystem affects every Amazon-dependent seller simultaneously and equally. Independent, verifiable trust is what lets a merchant trade across fragments.</p>
+
     <h2>Why It Matters to Merchant Sovereignty</h2>
-    <p>Global trade is fragmenting into zones: diverging regulations, regional payment systems, separated platform ecosystems. The merchant whose trustworthiness exists only inside one platform's borders inherits all of that platform's geopolitical limits. Independent, verifiable trust is what lets a merchant trade across fragments — non-aligned commerce in practice.</p>
+    <p>Global trade is fragmenting into zones: diverging regulations, regional payment systems, separated platform ecosystems. The merchant whose trustworthiness exists only inside one platform's borders inherits all of that platform's geopolitical limits. Independent, verifiable trust is what lets a merchant trade across fragments &mdash; <a href="/lexicon/non-aligned-commerce/">non-aligned commerce</a> in practice.</p>
+
+    <h2>The Three Verification Layers for Foreign Buyers</h2>
+    <div class="trust-layers">
+      <div><h3>Layer 1: Identity</h3><p>Legal business name, registration number, registered address, and a provable history of operation &mdash; published under the merchant's own domain, not just asserted on a platform profile that may be deleted.</p></div>
+      <div><h3>Layer 2: Commercial Terms</h3><p>Complete, published commercial terms: pricing, shipping timelines, return and refund policy, and dispute resolution process. In a language and format accessible to buyers in target zones. Ideally machine-readable for AI agent parsing.</p></div>
+      <div><h3>Layer 3: Trading History</h3><p>Independently verifiable proof of fulfilled orders &mdash; archived transaction records, independent review platform data, or structured trading history that exists outside any platform's proprietary database and survives account closure.</p></div>
+    </div>
+
     <h2>How the Score Measures It</h2>
-    <p>The Merchant Sovereignty Score assesses this dimension through 2 governed questions, weighted at 12.5% of the total score. The questions are fixed under public score governance — they change only through a recorded decision, never silently:</p>
+    <p>The Merchant Sovereignty Score assesses this dimension through 2 governed questions, weighted at 12.5% of the total score. The questions are fixed under public score governance &mdash; they change only through a recorded decision, never silently:</p>
     <ul class="qs">
       <li>Can a buyer in another country establish that you are trustworthy without a platform vouching for you?</li>
       <li>Can you operate across more than one trade or regulatory zone?</li>
     </ul>
     <p>Each answer is scored from captured behavior (0 points) to sovereign behavior (maximum points). The dimension score is the share of sovereign points earned, from 0 to 100.</p>
+
     <h2>Low Control vs. High Control</h2>
     <div class="compare">
       <div class="low"><h3>What low control looks like</h3><p>Trust signals exist only inside platforms. A foreign buyer who finds you outside a marketplace finds nothing checkable: no verifiable identity, no provable history, no published terms. Operating in a second trade zone is theoretical.</p></div>
-      <div class="high"><h3>What high control looks like</h3><p>Identity, terms, and trading history are published and independently verifiable. Buyers in other zones can check you without an intermediary. Operations are structurally multi-zone, not single-market with aspirations.</p></div>
+      <div class="high"><h3>What high control looks like</h3><p>Identity, terms, and trading history published and independently verifiable. Buyers in other zones can check you without an intermediary. Operations are structurally multi-zone, not single-market with aspirations.</p></div>
     </div>
+
+    <h2>Cross-Border Trust and AI Agents</h2>
+    <p>As <a href="/agentic-commerce/">agentic commerce</a> develops, AI buying agents evaluate merchants across borders using structured data: schema.org Organization markup for verified identity, schema.org Offer and ShippingDetails for commercial terms, AggregateRating and Review data for independently verifiable reputation. A merchant whose trust signals exist only inside a platform's proprietary system provides nothing an AI agent can parse when evaluating cross-border options outside that platform's context.</p>
+    <p>A merchant with structured data published under their own domain is verifiable by an AI agent without platform mediation &mdash; in any geographic context, in any regulatory zone, for any buyer. Cross-border trust, in the agentic commerce era, is structured trust: the prerequisite for being evaluated and selected by agents acting globally.</p>
+
     <div class="action">
       <span class="label">One Next Action</span>
-      <p>Publish one independent, checkable trust page under your own domain: verified business identity, complete commercial terms, and provable trading history. Make it the page a cautious foreign buyer would need.</p>
+      <p>Publish one independent, checkable trust page under your own domain: verified business identity, complete commercial terms, and provable trading history. Make it the page a cautious foreign buyer &mdash; or an AI agent &mdash; would need to confirm you are trustworthy without any platform's involvement.</p>
     </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-block">
+      <h3>What is cross-border trust for merchants?</h3>
+      <p>Cross-border trust is a merchant's ability to be verified as trustworthy by a foreign buyer without requiring a platform to vouch for them. It measures whether the merchant's identity, commercial terms, and trading history can be confirmed by a buyer or AI agent in a different country or regulatory zone &mdash; independently of any marketplace platform.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How can merchants sell internationally without relying on Amazon or similar marketplaces?</h3>
+      <p>Independent international selling requires: (1) Trust verification &mdash; published, independently verifiable business identity, commercial terms, and trading history so a foreign buyer can confirm the merchant is legitimate without marketplace vouching. (2) Cross-border payment capacity &mdash; settlement rails that work across target markets. (3) Logistics infrastructure in the target zones. Trust verification is the hardest element to establish independently, because it was always the marketplace's core product.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What trust signals do foreign buyers need to trust a merchant independently?</h3>
+      <p>Three elements: (1) Verified business identity &mdash; legal name, registration, address, provable history. (2) Published commercial terms &mdash; pricing, shipping, returns, dispute resolution. (3) Independently verifiable trading history &mdash; proof of fulfilled orders outside any platform's proprietary database. Together these constitute the minimum conditions for cross-border trust without platform vouching.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How do AI agents verify merchant trustworthiness for cross-border transactions?</h3>
+      <p>AI buying agents verify trustworthiness by parsing structured data: schema.org Organization for identity, schema.org Offer and ShippingDetails for commercial terms, AggregateRating and Review data for reputation. A merchant with structured data on their own domain is verifiable by an AI agent without platform mediation &mdash; in any geographic context, for any buyer.</p>
+    </div>
+    <div class="faq-block">
+      <h3>What is non-aligned commerce?</h3>
+      <p>Non-aligned commerce is trade that does not depend on alignment with any single platform ecosystem, regulatory zone, or political-economic bloc. As global trade fragments into zones with diverging regulations, payment systems, and platforms, a merchant aligned exclusively with one bloc inherits all of that bloc's limitations. Non-aligned commerce means operating across fragments with trust, settlement, and identity that are verifiable in multiple zones.</p>
+    </div>
+    <div class="faq-block">
+      <h3>How is cross-border trust measured in the Merchant Sovereignty Score?</h3>
+      <p>Cross-Border Trust is dimension 06 (XBR), weighted at 12.5% of the total. Two governed questions assess it: (1) Can a buyer in another country establish that you are trustworthy without a platform vouching for you? (2) Can you operate across more than one trade or regulatory zone? Each is scored from captured behavior to sovereign behavior.</p>
+    </div>
+
     <div class="crosslinks">
-      <p>Canonical term: <a href="/lexicon/non-aligned-commerce/">Non-Aligned Commerce</a> in the OutMerchant Lexicon. This dimension is governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
-      <p>Persistent low control on this dimension is characteristic of the <a href="/levels/emerging/">Emerging</a> tier. High control across all eight dimensions defines the standard's protected highest rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
-      <a class="cta" href="/score/">→ Measure This Dimension</a>
-      <a class="cta-secondary" href="/">The Standard</a>
+      <p>Canonical term: <a href="/lexicon/non-aligned-commerce/">Non-Aligned Commerce</a> in the OutMerchant Lexicon. Governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
+      <p>Low control here is characteristic of the <a href="/levels/emerging/">Emerging</a> tier. High control across all eight dimensions defines the terminal rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
+      <a class="cta" href="/score/">&rarr; Measure This Dimension</a>
+      <a class="cta-secondary" href="/agentic-commerce/">Agentic Commerce</a>
     </div>
   </div>
 </main>
 <footer>
   <div class="wrap">
-    <div>MERCHANT SOVEREIGNTY SCORE — REFERENCE STANDARD</div>
-    <div><a href="/">OUTMERCHANT.COM</a> — EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
+    <div>MERCHANT SOVEREIGNTY SCORE &mdash; REFERENCE STANDARD</div>
+    <div><a href="/">OUTMERCHANT.COM</a> &mdash; EVERY LAYER SERVES THE MERCHANT. NO LAYER OWNS THE MERCHANT.</div>
   </div>
 </footer>
 </body>
