@@ -1,39 +1,40 @@
-# OutMerchant.com
+# Outmerchant
 
-> OutMerchant is not built as a website. It is built as a miniature commercial state: it has a constitution, a lexicon, a measurement standard, a decision record, boundaries, quality courts, and execution layers.
->
-> **Every layer serves the merchant. No layer owns the merchant.**
+**The reference standard for Merchant Sovereignty.**
 
-Live surface: [outmerchant.com](https://outmerchant.com/) — the doctrine, the canonical lexicon, the eight-dimension architecture, and the entry to the Merchant Sovereignty Score.
+Outmerchant.com defines, measures, and names the condition in which a merchant owns their route to the buyer — channels, customers, reputation, settlement rails, and margin — without depending on any single platform to hold any of it.
 
-## Governance Operating System
+## What This Repository Contains
 
-Every page, tool, term, link, claim, monetization, and build decision in this repository is subject to OutMerchant logic. The system is layered; no layer may be bypassed.
+| Path | What It Is |
+|------|------------|
+| `/` | The live standard — HTML surface, JSON-LD, sitemap, robots |
+| `main/data/` | The governed data model — score dimensions, questions, levels, lexicon, pages |
+| `main/scripts/` | Quality gate validators and build scripts |
+| `DECISION_LOG.md` | Every significant decision about the system, recorded |
+| `QUALITY_GATE.md` | The enforcement layer — what is checked and how |
+| `SCORE_GOVERNANCE.md` | The Merchant Sovereignty Score governance |
+| `LEXICON_GOVERNANCE.md` | Lexicon admission law and casing rules |
+| `ASSET_THESIS.md` | The strategic thesis — why this asset exists and what it becomes |
 
-| Layer | Governing files |
-|-------|----------------|
-| Score & Standard | `SCORE_GOVERNANCE.md` |
-| Canonical Lexicon | `LEXICON_GOVERNANCE.md` |
-| Routes & Pages | `ROUTE_GOVERNANCE.md` |
-| Claims & Sources | `CLAIM_POLICY.md` |
-| AI Readability | `AI_READABILITY_POLICY.md` |
-| Quality Court | `QUALITY_GATE.md` |
-| Decision Record | `DECISION_LOG.md` |
+## The Standard
 
-## Governed Data Layer
+The **Merchant Sovereignty Score** (0–100) measures commercial independence across eight dimensions:
 
-The single sources of truth. No logic may exist outside them.
+| # | Code | Dimension |
+|---|------|-----------|
+| 01 | DEP | Platform Dependency |
+| 02 | OWN | Customer Ownership |
+| 03 | REP | Reputation Portability |
+| 04 | PAY | Payment & Settlement Exposure |
+| 05 | FEE | Fee & Margin Leakage |
+| 06 | XBR | Cross-Border Trust |
+| 07 | AGT | AI Commerce Readiness |
+| 08 | GOV | Governance Independence |
 
-```
-main/data/
-├── score_dimensions.json   # the eight dimensions of merchant control
-├── score_questions.json    # the governed 20-question bank
-├── score_levels.json       # Captured / Dependent / Emerging / OutMerchant (inviolable)
-├── glossary_terms.json     # the canonical lexicon (14 founding terms)
-├── pages.json              # the route registry (28 routes)
-├── internal_links.json     # the required link graph (85 edges)
-└── navigation.json         # the governed navigation
-```
+Four tiers classify the result: **Captured** (0–25) · **Dependent** (26–50) · **Emerging** (51–75) · **Outmerchant** (76–100).
+
+The terminal tier — Outmerchant — is inviolable by DEC-001 and DEC-006. Its spelling is governed by DEC-016.
 
 ## The Quality Gate
 
@@ -41,16 +42,14 @@ main/data/
 python3 main/scripts/quality_gate.py
 ```
 
-Runs on every push via `.github/workflows/quality-gate.yml`. A red gate blocks merge: either the change is fixed to comply, or the law itself is changed explicitly with a `DECISION_LOG.md` entry. There is no third path.
+Runs 9 validators. Exits non-zero on any governance violation. Runs in CI on every push. A red gate blocks merge.
 
-## Deployment
+## Governance
 
-GitHub Pages serves from the repository root (`index.html`, `CNAME`). GitHub is the source of truth. Content routes (`/score/`, `/lexicon/…`, `/dimensions/…`, `/levels/…`, `/protocol/`) are registered as `planned` in `pages.json` and ship in Sprint 2B through the gate.
+Every significant decision is recorded in `DECISION_LOG.md` with an ID, date, layer, decision, and rationale. The current record runs to DEC-016. Nothing significant changes silently.
 
-## Why the structure resists imitation
-
-A copier can clone a page. They cannot clone: a name that is a verb and a rank, a canonical lexicon, a governed score model whose terminal tier carries the asset's name, a required link topology, an AI-native readability layer, mechanical quality enforcement, and a permanent record of why every decision was made. The composition is the moat.
+**Orthography:** "Outmerchant" (initial capital only) is the official form per DEC-016. Validator 9 (`validate_orthography.py`) enforces this automatically.
 
 ---
 
-*Strategic doctrine for this asset is maintained in the Sovereign Asset System repository (`portfolio/asset-dossiers/outmerchant.com/`).*
+*Every layer serves the merchant. No layer owns the merchant.*

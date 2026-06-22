@@ -1,76 +1,61 @@
 # Route Governance
 
-> Every page is part of the system or it does not exist. This file governs routes, their lifecycle, and the laws that prevent the site from degrading into a content pile.
+> Every page on Outmerchant.com must be intentional, registered, and owned. This file governs how pages enter, live in, and leave the canonical route registry.
 >
 > **Every layer serves the merchant. No layer owns the merchant.**
 
-## The Route Laws
+## The Route Registry
 
-1. **No page without a function.** Every route must declare a `purpose` that serves the score, the lexicon, the protocol, or buyer logic.
-2. **No orphan pages.** Every active route must be reachable from `/` through navigation or required internal links.
-3. **No SEO-only pages.** A page whose only justification is search volume is rejected.
-4. **No duplicate routes.** One concept, one canonical route.
-5. **One governance owner per route.** Every route belongs to exactly one owner: `lexicon`, `score`, `protocol`, `doctrine`, `governance`, or `home`.
+The route registry (`main/data/pages.json`) is the single source of truth for every page that exists, is planned, or has been deprecated on the asset. A page that is not in the registry does not officially exist; a page in the registry that has no corresponding file is a quality failure.
 
 ## Governed Artifacts
 
 | File | Role |
 |------|------|
-| `main/data/pages.json` | The route registry — single source of truth for all routes |
-| `main/data/navigation.json` | The governed navigation structure |
-| `main/data/internal_links.json` | The required internal link graph |
+| `main/data/pages.json` | Single source of truth for all routes |
+| Quality gate | Enforces registry completeness on every push |
 
-A page that exists on the site but not in `pages.json` is a governance violation. A route in `pages.json` marked `active` whose file does not exist is a build failure.
+## The Route Admission Law
 
-## Route Record Schema
+A page enters the registry only when it has:
 
-Every route in `pages.json` must carry:
+1. A canonical URL (route)
+2. A type (`index`, `lexicon`, `level`, `dimension`, `score`, `protocol`, `editorial`)
+3. A status (`active`, `planned`, `deprecated`)
+4. An owner (the governance document that governs this page's content)
+5. A purpose statement (one sentence: what does this page *do* for the asset?)
 
-```json
-{
-  "route": "/lexicon/platform-dependency/",
-  "type": "lexicon | score | dimension | level | protocol | home",
-  "status": "active | planned | deprecated",
-  "purpose": "Define platform dependency as a merchant sovereignty risk.",
-  "canonical_term": "Platform Dependency",
-  "required_internal_links": ["/score/", "/lexicon/merchant-sovereignty/"],
-  "seo_cluster": "dependency",
-  "governance_owner": "lexicon"
-}
-```
+The quality gate rejects registry entries missing any of these.
 
-`canonical_term` is required for lexicon, dimension, and level routes; `null` otherwise.
+## Route Status Rules
 
-## Route Lifecycle
-
-- **planned** — registered with full purpose and link requirements before any content is written. Sprint 2B builds only from planned routes.
-- **active** — content exists, passes the quality gate, is in the sitemap.
-- **deprecated** — never deleted from the registry; redirects or successor route must be recorded.
-
-## Current Deployment Constraint
-
-The live site is served by GitHub Pages from the repository root; `index.html` and `CNAME` therefore remain at root and `/` is the only active route until Sprint 2B ships the first content routes. This constraint is recorded here so the registry and the deployment never silently diverge.
-
-## Required Link Topology
-
-The route network must form a meaning system, not a page list:
-
-```
-/lexicon/<term>/      → /score/  and at least one related lexicon term
-/dimensions/<dim>/    → /score/, its lexicon term, at least one level, /protocol/
-/levels/<tier>/       → /score/  and /lexicon/merchant-sovereignty/
-/score/               → all eight dimension routes
-/protocol/            → /score/ and the doctrine surface
-```
-
-The visitor never reads "a page." The visitor enters a system of terms and measurement.
+- **`active`** — the page exists and is live. Must have a corresponding HTML file. Quality gate validates.
+- **`planned`** — the page is committed to but not yet built. No file required. Planning horizon: current sprint only.
+- **`deprecated`** — the page existed and has been retired. Must carry a deprecation date and a redirect destination.
 
 ## Change Control
 
-- Adding a route: full schema record in `pages.json`, owner assigned, link requirements declared. No decision log entry needed for routes that follow the topology above.
-- Adding a route *type* or changing the topology: requires a `DECISION_LOG.md` entry.
-- Activating a route: only through the quality gate.
+- Adding a route: requires a registry entry and, if active, the file. No page without a registry entry.
+- Changing a route URL: requires a registry update, a redirect from the old URL, and a decision log entry if the page is externally linked or indexed.
+- Deprecating a route: requires status change to `deprecated`, a deprecation date, and a redirect. Never deleted from the registry.
+
+## Dimension-to-Route Mapping
+
+Every scored dimension has a reference page. The mapping is:
+
+| Code | Route |
+|------|-------|
+| DEP | `/dimensions/platform-dependency/` |
+| OWN | `/dimensions/customer-ownership/` |
+| REP | `/dimensions/reputation-portability/` |
+| PAY | `/dimensions/payment-settlement-exposure/` |
+| FEE | `/dimensions/fee-margin-leakage/` |
+| XBR | `/dimensions/cross-border-trust/` |
+| AGT | `/dimensions/ai-commerce-readiness/` |
+| GOV | `/dimensions/governance-independence/` |
+
+These routes are inviolable while the dimensions they map to are inviolable.
 
 ---
 
-*Governed under the OutMerchant Governance Operating System. Enforced by `main/scripts/validate_routes.py` and `main/scripts/validate_links.py`.*
+*Governed under the Outmerchant Governance Operating System. Enforced by `main/scripts/validate_routes.py`.*

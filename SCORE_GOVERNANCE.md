@@ -1,58 +1,64 @@
 # Score Governance
 
-> Governs the Merchant Sovereignty Score: its model, its data, its change control, and its inviolable elements.
+> The law of the measurement instrument. What the Merchant Sovereignty Score is, what it measures, what it cannot become, and what governs it.
 >
 > **Every layer serves the merchant. No layer owns the merchant.**
 
-## Governed Artifacts
+---
 
-The score model lives in exactly three data files. No score logic may exist anywhere else.
+## What the Score Is
+
+The Merchant Sovereignty Score is a diagnostic measurement of a merchant's commercial sovereignty posture. It is a 0–100 index produced by applying a weighted average across eight governed dimensions of merchant control. It is not financial advice, investment advice, legal advice, or a guarantee of commercial outcome.
+
+## What the Score Measures
+
+Eight dimensions, each weighted equally at 12.5% of the total:
+
+| Code | Dimension |
+|------|-----------|
+| DEP | Platform Dependency |
+| OWN | Customer Ownership |
+| REP | Reputation Portability |
+| PAY | Payment & Settlement Exposure |
+| FEE | Fee & Margin Leakage |
+| XBR | Cross-Border Trust |
+| AGT | AI Commerce Readiness |
+| GOV | Governance Independence |
+
+## The Four Tiers (Inviolable — DEC-006)
+
+| Tier | Range | Meaning |
+|------|-------|---------|
+| Captured | 0–25 | Fully platform-dependent. Commerce survives only at the infrastructure's pleasure. |
+| Dependent | 26–50 | Partially free. Significant single-point-of-control exposure. |
+| Emerging | 51–75 | Building sovereignty. The merchant sees the cage and is constructing the exit. |
+| Outmerchant | 76–100 | Sovereign. Channels, customers, reputation, settlement, and margin owned. |
+
+The boundaries, tier names, and terminal tier name (*Outmerchant*) are inviolable. A proposal to change them requires a decision log entry that supersedes DEC-006.
+
+## What the Score Cannot Become
+
+- A ranking of merchants relative to each other (it is an absolute measure, not a relative one)
+- A certification system that Outmerchant issues for a fee (before DEC-005 is superseded)
+- A tool that can be gamed by any action other than genuinely improving the measured conditions
+- A surface for monetization before the allowed phase (DEC-005)
+
+## Governed Artifacts
 
 | File | Role |
 |------|------|
-| `main/data/score_dimensions.json` | The eight dimensions of merchant control — codes, names, weights |
-| `main/data/score_questions.json` | The governed question bank — 20 questions mapped to dimensions |
-| `main/data/score_levels.json` | The four classification tiers — fixed boundaries and names |
-
-Any tool, page, or report that computes or displays a score MUST read from these files. A score surface that hardcodes its own model is a governance violation.
-
-## Inviolable Elements
-
-The following may not be changed by any sprint, redesign, or integration without a constitutional-level decision recorded in `DECISION_LOG.md`:
-
-1. **The eight dimensions.** Platform Dependency (DEP), Customer Ownership (OWN), Reputation Portability (REP), Payment & Settlement Exposure (PAY), Fee & Margin Leakage (FEE), Cross-Border Trust (XBR), AI Commerce Readiness (AGT), Governance Independence (GOV).
-2. **The four tiers and their boundaries.** 0–25 Captured, 26–50 Dependent, 51–75 Emerging, 76–100 OutMerchant.
-3. **The terminal-tier name.** The highest tier carries the asset's own name. This is the asset's inevitability mechanism: the framework cannot be used without aiming at the brand. Removing this closure removes the asset's core structural property. (DEC-001, DEC-006)
+| `main/data/score_dimensions.json` | 8 dimensions, codes, weights, names |
+| `main/data/score_questions.json` | 20 governed questions, one per dimension |
+| `main/data/score_levels.json` | 4 tier definitions with boundaries |
+| `main/data/engine_guidance.json` | Text for score result surfaces |
 
 ## Change Control
 
-- Every change to dimensions, weights, questions, options, points, or tier semantics requires an entry in `DECISION_LOG.md` **before** merge.
-- Question wording may be refined editorially, but a change that alters what a question measures is a model change.
-- Weights must always sum to 100 across dimensions. The quality gate enforces this.
-- Question identifiers (Q01–Q20) are permanent. Retired questions are marked `"status": "retired"`, never deleted, never reused.
-
-## Scoring Contract
-
-- Each question offers ordered options with integer points from 0 (captured behavior) to the question maximum (sovereign behavior).
-- Dimension score = (points earned in that dimension / maximum points in that dimension) × 100.
-- Total score = weighted average of dimension scores using the weights in `score_dimensions.json`.
-- The total score maps to exactly one tier in `score_levels.json`. Boundaries are inclusive.
-- Output must always include: total score, tier name, and all eight dimension scores. A score without its dimension breakdown is not a Sovereignty Score.
-
-## Score Surface Rules
-
-- The diagnostic must remain free to run. Monetization, if ever applied, gates the *delivered report*, never the measurement itself (see `MONETIZATION_PRINCIPLES.md`, future).
-- The score must never be used to rank, shame, or expose individual merchants publicly.
-- No "instant score" marketing gimmicks. The score is a standard, not a quiz funnel.
-- Structured (machine-readable) score results are a planned requirement under `AI_READABILITY_POLICY.md`.
-
-## Prohibited
-
-- Hardcoded score logic outside the three data files
-- Random or A/B-tested changes to the model
-- Adding a fifth tier, renaming tiers, or shifting boundaries for marketing reasons
-- Publishing benchmark claims ("the average merchant scores 47") without real data and `CLAIM_POLICY.md` compliance
+- Dimension codes, weights, and count: inviolable (DEC-008)
+- Tier boundaries and terminal tier name: inviolable (DEC-006)
+- Questions: may be refined editorially without a decision; meaning changes require a decision entry
+- Engine guidance text: editorial changes allowed; structural changes require a decision entry
 
 ---
 
-*Governed under the OutMerchant Governance Operating System. Enforced by `main/scripts/validate_score_model.py`.*
+*Governed under the Outmerchant Governance Operating System. Enforced by `main/scripts/validate_score_model.py`.*

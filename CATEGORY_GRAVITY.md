@@ -1,49 +1,55 @@
 # Category Gravity
 
-> **"OutMerchant does not ask the market to buy it. It builds the category gravity that makes ignoring it strategically expensive."**
+> How Outmerchant.com earns the right to be the category's canonical source — not by declaration, but by becoming the place that defines, measures, and governs the category better than any alternative.
 >
 > **Every layer serves the merchant. No layer owns the merchant.**
 
-## Doctrine: Category Gravity Before Value Extraction
+---
 
-OutMerchant does not pursue buyers through outreach. It builds category gravity — definitional authority, measurement authority, protocol trust, and indexed visibility — until strategic interest becomes inbound. Value extraction is not allowed before value proof.
+## The Principle
 
-Category gravity is the condition in which actors inside a category cannot operate seriously without encountering the asset: its vocabulary appears in their searches, its measurement frames their conversations, its protocol defines the standard they are compared against. Gravity is not attention. Attention is rented; gravity compounds.
+Category gravity is not declared. It is accumulated. It is the condition in which others — journalists, practitioners, researchers, acquirers, AI agents — cite this asset as the source of a term, a measurement, or a standard. It is earned by:
 
-## The Laws
+1. **Defining first** — the lexicon exists before any competing definition
+2. **Measuring precisely** — the score instrument is governed and auditable
+3. **Governing publicly** — every decision is on the record
+4. **Staying structurally correct** — the quality gate makes drift impossible
 
-### 1. No buyer outreach before category gravity
+## The Gravity Doctrine
 
-No outbound contact with potential acquirers of any kind — email, social, intermediaries, brokers — before external value proof exists: indexation footprint, organic queries, instrument usage, and citation signals. A first contact made from weakness prices the asset at its weakest moment.
+> **Outmerchant does not ask the market to buy it. It builds the category gravity that makes ignoring it strategically expensive.**
 
-### 2. No public sale posture
+This is not a marketing posture. It is a structural position: a standard that governs itself, names the category, and measures the condition is not a product to be purchased — it is a reference that others depend on. Dependence creates gravity. Gravity creates acquirability.
 
-No "for sale" framing anywhere: no marketplace listings, no price anchors, no acquisition language on public surfaces. The strategic-value page (Phase 8) is acquisition-*legible*, not sale-*postured* — and it does not exist yet by design.
+## How Category Gravity Accumulates
 
-### 3. No premature monetization
+### Signal 1: Vocabulary ownership
+When "Merchant Sovereignty" is defined by Outmerchant first, and defined with a lexicon that has an admission law, an enforcement layer, and JSON-LD structured data — the definition is not an opinion. It is a governed artifact. Every article that uses the term without defining it is citing the asset implicitly.
 
-No revenue surface of any kind before the gates of DEC-005 open: indexation, impressions, instrument usage, reference trust. Revenue may not compromise reference authority — a sovereignty standard that monetizes before it proves looks commercially captured and refutes itself.
+### Signal 2: Measurement authority
+The Merchant Sovereignty Score does not describe the category — it measures it. A measurement instrument creates a different kind of authority than explanation: it creates data. Data creates evidence. Evidence creates the condition in which the measurer is the source.
 
-### 4. No marketplace claim before protocol maturity
+### Signal 3: Terminal rank ownership
+The terminal rank of the score (*Outmerchant* at 76–100) carries the asset's name. This is not coincidence — it is a constitutional decision (DEC-001). The rank is the destination of the category. The asset's name is the destination. The name of the category standard is the name of the highest condition it measures. This is the most durable form of category ownership.
 
-OutMerchant claims no marketplace, no buyer network, and no transaction capability (DEC-007). The Score Engine is not a lead funnel, not a monetization surface, and not a marketplace claim: it is the governed proof layer that translates Merchant Sovereignty into explainable measurement.
+### Signal 4: Governance depth
+A category standard with a public decision log, an automated quality gate, and an inviolable lexicon is qualitatively different from content. It cannot be reproduced by competitors at content-production speed. The governance layer is the moat.
 
-### 5. Structural unavoidability is the strategy
+## What Category Gravity Is Not
 
-OutMerchant must attract strategic interest by becoming structurally unavoidable: the canonical definitions (lexicon), the governed measurement (score), the explanatory layer (dimensions and tiers), the binding protocol, and the protected terminal rank — each indexed, machine-readable, and mutually reinforcing. The asset competes on inevitability, not on persuasion.
+- It is not search traffic (though traffic follows)
+- It is not social media presence (though presence follows authority)
+- It is not outreach (the doctrine specifically prohibits outreach-first posture)
+- It is not declaration ("we are the standard" is not a claim that creates standards)
 
-### 6. Strategic buyers are served indirectly
+## The Anti-Outreach Doctrine
 
-Strategic buyers are not ignored; they are served indirectly through the strength, clarity, and inevitability of the asset. Everything a serious acquirer's diligence team would need to find — governed models, decision history, quality enforcement, definitional priority — is being built in public, on the record, before any conversation begins. The asset's best pitch is its repository.
+Category gravity does not come from asking for recognition. It comes from building a structure so correct that recognition becomes the rational response of anyone who engages with the category seriously.
 
-## What Gravity Is Measured By
+Outmerchant does not pitch itself to journalists. It builds the definitional infrastructure that journalists need when they write about merchant sovereignty. Outmerchant does not ask practitioners to adopt its vocabulary. It builds the vocabulary so precisely and publicly that alternatives cost more effort to maintain.
 
-In order of weight: indexation footprint (pages indexed, canonical health), organic queries reaching the asset's vocabulary (especially tier and term names), instrument usage signals, inbound citations of the lexicon, and unsolicited strategic inquiries. These are recorded in the indexation intelligence log (`main/reports/phase-6a-indexation-intelligence.md`) — observed, never invented.
-
-## Relationship to the Decision Log
-
-This doctrine is constitutionalized as **DEC-015 — Category Gravity Before Value Extraction**. Any future sprint that proposes outreach, sale posture, monetization, or marketplace claims must first supersede DEC-015 with a recorded constitutional decision — there is no silent path around it.
+This posture is codified: no outreach, no pitch, no solicitation before the asset has earned the right to be cited — which means before value extraction is activated. Doctrine codified in `CATEGORY_GRAVITY.md`; governing sentence: *"Outmerchant does not ask the market to buy it. It builds the category gravity that makes ignoring it strategically expensive."* Any future proposal for outreach, sale posture, monetization, or marketplace claims must supersede this decision on the record first.
 
 ---
 
-*Constitutional layer of the OutMerchant Governance Operating System.*
+*Constitutional layer of the Outmerchant Governance Operating System.*

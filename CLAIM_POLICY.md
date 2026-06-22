@@ -1,48 +1,73 @@
 # Claim Policy
 
-> OutMerchant speaks about AI, Web3, global trade, platforms, payments, and governance. A reference standard that overclaims refutes itself. This policy governs every claim on every surface.
+> Every factual, comparative, or predictive claim made on Outmerchant.com must be supportable, bounded, or explicitly marked as a projection. This file governs what claims the asset may and may not make.
 >
 > **Every layer serves the merchant. No layer owns the merchant.**
 
-## Claim Classes
+## Why a Claim Policy Exists
 
-| Class | Definition | Requirement |
-|-------|-----------|-------------|
-| **Definitional** | Claims about OutMerchant's own terms, score, and tiers | Allowed freely — this is the asset's own canon |
-| **Structural** | Claims about how commerce infrastructure works (fees exist, accounts get suspended, reputation is platform-bound) | Allowed when describing widely observable mechanics, in measured language |
-| **Empirical** | Numbers, market sizes, statistics, named-company behavior | Require a source, or must be reformulated as structural/cautious |
-| **Predictive** | Claims about the future of AI, Web3, trade | Must use trajectory language, never absolute language |
+Authority assets are cited. Cited assets are scrutinised. A single unsupportable claim in a governance document or a page that names the asset as a standard undermines everything the governance layer has built. The claim policy exists to make the asset citable without risk of factual challenge.
 
-## Governed Formulations
+## Permitted Claim Categories
 
-Predictive claims must follow the approved register:
+### 1. Definitional claims
+> *Merchant Sovereignty is the condition in which a merchant owns, rather than rents, the infrastructure between themselves and their buyers.*
 
-- ❌ "AI will control everything."
-- ✅ **"AI is becoming a control layer in discovery, comparison, trust, and purchase routing."**
-- ❌ "Web3 will replace everything." / Web3 as destiny or hype.
-- ✅ **"Decentralized infrastructure is treated as a trust and ownership layer — adopted where it serves merchant sovereignty, ignored where it does not."**
-- ❌ "Platforms are the enemy." / anti-state, anti-bank, anti-platform rhetoric.
-- ✅ **"Not anti-platform. Not anti-state. Not anti-bank. Anti-single-point-of-control."**
+Definitional claims are governed by the lexicon. They are the asset's core product. They require no external citation because they are not assertions about the external world — they are definitions of a governed vocabulary.
 
-## Hard Prohibitions
+### 2. Structural claims
+> *The Merchant Sovereignty Score measures eight dimensions, weighted equally at 12.5% each.*
 
-- No legal advice and no claims that read as legal advice
-- No financial advice, no investment language, no token/coin promotion of any kind
-- No political alignment: the asset is non-aligned by doctrine; no taking sides between states, blocs, or regulatory regimes — fragmentation is described as a condition, never cheered
-- No marketplace promises: OutMerchant claims no marketplace, no buyer network, and no transaction capability before such a thing exists and is governed (DEC-007)
-- No fabricated benchmarks, fake testimonials, or invented usage numbers
-- No fear-mongering: dependency risk is stated structurally, never theatrically
+Structural claims describe the asset itself — its architecture, its governance, its measurement model. They require no external citation because they are verifiable by inspection of the governed files.
 
-## Source Rules (interim, until `SOURCE_POLICY.md` is constituted)
+### 3. Grounded empirical claims
+> *Platform account suspensions on major marketplaces can occur without advance notice.*
 
-- Empirical claims carry a source or are removed
-- Sources must be primary or institutionally credible; no citing content farms
-- A claim that cannot be sourced is rewritten as a structural observation or cut — the standard loses nothing by claiming less
+Grounded empirical claims describe conditions in the world that are widely documented, legally established, or structurally obvious from platform terms of service. These require either citation or qualification ("typically", "commonly", "in most cases").
 
-## Why This Layer Is Strict
+### 4. Conditional projections
+> *A merchant with high platform dependency who loses their account faces immediate revenue disruption.*
 
-Trust is the asset. Every unsourced number, every absolute prediction, every political slip is a discount on acquisition value. A future acquirer's diligence team must find a property whose every claim survives scrutiny. This policy is written for that reading.
+Conditional projections describe what follows from a defined condition. They are permitted when the conditional relationship is logically sound and the condition is clearly stated.
+
+## Prohibited Claim Categories
+
+### 1. Unsupported superlatives
+*Outmerchant is the leading authority on merchant sovereignty.* — Not permitted until there is evidence (traffic, citations, usage) to support it.
+
+### 2. Fabricated statistics
+*85% of merchants experience platform dependency problems.* — Not permitted without a sourced study or the asset's own governed data.
+
+### 3. Legal or financial advice
+*You should not sell on Amazon.* — Not permitted. The asset measures; it does not advise.
+
+### 4. Predictive claims about specific outcomes
+*Following these steps will guarantee you reach the Outmerchant tier.* — Not permitted. The score measures a condition; it does not guarantee a result.
+
+### 5. Competitor claims
+*Unlike [competitor], Outmerchant is...* — Not permitted. The asset stands on its own standard.
+
+## The Softening Vocabulary
+
+When describing structural conditions that are real but not universal, the asset uses bounded language:
+- "may" / "may have" (not "will" / "has")
+- "in many cases" / "commonly" (not "always" / "every")
+- "can" / "can result in" (not "does" / "results in")
+- "significantly reduced" / "reduced visibility" (not "excluded" / "invisible")
+
+The softening vocabulary does not weaken the insight. It makes the insight citable.
+
+## AI Commerce Claims (WS6)
+
+Claims about AI agents and merchant visibility in agentic commerce are to be framed in terms of structural conditions and trajectories, not absolute states. Phrases like "structurally excluded" overstate a condition that is evolving. Permitted framings:
+- "may have significantly reduced visibility"
+- "absent from the routing layer for agents that cannot access platform-specific feeds"
+- "this gap compounds" (not "this exclusion compounds")
+
+## Change Control
+
+This policy is governed. Changes require a `DECISION_LOG.md` entry. Additions to the prohibited list may be made without a decision entry; removals or category changes require one.
 
 ---
 
-*Governed under the OutMerchant Governance Operating System. Applied editorially to every page; spot-enforced by the quality gate (empty/thin content checks).*
+*Governed under the Outmerchant Governance Operating System.*
