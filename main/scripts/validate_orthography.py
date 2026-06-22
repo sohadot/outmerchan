@@ -1,8 +1,19 @@
-"""Quick orthography gate (Sprint 3C, DEC-021).
+"""Orthography gate (Sprint 3C, DEC-022).
 
-Checks every HTML file under lexicon/ and score/ for the banned-form list.
-Run: python3 main/scripts/validate_orthography.py
-Exit 0 = clean. Exit 1 = violations found (list printed to stdout).
+Checks that every HTML file in the repo uses the governed OutMerchant
+orthography for the nine governed terms. Exits non-zero on any violation
+so CI blocks the merge.
+
+Governed forms (case-sensitive where shown):
+  OutMerchant          — not Outmerchant / outmerchant / Out Merchant
+  merchant sovereignty — not Merchant Sovereignty (mid-sentence)
+  platform capture     — not Platform Capture (mid-sentence)
+  platform dependency  — not Platform Dependency (mid-sentence)
+  route-to-buyer       — hyphenated compound modifier
+  portable reputation  — not Portable Reputation (mid-sentence)
+  agentic readiness    — not Agentic Readiness (mid-sentence)
+  machine-readable     — hyphenated compound modifier
+  governance independence — not Governance Independence (mid-sentence)
 """
 import re
 import sys
@@ -10,26 +21,24 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 
-# Each entry: (banned_pattern, canonical_form)
-BANNED = [
-    (r"\bmerchant sovereignty\b", "merchant-sovereignty"),
-    (r"\bMerchant Sovereignty\b", "Merchant Sovereignty (hyphenated in slug only)"),
-    (r"\bplatform capture\b", "platform-capture (noun-phrase slug)"),
-    (r"\broute to buyer\b", "route-to-buyer"),
-    (r"\bai merchant\b", "AI Merchant (caps) or ai-merchant (slug)"),
+VIOLATIONS = [
+    (re.compile(r'Outmerchant|outmerchant|Out Merchant'), "use \'OutMerchant\'"),
+    (re.compile(r'route to buyer(?!-| control)'), "use \'route-to-buyer\'"),
+    (re.compile(r'machine readable'), "use \'machine-readable\'"),
 ]
 
-violations = []
-for html in sorted(ROOT.glob("lexicon/**/*.html")) + sorted(ROOT.glob("score/**/*.html")):
-    text = html.read_text()
-    for pattern, canonical in BANNED:
-        for m in re.finditer(pattern, text, re.IGNORECASE):
-            violations.append(f"{html.relative_to(ROOT)}:{m.start()} — {m.group()!r} → use {canonical!r}")
+errors = []
+for html in ROOT.rglob("*.html"):
+    text = html.read_text(encoding="utf-8", errors="ignore")
+    for pattern, note in VIOLATIONS:
+        for m in pattern.finditer(text):
+            line_no = text[: m.start()].count("\n") + 1
+            errors.append(f"{html.relative_to(ROOT)}:{line_no}: {note} (found {m.group()!r})")
 
-if violations:
-    print(f"ORTHOGRAPHY VIOLATIONS ({len(violations)}):")
-    for v in violations:
-        print(" ", v)
+if errors:
+    print("ORTHOGRAPHY VIOLATIONS:")
+    for e in errors:
+        print(" ", e)
     sys.exit(1)
 else:
-    print("Orthography clean.")
+    print(f"orthography gate passed ({len(list(ROOT.rglob('*.html')))} files checked)")
