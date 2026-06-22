@@ -18,13 +18,17 @@ Runs all validators and exits non-zero on any failure. The same command runs in 
 
 ## Validators
 
-| Script | Enforces | Source law |
-|--------|----------|-----------|
-| `validate_score_model.py` | 8 dimensions, codes fixed, weights sum to 100, 20 questions all mapped, 4 tiers contiguous 0–100, terminal tier named "OutMerchant" | `SCORE_GOVERNANCE.md` |
-| `validate_glossary.py` | Every term has definition, system function, relations (resolvable), route (registered), score relation; canonical casing of the verb/rank pair | `LEXICON_GOVERNANCE.md` |
-| `validate_routes.py` | Schema completeness, no duplicate routes, active routes have files, no orphan active routes, required links point to registered routes, owners valid | `ROUTE_GOVERNANCE.md` |
-| `validate_links.py` | Internal link graph consistency: every edge connects registered routes, anchor links on the live surface resolve | `ROUTE_GOVERNANCE.md` |
-| `validate_seo.py` | Canonical URL, title, meta description present; JSON-LD parses; DefinedTermSet covers all `in_jsonld` lexicon terms; sitemap covers active routes | `AI_READABILITY_POLICY.md` |
+| # | Validator | Decision | What It Checks |
+|---|-----------|----------|-----------------|
+| 1 | validate_score_model | DEC-001, DEC-006, DEC-008 | Score model integrity, tier boundaries, terminal tier |
+| 2 | validate_glossary | DEC-002, DEC-004 | Glossary term completeness and constitutional term presence |
+| 3 | validate_routes | DEC-003 | Route completeness and route-to-dimension mapping |
+| 4 | validate_links | DEC-005 | Internal link integrity across all HTML pages |
+| 5 | validate_seo | DEC-007 | SEO metadata completeness on all HTML pages |
+| 6 | validate_reference | DEC-013 | Reference page generation from governed model |
+| 7 | validate_definitional | DEC-014 | Definitional page structure and content governance |
+| 8 | validate_engine | DEC-015 | Engine guidance file integrity |
+| 9 | validate_orthography | DEC-016 | Orthography governance — "Outmerchant" is the official form |
 
 ## Checks Enforced
 
@@ -37,7 +41,7 @@ Runs all validators and exits non-zero on any failure. The same command runs in 
 - No invalid score dimension, weight drift, or unmapped question
 - No undefined or malformed lexicon term
 - No active route without a file
-- Terminal tier name integrity ("OutMerchant" at 76–100)
+- Terminal tier name integrity ("Outmerchant" at 76–100)
 
 ## Checks Enforced by Review (not yet mechanical)
 
@@ -54,4 +58,4 @@ A failing gate is never overridden by urgency. Either the change is fixed to com
 
 ---
 
-*Governed under the OutMerchant Governance Operating System.*
+*Governed under the Outmerchant Governance Operating System.*
