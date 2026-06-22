@@ -413,8 +413,8 @@
       "route": "/levels/outmerchant/",
       "type": "level",
       "status": "active",
-      "purpose": "Define the OutMerchant tier (76–100) of the Merchant Sovereignty Score.",
-      "canonical_term": "OutMerchant",
+      "purpose": "Define the Outmerchant tier (76–100) of the Merchant Sovereignty Score.",
+      "canonical_term": "Outmerchant",
       "required_internal_links": [
         "/score/",
         "/lexicon/merchant-sovereignty/"

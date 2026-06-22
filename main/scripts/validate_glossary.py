@@ -45,8 +45,8 @@ def run():
     noun = next((t for t in terms if t["slug"] == "outmerchant-noun"), None)
     if not verb or verb["term"] != "outmerchant" or verb["type"] != "verb":
         errors.append("lexicon: constitutional term 'outmerchant' (verb, lowercase) missing or malformed (DEC-001)")
-    if not noun or noun["term"] != "OutMerchant" or noun["type"] != "noun":
-        errors.append("lexicon: constitutional term 'OutMerchant' (noun, CamelCase) missing or malformed (DEC-001)")
+    if not noun or noun["term"] != "Outmerchant" or noun["type"] != "noun":
+        errors.append("lexicon: constitutional term 'Outmerchant' (noun, initial capital only) missing or malformed (DEC-001, DEC-016)")
     return errors
 
 

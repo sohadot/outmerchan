@@ -17,6 +17,7 @@ import validate_reference
 import validate_routes
 import validate_score_model
 import validate_seo
+import validate_orthography
 
 VALIDATORS = [
     ("score model (SCORE_GOVERNANCE.md)", validate_score_model),
@@ -27,12 +28,13 @@ VALIDATORS = [
     ("reference standard (DEC-013)", validate_reference),
     ("definitional authority (DEC-014)", validate_definitional),
     ("score engine governance (DEC-015)", validate_engine),
+    ("orthography (DEC-016)", validate_orthography),
 ]
 
 
 def main():
     total = 0
-    print("OutMerchant Quality Gate")
+    print("Outmerchant Quality Gate")
     print("=" * 60)
     for name, module in VALIDATORS:
         errors = module.run()

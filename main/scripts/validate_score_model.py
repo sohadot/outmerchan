@@ -6,7 +6,7 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "main" / "data"
 
 FIXED_CODES = {"DEP", "OWN", "REP", "PAY", "FEE", "XBR", "AGT", "GOV"}
-FIXED_TIERS = [("Captured", 0, 25), ("Dependent", 26, 50), ("Emerging", 51, 75), ("OutMerchant", 76, 100)]
+FIXED_TIERS = [("Captured", 0, 25), ("Dependent", 26, 50), ("Emerging", 51, 75), ("Outmerchant", 76, 100)]
 
 
 def run():
@@ -66,8 +66,8 @@ def run():
             errors.append(
                 f"score: tier drift — expected {name} {lo}-{hi}, got {lvl['name']} {lvl['min']}-{lvl['max']} (inviolable, DEC-006)")
     terminal = max(levels, key=lambda x: x["max"])
-    if terminal["name"] != "OutMerchant" or terminal["max"] != 100:
-        errors.append("score: terminal tier must be 'OutMerchant' ending at 100 (inviolable, DEC-001/DEC-006)")
+    if terminal["name"] != "Outmerchant" or terminal["max"] != 100:
+        errors.append("score: terminal tier must be 'Outmerchant' ending at 100 (inviolable, DEC-001/DEC-006)")
     return errors
 
 
