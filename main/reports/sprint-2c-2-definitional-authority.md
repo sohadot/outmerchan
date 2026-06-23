@@ -1,7 +1,7 @@
 # Sprint 2C-2 Report — Canonical Lexicon + Protocol (Definitional Authority)
 
 **Date:** 2026-06-10
-**Decision:** DEC-014 — OutMerchant moved from standard surface to definitional authority
+**Decision:** DEC-014 — Outmerchant moved from standard surface to definitional authority
 **Gate result:** 🟢 GREEN — all 7 validators pass
 
 ---
@@ -86,4 +86,4 @@ Constraints honored: no monetization, no buyer/acquisition pages, no marketplace
 
 ---
 
-*Report maintained under the OutMerchant Governance Operating System.*
+*Report maintained under the Outmerchant Governance Operating System.*

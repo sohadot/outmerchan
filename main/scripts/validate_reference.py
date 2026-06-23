@@ -1,6 +1,6 @@
 """Enforces reference-standard integrity (Sprint 2C-1, DEC-013):
 dimension pages match score_dimensions.json, level pages match
-score_levels.json, the protected OutMerchant rank statement is present,
+score_levels.json, the protected Outmerchant rank statement is present,
 and required cross-links exist in the rendered pages."""
 import json
 import re
@@ -12,7 +12,7 @@ DATA = ROOT / "main" / "data"
 
 def page_html(route):
     path = ROOT / route.strip("/") / "index.html"
-    return path.read_text() if path.exists() else None
+    return path.read_text(encoding="utf-8") if path.exists() else None
 
 
 def hrefs(html):
@@ -21,8 +21,8 @@ def hrefs(html):
 
 def run():
     errors = []
-    dims = json.loads((DATA / "score_dimensions.json").read_text())["dimensions"]
-    levels = json.loads((DATA / "score_levels.json").read_text())["levels"]
+    dims = json.loads((DATA / "score_dimensions.json").read_text(encoding="utf-8"))["dimensions"]
+    levels = json.loads((DATA / "score_levels.json").read_text(encoding="utf-8"))["levels"]
 
     for d in dims:
         html = page_html(d["route"])
@@ -58,7 +58,7 @@ def run():
     om = page_html("/levels/outmerchant/")
     if om:
         if "protected" not in om.lower():
-            errors.append("reference: /levels/outmerchant/ does not define OutMerchant as a protected rank")
+            errors.append("reference: /levels/outmerchant/ does not define Outmerchant as a protected rank")
         if "DEC-006" not in om:
             errors.append("reference: /levels/outmerchant/ does not cite the protecting decision (DEC-006)")
     return errors

@@ -20,7 +20,7 @@ def route_to_file(route: str) -> Path:
 
 def run():
     errors = []
-    pages = json.loads((DATA / "pages.json").read_text())["pages"]
+    pages = json.loads((DATA / "pages.json").read_text(encoding="utf-8"))["pages"]
     routes = [p["route"] for p in pages]
     routeset = set(routes)
 
@@ -50,7 +50,7 @@ def run():
             errors.append(f"routes: active route {r} has no file at {route_to_file(r).relative_to(ROOT)}")
 
     # Orphan law: every active route must be reachable from '/'
-    nav = json.loads((DATA / "navigation.json").read_text())
+    nav = json.loads((DATA / "navigation.json").read_text(encoding="utf-8"))
     edges = {}
     for p in pages:
         edges.setdefault(p["route"], set()).update(p.get("required_internal_links", []))

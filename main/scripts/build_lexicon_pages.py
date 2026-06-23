@@ -75,9 +75,9 @@ EDITORIAL = {
 
 OUTMERCHANT_PAGE = {
     "route": "/lexicon/outmerchant/",
-    "context": "The headword carries the asset's deepest structural property: the verb names the act, the noun names the rank, and the rank is the terminal tier of the standard's own score. A merchant who measures Captured, Dependent, or Emerging has one natural path forward — and the destination permanently carries the standard's name, protected by recorded decisions (DEC-001, DEC-006) and an automated quality gate. The framework cannot be used without the name becoming the goal: that is the referential closure at the center of OutMerchant.",
+    "context": "The headword carries the asset's deepest structural property: the verb names the act, the noun names the rank, and the rank is the terminal tier of the standard's own score. A merchant who measures Captured, Dependent, or Emerging has one natural path forward — and the destination permanently carries the standard's name, protected by recorded decisions (DEC-001, DEC-006) and an automated quality gate. The framework cannot be used without the name becoming the goal: that is the referential closure at the center of Outmerchant.",
     "usage_verb": "They stopped renting their route to market and started owning it — channel by channel, rail by rail, they outmerchanted competitors twice their size.",
-    "usage_noun": "At 81 on the Sovereignty Score, no single platform, gateway, or intermediary could end her trade: she is an OutMerchant.",
+    "usage_noun": "At 81 on the Sovereignty Score, no single platform, gateway, or intermediary could end her trade: she is an Outmerchant.",
 }
 
 
@@ -88,9 +88,9 @@ def relation_link(term):
     if rel == "instrument":
         return "/score/", "the Merchant Sovereignty Score"
     if rel == "tier":
-        return ("/levels/outmerchant/", "the OutMerchant tier") if term["slug"] == "outmerchant-noun" \
+        return ("/levels/outmerchant/", "the Outmerchant tier") if term["slug"] == "outmerchant-noun" \
             else ("/levels/captured/", "the Captured tier")
-    return "/protocol/", "the OutMerchant Protocol"
+    return "/protocol/", "the Outmerchant Protocol"
 
 
 def head(route, title, description, jsonld):
@@ -106,7 +106,7 @@ def head(route, title, description, jsonld):
 <meta name="theme-color" content="#020408">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{ORIGIN}{route}">
-<meta property="og:site_name" content="OutMerchant">
+<meta property="og:site_name" content="Outmerchant">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
 <meta name="twitter:card" content="summary_large_image">
@@ -146,7 +146,7 @@ FOOTER = """<footer>
 """
 
 CANON_NOTE = """    <h2>Canonical Source</h2>
-    <p>This definition is first articulated, formally governed, and machine-published at OutMerchant.com. The text above is the governed definition, verbatim — it is generated from the same structured lexicon that machines read, and an automated quality gate rejects any divergence between the published page and the governed record. Definition changes happen only through a recorded decision, never silently.</p>"""
+    <p>This definition is first articulated, formally governed, and machine-published at Outmerchant.com. The text above is the governed definition, verbatim — it is generated from the same structured lexicon that machines read, and an automated quality gate rejects any divergence between the published page and the governed record. Definition changes happen only through a recorded decision, never silently.</p>"""
 
 
 def defined_term_jsonld(ts, route):
@@ -164,7 +164,7 @@ def defined_term_jsonld(ts, route):
         ] + [{
             "@type": "BreadcrumbList",
             "itemListElement": [
-                {"@type": "ListItem", "position": 1, "name": "OutMerchant", "item": f"{ORIGIN}/"},
+                {"@type": "ListItem", "position": 1, "name": "Outmerchant", "item": f"{ORIGIN}/"},
                 {"@type": "ListItem", "position": 2, "name": "Lexicon", "item": f"{ORIGIN}/lexicon/"},
                 {"@type": "ListItem", "position": 3, "name": ts[0]["term"], "item": f"{ORIGIN}{route}"},
             ],
@@ -187,7 +187,7 @@ def build_term_page(term, slug_route):
     e = EDITORIAL[term["slug"]]
     route = term["route"]
     rel_route, rel_label = relation_link(term)
-    title = f"{term['term']} — Canonical Definition | The OutMerchant Lexicon"
+    title = f"{term['term']} — Canonical Definition | The Outmerchant Lexicon"
     desc = term["definition"][:300]
     body = f"""    <p class="kicker">// The Lexicon — Canonical Definition</p>
     <h1>{term['term']} <span class="pos">{term['type']}</span></h1>
@@ -201,7 +201,7 @@ def build_term_page(term, slug_route):
     <p>{related_links(term, slug_route)}</p>
 {CANON_NOTE}
     <div class="crosslinks">
-      <p>This term operates inside <a href="{rel_route}">{rel_label}</a> and is governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
+      <p>This term operates inside <a href="{rel_route}">{rel_label}</a> and is governed by <a href="/protocol/">the Outmerchant Protocol</a>.</p>
       <a class="cta" href="/score/">→ Measure Your Sovereignty</a>
       <a class="cta-secondary" href="/lexicon/">Full Lexicon</a>
     </div>"""
@@ -214,22 +214,22 @@ def build_outmerchant_page(slug_route):
     noun = next(t for t in terms if t["slug"] == "outmerchant-noun")
     p = OUTMERCHANT_PAGE
     route = p["route"]
-    title = "outmerchant (v.) / OutMerchant (n.) — Canonical Definition | The OutMerchant Lexicon"
+    title = "outmerchant (v.) / Outmerchant (n.) — Canonical Definition | The Outmerchant Lexicon"
     desc = ("outmerchant, verb: to out-trade competitors by owning, rather than renting, the route to the buyer. "
-            "OutMerchant, noun: the protected highest rank (76–100) of the Merchant Sovereignty Score.")
+            "Outmerchant, noun: the protected highest rank (76–100) of the Merchant Sovereignty Score.")
     body = f"""    <p class="kicker">// The Lexicon — Canonical Definition — The Headword</p>
-    <h1>outmerchant <span class="pos">verb</span> / OutMerchant <span class="pos">noun</span></h1>
+    <h1>outmerchant <span class="pos">verb</span> / Outmerchant <span class="pos">noun</span></h1>
     <h2>outmerchant <span class="pos">verb</span></h2>
     <div class="canon-def"><p>{verb['definition']}</p></div>
     <p><em>“{p['usage_verb']}”</em></p>
-    <h2>OutMerchant <span class="pos">noun</span></h2>
+    <h2>Outmerchant <span class="pos">noun</span></h2>
     <div class="canon-def"><p>{noun['definition']}</p></div>
     <p><em>“{p['usage_noun']}”</em></p>
     <h2>The Referential Closure</h2>
     <p>{p['context']}</p>
 {CANON_NOTE}
     <div class="crosslinks">
-      <p>The noun is formally defined as a tier at <a href="/levels/outmerchant/">the OutMerchant rank</a>; the act is measured by <a href="/score/">the Merchant Sovereignty Score</a>; both are governed by <a href="/protocol/">the OutMerchant Protocol</a>. Related: <a href="/lexicon/merchant-sovereignty/">Merchant Sovereignty</a>, <a href="/lexicon/route-to-buyer-control/">Route-to-Buyer Control</a>.</p>
+      <p>The noun is formally defined as a tier at <a href="/levels/outmerchant/">the Outmerchant rank</a>; the act is measured by <a href="/score/">the Merchant Sovereignty Score</a>; both are governed by <a href="/protocol/">the Outmerchant Protocol</a>. Related: <a href="/lexicon/merchant-sovereignty/">Merchant Sovereignty</a>, <a href="/lexicon/route-to-buyer-control/">Route-to-Buyer Control</a>.</p>
       <a class="cta" href="/score/">→ Measure Your Sovereignty</a>
       <a class="cta-secondary" href="/lexicon/">Full Lexicon</a>
     </div>"""
@@ -239,9 +239,9 @@ def build_outmerchant_page(slug_route):
 
 def build_index(slug_route):
     route = "/lexicon/"
-    title = "The OutMerchant Lexicon — Canonical Definitions of Merchant Sovereignty | OutMerchant"
+    title = "The Outmerchant Lexicon — Canonical Definitions of Merchant Sovereignty | Outmerchant"
     desc = ("The canonical lexicon of the Merchant Sovereignty standard: governed definitions of outmerchant, "
-            "OutMerchant, Merchant Sovereignty, Platform Capture, Machine-Readable Trust, Agent-Selectable "
+            "Outmerchant, Merchant Sovereignty, Platform Capture, Machine-Readable Trust, Agent-Selectable "
             "Merchant, and every term the standard names and measures.")
     active_terms = [t for t in terms if t["status"] == "active"]
     jsonld = json.dumps({
@@ -250,9 +250,9 @@ def build_index(slug_route):
             {
                 "@type": "DefinedTermSet",
                 "@id": f"{ORIGIN}/#lexicon",
-                "name": "The OutMerchant Lexicon",
+                "name": "The Outmerchant Lexicon",
                 "url": f"{ORIGIN}/lexicon/",
-                "description": "Canonical definitions of the merchant sovereignty vocabulary, first articulated and governed at OutMerchant.com.",
+                "description": "Canonical definitions of the merchant sovereignty vocabulary, first articulated and governed at Outmerchant.com.",
                 "hasDefinedTerm": [
                     {
                         "@type": "DefinedTerm",
@@ -266,7 +266,7 @@ def build_index(slug_route):
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "OutMerchant", "item": f"{ORIGIN}/"},
+                    {"@type": "ListItem", "position": 1, "name": "Outmerchant", "item": f"{ORIGIN}/"},
                     {"@type": "ListItem", "position": 2, "name": "Lexicon", "item": f"{ORIGIN}/lexicon/"},
                 ],
             },
@@ -278,14 +278,14 @@ def build_index(slug_route):
             continue
         seen.add(t["route"])
         if t["route"] == "/lexicon/outmerchant/":
-            name, typ = "outmerchant / OutMerchant", "verb / noun"
+            name, typ = "outmerchant / Outmerchant", "verb / noun"
             d = "The headword: the verb names the act of out-trading by ownership; the noun names the protected highest rank of the Sovereignty Score."
         else:
             name, typ, d = t["term"], t["type"], t["definition"]
         items.append(f'      <a href="{t["route"]}"><span class="t">{name}<em>{typ}</em></span><span class="d">{d}</span></a>')
     body = f"""    <p class="kicker">// The Lexicon — The Language of the Category</p>
-    <h1>The OutMerchant Lexicon</h1>
-    <p>Every strong category needs a dictionary. This is the canonical lexicon of <strong>Merchant Sovereignty</strong>: the governed vocabulary through which the condition is named, measured by <a href="/score/">the Sovereignty Score</a>, and protected under <a href="/protocol/">the OutMerchant Protocol</a>.</p>
+    <h1>The Outmerchant Lexicon</h1>
+    <p>Every strong category needs a dictionary. This is the canonical lexicon of <strong>Merchant Sovereignty</strong>: the governed vocabulary through which the condition is named, measured by <a href="/score/">the Sovereignty Score</a>, and protected under <a href="/protocol/">the Outmerchant Protocol</a>.</p>
     <p>Admission to this lexicon is governed by law, not by convenience: no term enters without a definition, a function inside the system, a relationship to other terms, and a place in the measurement. The lexicon a machine reads and the lexicon a human reads are the same lexicon — every definition below is published verbatim from the governed structured record.</p>
     <div class="term-list">
 {chr(10).join(items)}
@@ -303,11 +303,11 @@ def main():
     built = []
     out = ROOT / "lexicon" / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(build_index(slug_route))
+    out.write_text(build_index(slug_route), encoding="utf-8")
     built.append("/lexicon/")
     out = ROOT / "lexicon" / "outmerchant" / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(build_outmerchant_page(slug_route))
+    out.write_text(build_outmerchant_page(slug_route), encoding="utf-8")
     built.append("/lexicon/outmerchant/")
     for t in terms:
         if t["slug"] in ("outmerchant-verb", "outmerchant-noun") or t["route"] == "/score/":
@@ -316,7 +316,7 @@ def main():
             continue
         path = ROOT / t["route"].strip("/") / "index.html"
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(build_term_page(t, slug_route))
+        path.write_text(build_term_page(t, slug_route), encoding="utf-8")
         built.append(t["route"])
     print(f"built {len(built)} lexicon pages:")
     for r in built:

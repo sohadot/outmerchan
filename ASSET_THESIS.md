@@ -1,105 +1,90 @@
-# Asset Thesis — Outmerchant.com
+# Asset Thesis - Outmerchant.com
 
 > The single question all layers of this repository serve:
-> **How does Outmerchant.com become a Category Artifact — a digital asset that does not merely explain its category, but carries its name, defines its language, measures it, and makes acquiring it a shortcut to owning a position inside the future of commerce?**
+> **How does Outmerchant.com become a Category Artifact: a digital asset that does not merely explain its category, but carries its name, defines its language, measures it, and makes acquiring it a shortcut to owning a position inside the future of commerce?**
 >
 > **Every layer serves the merchant. No layer owns the merchant.**
 
 ---
 
-## The Central Question of the Category
+## The Central Question
 
-> Who owns the merchant's route to the buyer in the era of platforms, AI, multi-rail payments, and decentralization?
+Who owns the merchant's route to the buyer in the era of platforms, AI-mediated discovery, multi-rail payments, fragmented trust, and changing governance systems?
 
-Outmerchant exists to be the place where this question is defined, measured, given vocabulary, explained dimension by dimension, and turned into an instrument. Inevitability is not declared. It is constructed as a semantic and operational monopoly around the category's central question.
+Outmerchant exists to make this question defined, measurable, explainable, machine-readable, and governed. It is not a normal website, startup, SaaS funnel, marketplace, or domain-for-sale page. It is a strategic reference asset whose value is built through category gravity, semantic discipline, public governance, and proof over time.
 
 ## The Category
 
-- **Category name:** **Merchant Sovereignty** (two words, sayable by others without effort — DEC-009)
-- **Category owner:** Outmerchant.com — defines the vocabulary, measures the condition, names the ranks, protects the standard
-- **Category artifact:** A digital asset that *is* the standard, not merely a commentary on it
+- **Category name:** Merchant Sovereignty
+- **Category owner:** Outmerchant.com
+- **Category artifact:** the standard, not commentary about the standard
+- **Terminal rank:** Outmerchant, protected by recorded decision and automated validation
 
-## The Asset's Structural Uniqueness
+Merchant Sovereignty is the condition in which a merchant controls the route to the buyer: channels, customer relationships, reputation, settlement, margin, machine readability, and the rules of their commerce.
 
-Category artifacts cannot be copied at cost.
+## Current State
 
-A competitor can clone a blog post. They cannot clone:
-- A **governed lexicon** that has been cited as a definitional source
-- A **scoring instrument** that has measured thousands of merchants
-- A **decision log** that shows every significant choice and its rationale — making the structure historically provable
-- A **quality gate** that enforces the standard automatically — making drift structurally impossible
-- A **terminal rank name** (*Outmerchant*) that has become the word for the thing it measures
+### Definitional Layer Complete
 
-The moat is not the content. The moat is the accumulated governance and usage record that makes the content unchallengeable.
+The canonical lexicon is live. Fifteen governed terms define the vocabulary of Merchant Sovereignty, including outmerchant as the verb, Outmerchant as the noun/rank, Merchant Sovereignty, Route-to-Buyer Control, Machine-Readable Trust, Agentic Commerce Readiness, and Agent-Selectable Merchant.
 
-## What the Asset Becomes At Each Layer
+### Governance Operating System Complete
 
-### Layer 1: Definitional Authority
-> Outmerchant.com is where Merchant Sovereignty is defined.
+The decision log, route governance, score governance, lexicon governance, claim policy, AI readability policy, and quality gate operate as one enforcement system. The asset does not rely on intention alone; it rejects drift mechanically where drift can be checked.
 
-The lexicon exists. JSON-LD structured data is live. The terms are canonical and machine-readable. At this layer, the asset is a definitional source — not yet a measurement tool, not yet a standard. Its value is epistemic: it has vocabulary that others must use or define against.
+### Score Engine Live and Reinforced
 
-### Layer 2: Governance Infrastructure
-> The asset governs itself. Rules are not declared; they are enforced.
+The `/score/` diagnostic engine is live and governed by structured data. It measures 8 dimensions across 20 active questions and classifies results into 4 sovereignty levels: Captured, Dependent, Emerging, and Outmerchant.
 
-The quality gate runs on every push. The decision log is public. The lexicon has an admission law. The score model has inviolable tiers. At this layer, the asset has acquired the property that makes it impossible to maintain without integrity: the system rejects its own violations.
+### Reference Standard Live
 
-### Layer 3: Measurement Tool
-> Outmerchant measures what it claims to define.
+The dimension pages, level pages, lexicon pages, protocol page, and score engine now form a reference standard. The system explains what it measures and measures what it defines.
 
-The Merchant Sovereignty Score is live: 8 dimensions, 20 governed questions, 4 tiers, terminal tier *Outmerchant*. The score turns the vocabulary into an instrument. A merchant who takes the diagnostic becomes a data point; a data point becomes evidence; evidence becomes authority.
+### Lexicon and Protocol Live
 
-### Layer 4: Reference Standard
-> Every dimension and tier has a reference page. The standard explains itself.
+The `/lexicon/` layer provides the canonical vocabulary. The `/protocol/` layer explains how the lexicon, score, reference pages, quality gate, and decision log bind into one governed system.
 
-Eight dimension pages and four level pages document what the score measures and why. The lexicon has individual term pages. The protocol page explains how the system binds together. The asset is now self-explanatory: it can be handed to a journalist, an acquirer, or an AI agent and understood without a guide.
+### Agentic Commerce Layer Active
 
-### Layer 5: AI Commerce Intelligence
-> The standard speaks to machines, not only to humans.
+The `/agentic-commerce/` layer extends Merchant Sovereignty into AI-mediated discovery and machine-readable trust. Its claims remain structural and bounded: merchants become more discoverable and evaluable when their identity, catalog, terms, and trust signals are structured outside any single platform.
 
-The AI Merchant Sovereignty, Agentic Commerce Readiness, Machine-Readable Trust, and Agent-Selectable Merchant layers are built. The asset is positioned for the agentic commerce era: it explains to both merchants and AI systems what makes a merchant discoverable, trustable, and selectable in AI-mediated commerce.
+### Search Discovery Started
 
-### Layers 6–8: Indexation, Monetization, Acquisition
-> The asset converts from a standard into a business.
+Google Search Console and Bing Webmaster discovery have begun and are recorded in the indexation intelligence log. This is discovery, not proof of authority. The asset waits for real indexed-page, canonical, crawl, impression, and query data before the next corrective phase.
 
-Search Console verification, sitemap optimization, and thin-page audits in Layer 6. Revenue surfaces in Layer 7 (only after proof of indexation and traffic). Buyer dossier, negotiation posture, and strategic acquisition page in Layer 8. These layers are gated: they do not exist until the earlier layers have proven themselves.
+## Current Phase
 
-## The Acquirer Thesis
+**Orthography Lock + Sovereign Quality Audit.**
 
-Why would someone pay for Outmerchant.com?
+The present phase strengthens the road under the asset: official spelling, metadata consistency, report discipline, claim safety, quality gates, and post-enrichment audit quality. Outmerchant must behave as one mature word because the word itself is part of the asset's value.
 
-Not for the traffic (though traffic is expected). Not for the revenue (though revenue is planned). For the **category position**: whoever acquires Outmerchant acquires the canonical definition of Merchant Sovereignty, the standard that measures it, the terminal rank that names it, and the governance record that proves the position was built deliberately and cannot be imitated at cost.
+## Next Phase
 
-In acquisitions of standards and category assets, the premium is not for content. It is for position. Content can be created; position must be earned. Outmerchant's position is earned through governance depth, vocabulary authority, and the irreproducibility of the decision record.
+**Sprint 3D - Indexation Intelligence Review & Corrective Authority Reinforcement.**
 
-## What Makes This Different From a Content Site
+This phase begins only after real Google/Bing data exists:
 
-| Content site | Outmerchant |
+- indexed pages
+- crawled not indexed
+- discovered not indexed
+- canonical status
+- first impressions
+- first queries
+
+The next layer is not another content expansion. It is an evidence-led review of whether the road is being recognized by external systems.
+
+## What Makes This Different
+
+| Ordinary content site | Outmerchant |
 |---|---|
-| Articles that explain a concept | A **governed standard** with an enforcement layer |
-| A glossary | A **canonical lexicon** with an admission law |
-| A quiz | A **measurement instrument** with inviolable tiers |
-| A blog post about sovereignty | A **terminal rank** (*Outmerchant*) that names the destination |
-| Opinion | A **decision log** that proves every significant choice |
+| Articles about a topic | Governed standard with an enforcement layer |
+| Glossary | Canonical lexicon with admission law |
+| Quiz | Measurement instrument with inviolable tiers |
+| Marketing posture | Public decision record and quality gate |
+| Traffic chase | Category-origin reference system |
 
-## Build Order (strict)
-
-| Phase | Layer | Status |
-|-------|-------|--------|
-| 1 | Definitional layer — lexicon on the live surface, JSON-LD, canonical, sitemap, robots | ✅ Done |
-| 2 | Governance Operating System — laws, governed data, quality gate, decision log | ✅ Done |
-| 3 | **Diagnostic product — `/score/` working from the governed JSON, indexable, 0–100, terminal tier Outmerchant** | ✅ Done |
-| 4 | Reference standard — 8 dimension pages, 4 level pages, lexicon pages, protocol page | ✅ Done |
-| 5 | AI commerce layer — AI Merchant Sovereignty, Agentic Commerce Readiness, Machine-Readable Trust, Agent-Selectable Commerce | ✅ Done |
-| 6 | **Orthography Lock + Sovereign Quality Audit (Sprint 3C)** | **Current** |
-| 7 | Indexation Intelligence — Search Console + sitemap + thin page audit | Next |
-| 8 | Monetization — only after proof | Gated |
-| 9 | Acquisition readiness — buyer dossier, revenue proof, traffic proof, category map, strategic acquisition page, negotiation posture | Final |
-
-## The Practical Decision
-
-Every question above translates into one direct step: **Sprint 2B makes Outmerchant measure what it claims to define.** `/score/` is not merely a tool — it is the first moment the asset converts from conceptual story into a practical, indexable, usable, eventually sellable standard. After `/score/`, everything becomes easier: SEO, reference status, audiences, income, acquirability.
+The objective is not to make Outmerchant louder. The objective is to make Outmerchant harder to ignore.
 
 ---
 
-*Constitutional layer of the Outmerchant Governance Operating System. Changes to this thesis require a `DECISION_LOG.md` entry. Strategic doctrine is mirrored in the Sovereign Asset System dossier.*
+*Constitutional layer of the Outmerchant Governance Operating System. Changes to this thesis require a `DECISION_LOG.md` entry.*

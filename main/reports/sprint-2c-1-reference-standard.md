@@ -1,7 +1,7 @@
 # Sprint 2C-1 Report — Reference Standard Pages
 
 **Date:** 2026-06-10
-**Decision:** DEC-013 — OutMerchant moved from diagnostic product to reference standard surface
+**Decision:** DEC-013 — Outmerchant moved from diagnostic product to reference standard surface
 **Gate result:** 🟢 GREEN — all 6 validators pass
 
 ---
@@ -70,7 +70,7 @@ Every active page verified to carry: canonical URL, unique title, unique meta de
 GATE GREEN
 ```
 
-Protected-rank integrity confirmed: tier names/boundaries unchanged; `/levels/outmerchant/` defines OutMerchant as the protected highest sovereignty rank citing DEC-001/DEC-006; the gate rejects any drift.
+Protected-rank integrity confirmed: tier names/boundaries unchanged; `/levels/outmerchant/` defines Outmerchant as the protected highest sovereignty rank citing DEC-001/DEC-006; the gate rejects any drift.
 
 Sprint constraints honored: no monetization, no email capture, no marketplace claim, no buyer outreach, no crypto-hype register.
 
@@ -88,4 +88,4 @@ Sprint constraints honored: no monetization, no email capture, no marketplace cl
 
 ---
 
-*Report maintained under the OutMerchant Governance Operating System.*
+*Report maintained under the Outmerchant Governance Operating System.*

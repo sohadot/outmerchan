@@ -21,7 +21,7 @@
     },
     {
       "slug": "outmerchant-noun",
-      "term": "OutMerchant",
+      "term": "Outmerchant",
       "type": "noun",
       "status": "active",
       "definition": "A merchant who has achieved measurable commercial sovereignty: one who owns their channels, customer relationships, reputation, settlement options, and margin. The highest classification (76\u2013100) on the Merchant Sovereignty Score.",
@@ -57,7 +57,7 @@
       "term": "Merchant Sovereignty Score",
       "type": "noun",
       "status": "active",
-      "definition": "A 0\u2013100 measurement of a merchant's real commercial independence, assessed across eight dimensions of control and classifying every merchant into four tiers: Captured, Dependent, Emerging, OutMerchant.",
+      "definition": "A 0\u2013100 measurement of a merchant's real commercial independence, assessed across eight dimensions of control and classifying every merchant into four tiers: Captured, Dependent, Emerging, Outmerchant.",
       "system_function": "The asset's measurement instrument; converts the doctrine into a diagnosable, comparable standard.",
       "related": [
         "merchant-sovereignty",

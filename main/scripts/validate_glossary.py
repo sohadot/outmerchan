@@ -12,8 +12,8 @@ VALID_STATUS = {"active", "deprecated"}
 
 def run():
     errors = []
-    terms = json.loads((DATA / "glossary_terms.json").read_text())["terms"]
-    routes = {p["route"] for p in json.loads((DATA / "pages.json").read_text())["pages"]}
+    terms = json.loads((DATA / "glossary_terms.json").read_text(encoding="utf-8"))["terms"]
+    routes = {p["route"] for p in json.loads((DATA / "pages.json").read_text(encoding="utf-8"))["pages"]}
     slugs = [t["slug"] for t in terms]
     slugset = set(slugs)
 
@@ -45,8 +45,8 @@ def run():
     noun = next((t for t in terms if t["slug"] == "outmerchant-noun"), None)
     if not verb or verb["term"] != "outmerchant" or verb["type"] != "verb":
         errors.append("lexicon: constitutional term 'outmerchant' (verb, lowercase) missing or malformed (DEC-001)")
-    if not noun or noun["term"] != "OutMerchant" or noun["type"] != "noun":
-        errors.append("lexicon: constitutional term 'OutMerchant' (noun, CamelCase) missing or malformed (DEC-001)")
+    if not noun or noun["term"] != "Outmerchant" or noun["type"] != "noun":
+        errors.append("lexicon: constitutional term 'Outmerchant' (noun, CamelCase) missing or malformed (DEC-001)")
     return errors
 
 

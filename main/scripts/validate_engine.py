@@ -26,14 +26,14 @@ def run():
 
     # Governed guidance layer
     try:
-        guidance = json.loads((DATA / "engine_guidance.json").read_text())
+        guidance = json.loads((DATA / "engine_guidance.json").read_text(encoding="utf-8"))
     except FileNotFoundError:
         return ["engine: engine_guidance.json missing"]
     except json.JSONDecodeError as exc:
         return [f"engine: engine_guidance.json does not parse ({exc})"]
 
-    dims = json.loads((DATA / "score_dimensions.json").read_text())["dimensions"]
-    levels = json.loads((DATA / "score_levels.json").read_text())["levels"]
+    dims = json.loads((DATA / "score_dimensions.json").read_text(encoding="utf-8"))["dimensions"]
+    levels = json.loads((DATA / "score_levels.json").read_text(encoding="utf-8"))["levels"]
     dim_codes = {d["code"] for d in dims}
     gdims = guidance.get("dimensions", {})
 
@@ -56,7 +56,7 @@ def run():
         errors.append("engine: engine_version missing from engine_guidance.json")
 
     # The engine surface
-    html = (ROOT / "score" / "index.html").read_text()
+    html = (ROOT / "score" / "index.html").read_text(encoding="utf-8")
     low = html.lower()
 
     if "engine boundary" not in low and "diagnostic boundary" not in low:

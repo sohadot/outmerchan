@@ -1,6 +1,6 @@
 # Category Gravity
 
-> How Outmerchant.com earns the right to be the category's canonical source — not by declaration, but by becoming the place that defines, measures, and governs the category better than any alternative.
+> How outmerchant.com earns the right to be the category's canonical source — not by declaration, but by becoming the place that defines, measures, and governs the category better than any alternative.
 >
 > **Every layer serves the merchant. No layer owns the merchant.**
 
@@ -46,7 +46,7 @@ A category standard with a public decision log, an automated quality gate, and a
 
 Category gravity does not come from asking for recognition. It comes from building a structure so correct that recognition becomes the rational response of anyone who engages with the category seriously.
 
-Outmerchant does not pitch itself to journalists. It builds the definitional infrastructure that journalists need when they write about merchant sovereignty. Outmerchant does not ask practitioners to adopt its vocabulary. It builds the vocabulary so precisely and publicly that alternatives cost more effort to maintain.
+Outmerchant does not pitch itself to journalists. It builds the definitional infrastructure that journalists need when they write about Merchant Sovereignty. Outmerchant does not ask practitioners to adopt its vocabulary. It builds the vocabulary so precisely and publicly that alternatives cost more effort to maintain.
 
 This posture is codified: no outreach, no pitch, no solicitation before the asset has earned the right to be cited — which means before value extraction is activated. Doctrine codified in `CATEGORY_GRAVITY.md`; governing sentence: *"Outmerchant does not ask the market to buy it. It builds the category gravity that makes ignoring it strategically expensive."* Any future proposal for outreach, sale posture, monetization, or marketplace claims must supersede this decision on the record first.
 

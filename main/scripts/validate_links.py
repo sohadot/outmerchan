@@ -9,9 +9,9 @@ DATA = ROOT / "main" / "data"
 
 def run():
     errors = []
-    pages = json.loads((DATA / "pages.json").read_text())["pages"]
-    links = json.loads((DATA / "internal_links.json").read_text())["links"]
-    nav = json.loads((DATA / "navigation.json").read_text())
+    pages = json.loads((DATA / "pages.json").read_text(encoding="utf-8"))["pages"]
+    links = json.loads((DATA / "internal_links.json").read_text(encoding="utf-8"))["links"]
+    nav = json.loads((DATA / "navigation.json").read_text(encoding="utf-8"))
     routeset = {p["route"] for p in pages}
 
     # Every edge must connect registered routes
@@ -41,7 +41,7 @@ def run():
         path = ROOT / "index.html" if p["route"] == "/" else ROOT / p["route"].strip("/") / "index.html"
         if not path.exists():
             continue
-        html = path.read_text()
+        html = path.read_text(encoding="utf-8")
         ids = set(re.findall(r'id="([^"]+)"', html))
         for href in re.findall(r'href="(#[^"]+)"', html):
             if href[1:] not in ids:
@@ -62,7 +62,7 @@ def run():
     for r in active_routes:
         if r != "/" and inbound.get(r, 0) == 0:
             errors.append(f"links: active route {r} has no inbound internal links (orphan on the live surface)")
-    html = (ROOT / "index.html").read_text()
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
     ids = set(re.findall(r'id="([^"]+)"', html))
     for item in nav.get("primary", []):
         target = item["target"]

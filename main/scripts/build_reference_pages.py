@@ -79,9 +79,9 @@ DIM_CONTENT = {
     "AGT": {
         "slug": "ai-commerce-readiness",
         "meaning": "AI Commerce Readiness measures whether an AI buying agent can find, parse, and trust your commerce. It asks whether your catalog is machine-readable, whether your terms are structured, and whether your identity and trust signals can be verified by software that has no patience for prose.",
-        "why": "AI is becoming a control layer in discovery, comparison, trust, and purchase routing. Merchants will increasingly be found, evaluated, and selected by agents acting for buyers. The merchant who is not machine-legible is invisible to that demand layer; the merchant who is legible only through one platform's feed has traded the old capture for a newer one. The goal is to be an agent-selectable merchant — legible and selectable by AI without surrendering sovereignty to AI-controlled market access.",
+        "why": "AI is becoming a control layer in discovery, comparison, trust, and purchase routing. Merchants will increasingly be found, evaluated, and selected by agents acting for buyers. The merchant who is not machine-legible may become less visible to that demand layer; the merchant who is legible only through one platform's feed has traded the old capture for a newer one. The goal is to be an agent-selectable merchant — legible and selectable by AI without surrendering sovereignty to AI-controlled market access.",
         "low": "No structured catalog data outside a platform's proprietary system. Terms exist as prose, if at all. An AI agent asked to verify this merchant finds nothing it can check.",
-        "high": "Catalog fully structured and openly accessible. Pricing, shipping, and returns published in machine-readable form. Identity and trust signals structured and independently verifiable — the merchant is selectable by an agent on the merchant's own credentials.",
+        "high": "Catalog fully structured and openly accessible. Pricing, shipping, and returns published in machine-readable form. Identity and trust signals structured and independently verifiable — the merchant becomes more likely to be discoverable and evaluable by agents on the merchant's own credentials.",
         "action": "Add structured data to your products and commercial terms on your own domain — start with standard schema.org markup for products, offers, and your organization. Make yourself the merchant an agent can verify.",
         "level": "/levels/emerging/",
     },
@@ -102,25 +102,25 @@ LEVEL_CONTENT = {
         "meaning": "Captured is the lowest tier of the Merchant Sovereignty Score. It names the condition in which the infrastructure owns the merchant: the platform holds the margin, the reputation, the customer relationship, and the route to the buyer. The merchant operates — but only at the infrastructure's pleasure. The standard's lexicon calls the mechanism platform capture: the end-state of unmanaged platform dependency.",
         "who": "Typically: marketplace-only sellers, social-commerce sellers whose entire funnel lives inside one app, and merchants whose storefront, payments, fulfillment, and customer contact all run through a single provider stack. Often successful in volume — capture is a control condition, not a revenue condition. Many captured merchants are profitable right up until the decision that ends them.",
         "pattern": "One dominant channel. One payment rail. Buyer contact mediated entirely by the platform. Reputation hostage to one database. Route-to-buyer costs unmeasured. No exit paths. Rules rewritten above the merchant's head, absorbed silently.",
-        "path": "Movement out of Captured starts with the two dimensions that loosen the platform's grip fastest: Platform Dependency and Customer Ownership. Open one channel no third party can switch off, and start holding consented, direct buyer contact. Re-measure. The path runs through Dependent and Emerging — and its terminal state is the rank that carries the standard's name: OutMerchant.",
+        "path": "Movement out of Captured starts with the two dimensions that loosen the platform's grip fastest: Platform Dependency and Customer Ownership. Open one channel no third party can switch off, and start holding consented, direct buyer contact. Re-measure. The path runs through Dependent and Emerging — and its terminal state is the rank that carries the standard's name: Outmerchant.",
     },
     "Dependent": {
         "slug": "dependent",
         "meaning": "Dependent is the second tier of the Merchant Sovereignty Score. The merchant is partially free: they operate real channels of their own, but on borrowed infrastructure — platform-dominated revenue, single-rail settlement, and trust that still lives mostly in other people's databases. The cage door is open, but the merchant still sleeps inside.",
         "who": "Typically: merchants with their own storefront whose revenue is still dominated by one marketplace; DTC brands that own their site but depend on one payment provider and one ad platform for nearly all discovery; sellers who hold some customer data but could not survive their primary channel's hostility.",
         "pattern": "Owned channel exists but is secondary. One settlement rail carries everything. A meaningful minority of customers are directly reachable; the majority are not. Reputation partially archived, not independently verifiable. Exit paths known but undocumented.",
-        "path": "Movement out of Dependent is about converting partial ownership into structural ownership: make the owned channel carry real revenue, add and test a second independent settlement rail, and make reputation portable and provable. Re-measure quarterly. The destination of the path is the protected highest rank — OutMerchant.",
+        "path": "Movement out of Dependent is about converting partial ownership into structural ownership: make the owned channel carry real revenue, add and test a second independent settlement rail, and make reputation portable and provable. Re-measure quarterly. The destination of the path is the protected highest rank — Outmerchant.",
     },
     "Emerging": {
         "slug": "emerging",
         "meaning": "Emerging is the third tier of the Merchant Sovereignty Score. The merchant sees the cage and is building the exit: channels diversified, direct customer relationships growing, settlement optionality real. What remains are the deeper layers — portable verifiable reputation, machine-readable trust, and governance independence — the dimensions that separate operating freely from ruling your own commerce.",
         "who": "Typically: established DTC brands with diversified acquisition; merchants running genuinely multi-channel operations with meaningful owned revenue; operators who have consciously begun treating sovereignty as a strategy rather than an accident of growth.",
         "pattern": "No single channel above a quarter to a third of revenue. Direct contact with a substantial share of buyers. Two or more usable settlement rails. The remaining gaps are characteristic: reputation not yet independently verifiable, catalog and terms not yet machine-readable, exit paths not yet documented and tested.",
-        "path": "The path from Emerging runs through the standard's most forward-looking dimensions: make your trust machine-readable and independently verifiable, become an agent-selectable merchant, and document a tested exit path for every critical provider. The remaining distance is governance, not operations. At its end stands the terminal rank: OutMerchant.",
+        "path": "The path from Emerging runs through the standard's most forward-looking dimensions: make your trust machine-readable and independently verifiable, become an agent-selectable merchant, and document a tested exit path for every critical provider. The remaining distance is governance, not operations. At its end stands the terminal rank: Outmerchant.",
     },
-    "OutMerchant": {
+    "Outmerchant": {
         "slug": "outmerchant",
-        "meaning": "OutMerchant is the highest tier of the Merchant Sovereignty Score — and it is a protected rank, not a brand name used decoratively. Under the standard's public governance, the terminal tier permanently carries the name OutMerchant (decisions DEC-001 and DEC-006), and an automated quality gate rejects any change to its name or boundaries. The rank defines the standard's terminal state: a merchant who owns their channels, customers, reputation, settlement options, margin, and the rules of their own commerce. To complete the standard is to become an OutMerchant — the noun is the destination of the verb.",
+        "meaning": "Outmerchant is the highest tier of the Merchant Sovereignty Score — and it is a protected rank, not a brand name used decoratively. Under the standard's public governance, the terminal tier permanently carries the name Outmerchant (decisions DEC-001 and DEC-006), and an automated quality gate rejects any change to its name or boundaries. The rank defines the standard's terminal state: a merchant who owns their channels, customers, reputation, settlement options, margin, and the rules of their own commerce. To complete the standard is to become an Outmerchant — the noun is the destination of the verb.",
         "who": "Merchants who have made sovereignty structural: no single point of control can terminate or capture their trade. Their commerce is legible to buyers, to other markets, and to AI agents — on their own credentials, without any platform vouching for them. They use infrastructure everywhere and are owned by it nowhere.",
         "pattern": "All eight dimensions in high control: distributed channels with owned primary revenue; direct consented customer relationships; independently verifiable portable reputation; multi-rail settlement including cross-border; measured and minimized route-to-buyer leakage; structured machine-readable catalog, terms, and trust; documented, tested exit paths from every critical provider. Every layer serves the merchant. No layer owns the merchant.",
         "path": "The movement at this tier is holding the rank. Sovereignty decays silently — a channel quietly grows past its share, a rail consolidates, a new dependency arrives inside a convenient tool. Re-measure on a schedule, re-test exit paths annually, and treat every new provider as a governance decision before it becomes a dependency.",
@@ -192,7 +192,7 @@ def page(route, title, description, kicker, h1, body, breadcrumb_name):
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "OutMerchant", "item": f"{ORIGIN}/"},
+                    {"@type": "ListItem", "position": 1, "name": "Outmerchant", "item": f"{ORIGIN}/"},
                     {"@type": "ListItem", "position": 2, "name": "Merchant Sovereignty Score", "item": f"{ORIGIN}/score/"},
                     {"@type": "ListItem", "position": 3, "name": breadcrumb_name, "item": f"{ORIGIN}{route}"},
                 ],
@@ -211,7 +211,7 @@ def page(route, title, description, kicker, h1, body, breadcrumb_name):
 <meta name="theme-color" content="#020408">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{ORIGIN}{route}">
-<meta property="og:site_name" content="OutMerchant">
+<meta property="og:site_name" content="Outmerchant">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
 <meta name="twitter:card" content="summary_large_image">
@@ -252,10 +252,13 @@ def build_dimension(dim):
     qs = [q for q in questions if q["dimension"] == dim["code"]]
     q_items = "\n".join(f"      <li>{q['text']}</li>" for q in qs)
     route = dim["route"]
-    title = f"{dim['name']} — Dimension {dim['order']:02d} of the Merchant Sovereignty Score | OutMerchant"
+    title = f"{dim['name']} — Dimension {dim['order']:02d} of the Merchant Sovereignty Score | Outmerchant"
     desc = (f"{dim['name']} is dimension {dim['order']:02d} ({dim['code']}) of the Merchant Sovereignty Score: "
             f"{dim['question']} What it means, why it matters to merchant sovereignty, and what low and high control look like.")
     level_name = next(l["name"] for l in levels if l["route"] == c["level"])
+    agentic_link = ""
+    if dim["code"] == "AGT":
+        agentic_link = '      <p>For the full reference on AI-mediated commerce, see <a href="/agentic-commerce/">Agentic Commerce</a>.</p>\n'
     body = f"""    <h2>What This Dimension Means</h2>
     <p>{c['meaning']}</p>
     <h2>Why It Matters to Merchant Sovereignty</h2>
@@ -276,8 +279,8 @@ def build_dimension(dim):
       <p>{c['action']}</p>
     </div>
     <div class="crosslinks">
-      <p>Canonical term: <a href="{TERM_BY_SLUG[dim['lexicon_term']]['route']}">{TERM_BY_SLUG[dim['lexicon_term']]['term']}</a> in the OutMerchant Lexicon. This dimension is governed by <a href="/protocol/">the OutMerchant Protocol</a>.</p>
-      <p>Persistent low control on this dimension is characteristic of the <a href="{c['level']}">{level_name}</a> tier. High control across all eight dimensions defines the standard's protected highest rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>
+      <p>Canonical term: <a href="{TERM_BY_SLUG[dim['lexicon_term']]['route']}">{TERM_BY_SLUG[dim['lexicon_term']]['term']}</a> in the Outmerchant Lexicon. This dimension is governed by <a href="/protocol/">the Outmerchant Protocol</a>.</p>
+{agentic_link}      <p>Persistent low control on this dimension is characteristic of the <a href="{c['level']}">{level_name}</a> tier. High control across all eight dimensions defines the standard's protected highest rank: <a href="/levels/outmerchant/">Outmerchant</a>.</p>
       <a class="cta" href="/score/">→ Measure This Dimension</a>
       <a class="cta-secondary" href="/">The Standard</a>
     </div>"""
@@ -288,16 +291,16 @@ def build_dimension(dim):
 def build_level(lvl):
     c = LEVEL_CONTENT[lvl["name"]]
     route = lvl["route"]
-    title = f"{lvl['name']} ({lvl['min']}–{lvl['max']}) — Merchant Sovereignty Score Tier | OutMerchant"
+    title = f"{lvl['name']} ({lvl['min']}–{lvl['max']}) — Merchant Sovereignty Score Tier | Outmerchant"
     desc = (f"{lvl['name']} is the Merchant Sovereignty Score tier covering {lvl['min']}–{lvl['max']}: "
             f"{lvl['meaning']}")
-    is_terminal = lvl["name"] == "OutMerchant"
+    is_terminal = lvl["name"] == "Outmerchant"
     path_links = "" if is_terminal else (
-        f"""      <p>The terminal state of this path carries the standard's name — the protected highest rank: <a href="/levels/outmerchant/">OutMerchant</a>.</p>\n""")
+        f"""      <p>The terminal state of this path carries the standard's name — the protected highest rank: <a href="/levels/outmerchant/">Outmerchant</a>.</p>\n""")
     terminal_note = ""
     if is_terminal:
         terminal_note = """    <h2>A Protected Rank, Not a Brand Label</h2>
-    <p><strong>OutMerchant is the standard's terminal classification.</strong> The tier's name and boundaries (76–100) are inviolable under public score governance: they are fixed by recorded decisions (DEC-001, DEC-006) and protected by an automated quality gate that rejects any change. This closure is deliberate — the framework cannot be used without its highest tier being the destination, and the destination permanently carries the standard's name. <em>to outmerchant</em> is the verb; <em>an OutMerchant</em> is the rank at the end of it.</p>
+    <p><strong>Outmerchant is the standard's terminal classification.</strong> The tier's name and boundaries (76–100) are inviolable under public score governance: they are fixed by recorded decisions (DEC-001, DEC-006) and protected by an automated quality gate that rejects any change. This closure is deliberate — the framework cannot be used without its highest tier being the destination, and the destination permanently carries the standard's name. <em>to outmerchant</em> is the verb; <em>an Outmerchant</em> is the rank at the end of it.</p>
 """
     body = f"""    <div class="range">{lvl['min']} — {lvl['max']}</div>
     <h2>What This Level Means</h2>
@@ -306,11 +309,11 @@ def build_level(lvl):
     <p>{c['who']}</p>
     <h2>The Common Control Pattern</h2>
     <p>{c['pattern']}</p>
-    <h2>{'Holding the Rank' if is_terminal else 'The Path Toward OutMerchant'}</h2>
+    <h2>{'Holding the Rank' if is_terminal else 'The Path Toward Outmerchant'}</h2>
     <p>{c['path']}</p>
     <div class="crosslinks">
 {path_links}      <a class="cta" href="/score/">→ Measure Your Tier</a>
-      <a class="cta-secondary" href="/levels/outmerchant/">The OutMerchant Rank</a>
+      <a class="cta-secondary" href="/levels/outmerchant/">The Outmerchant Rank</a>
     </div>"""
     kicker = f"// Tier {lvl['order']} of 4 — Merchant Sovereignty Score"
     return route, page(route, title, desc, kicker,
@@ -323,13 +326,13 @@ def main():
         route, html = build_dimension(dim)
         out = ROOT / route.strip("/") / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(html)
+        out.write_text(html, encoding="utf-8")
         built.append(route)
     for lvl in sorted(levels, key=lambda l: l["order"]):
         route, html = build_level(lvl)
         out = ROOT / route.strip("/") / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(html)
+        out.write_text(html, encoding="utf-8")
         built.append(route)
     print(f"built {len(built)} reference pages:")
     for r in built:

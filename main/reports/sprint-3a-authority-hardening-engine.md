@@ -66,4 +66,4 @@ No monetization · no buyer outreach · no public sale posture · no marketplace
 
 ---
 
-*Report maintained under the OutMerchant Governance Operating System.*
+*Report maintained under the Outmerchant Governance Operating System.*

@@ -13,7 +13,7 @@ ORIGIN = "https://outmerchant.com"
 
 def page_html(route):
     path = ROOT / route.strip("/") / "index.html"
-    return path.read_text() if path.exists() else None
+    return path.read_text(encoding="utf-8") if path.exists() else None
 
 
 def jsonld_terms(html):
@@ -37,8 +37,8 @@ def jsonld_terms(html):
 
 def run():
     errors = []
-    terms = json.loads((DATA / "glossary_terms.json").read_text())["terms"]
-    pages = json.loads((DATA / "pages.json").read_text())["pages"]
+    terms = json.loads((DATA / "glossary_terms.json").read_text(encoding="utf-8"))["terms"]
+    pages = json.loads((DATA / "pages.json").read_text(encoding="utf-8"))["pages"]
     status = {p["route"]: p["status"] for p in pages}
     active_terms = [t for t in terms if t["status"] == "active"]
 
