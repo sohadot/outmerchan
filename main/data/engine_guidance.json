@@ -41,6 +41,6 @@
     "Captured": "Your route to the buyer is owned end to end by others: discovery, relationship, transaction, settlement, and trust all pass through points of control you do not hold. The route is the first thing to reclaim — one owned segment changes the structure.",
     "Dependent": "You hold fragments of your route to the buyer, but its critical segments are borrowed. The route works — on terms you do not set. Converting borrowed segments into owned ones is the work of this tier.",
     "Emerging": "You own most of your route to the buyer. What remains borrowed are the deeper layers — verifiable trust, machine legibility, and the rules themselves. The remaining distance is governance, not operations.",
-    "OutMerchant": "You own your route to the buyer end to end: no single point of control sits between you and your customer. The work now is holding the route — sovereignty decays silently when unwatched."
+    "Outmerchant": "You own your route to the buyer end to end: no single point of control sits between you and your customer. The work now is holding the route — sovereignty decays silently when unwatched."
   }
 }

@@ -97,4 +97,4 @@ No corrective action required — the pipeline is healthy (Google: Success, 29/2
 
 ---
 
-*Maintained under the OutMerchant Governance Operating System.*
+*Maintained under the Outmerchant Governance Operating System.*

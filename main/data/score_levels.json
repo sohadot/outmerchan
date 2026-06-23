@@ -29,7 +29,7 @@
     },
     {
       "order": 4,
-      "name": "OutMerchant",
+      "name": "Outmerchant",
       "min": 76,
       "max": 100,
       "route": "/levels/outmerchant/",

@@ -2,53 +2,54 @@
 
 **The reference standard for Merchant Sovereignty.**
 
-Outmerchant.com defines, measures, and names the condition in which a merchant owns their route to the buyer — channels, customers, reputation, settlement rails, and margin — without depending on any single platform to hold any of it.
+Outmerchant.com defines, measures, and protects the condition in which a merchant owns the route to the buyer: channels, customers, reputation, settlement rails, margin, machine readability, and governance.
 
-## What This Repository Contains
+## Current Architecture
 
-| Path | What It Is |
-|------|------------|
-| `/` | The live standard — HTML surface, JSON-LD, sitemap, robots |
-| `main/data/` | The governed data model — score dimensions, questions, levels, lexicon, pages |
-| `main/scripts/` | Quality gate validators and build scripts |
-| `DECISION_LOG.md` | Every significant decision about the system, recorded |
-| `QUALITY_GATE.md` | The enforcement layer — what is checked and how |
-| `SCORE_GOVERNANCE.md` | The Merchant Sovereignty Score governance |
-| `LEXICON_GOVERNANCE.md` | Lexicon admission law and casing rules |
-| `ASSET_THESIS.md` | The strategic thesis — why this asset exists and what it becomes |
+The live asset contains 29 governed public routes beyond the home surface, 15 governed lexicon terms, 8 score dimensions, 4 sovereignty levels, and the protected Outmerchant rank. The route registry currently contains 30 active entries including `/`.
 
-## The Standard
+Core public layers:
 
-The **Merchant Sovereignty Score** (0–100) measures commercial independence across eight dimensions:
+- `/score/` - governed Merchant Sovereignty diagnostic engine
+- `/protocol/` - the protocol binding score, lexicon, reference pages, and governance
+- `/lexicon/` - canonical Merchant Sovereignty vocabulary
+- `/agentic-commerce/` - AI-mediated commerce and machine-legibility layer
 
-| # | Code | Dimension |
-|---|------|-----------|
-| 01 | DEP | Platform Dependency |
-| 02 | OWN | Customer Ownership |
-| 03 | REP | Reputation Portability |
-| 04 | PAY | Payment & Settlement Exposure |
-| 05 | FEE | Fee & Margin Leakage |
-| 06 | XBR | Cross-Border Trust |
-| 07 | AGT | AI Commerce Readiness |
-| 08 | GOV | Governance Independence |
-
-Four tiers classify the result: **Captured** (0–25) · **Dependent** (26–50) · **Emerging** (51–75) · **Outmerchant** (76–100).
-
-The terminal tier — Outmerchant — is inviolable by DEC-001 and DEC-006. Its spelling is governed by DEC-016.
-
-## The Quality Gate
-
-```
-python3 main/scripts/quality_gate.py
-```
-
-Runs 9 validators. Exits non-zero on any governance violation. Runs in CI on every push. A red gate blocks merge.
+The internal link registry records 118 governed internal links, including the 114-link baseline plus the active Agentic Commerce reinforcement edges.
 
 ## Governance
 
-Every significant decision is recorded in `DECISION_LOG.md` with an ID, date, layer, decision, and rationale. The current record runs to DEC-016. Nothing significant changes silently.
+The repository is governed by:
 
-**Orthography:** "Outmerchant" (initial capital only) is the official form per DEC-016. Validator 9 (`validate_orthography.py`) enforces this automatically.
+- `DECISION_LOG.md` - constitutional and operational decisions through DEC-016
+- `QUALITY_GATE.md` - the enforcement layer
+- `SCORE_GOVERNANCE.md` - score dimensions, tiers, and diagnostic rules
+- `LEXICON_GOVERNANCE.md` - lexicon admission law
+- `ROUTE_GOVERNANCE.md` - route registry and internal topology
+- `AI_READABILITY_POLICY.md` - metadata and machine-readable clarity rules
+- `CLAIM_POLICY.md` - claim discipline and bounded AI language
+
+DEC-016 locks the official spelling: **Outmerchant** for the asset, rank, protocol, and standard; **outmerchant** only for the verb or lexical headword; **outmerchant.com** only for the domain.
+
+## Quality Gate
+
+```bash
+python main/scripts/quality_gate.py
+```
+
+The gate now runs 9 validators:
+
+1. Score model
+2. Lexicon
+3. Routes
+4. Internal links
+5. SEO / AI readability
+6. Reference standard
+7. Definitional authority
+8. Score engine governance
+9. Official orthography
+
+Google Search Console and Bing Webmaster discovery are recorded in the indexation intelligence log. The next phase waits for real Google/Bing indexation data before corrective authority reinforcement begins.
 
 ---
 

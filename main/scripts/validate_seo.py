@@ -22,8 +22,8 @@ def collect_defined_terms(node, out):
 
 def run():
     errors = []
-    pages = json.loads((DATA / "pages.json").read_text())["pages"]
-    terms = json.loads((DATA / "glossary_terms.json").read_text())["terms"]
+    pages = json.loads((DATA / "pages.json").read_text(encoding="utf-8"))["pages"]
+    terms = json.loads((DATA / "glossary_terms.json").read_text(encoding="utf-8"))["terms"]
     active = [p for p in pages if p["status"] == "active"]
 
     for p in active:
@@ -31,7 +31,7 @@ def run():
         if not path.exists():
             errors.append(f"seo: active route {p['route']} has no file")
             continue
-        html = path.read_text()
+        html = path.read_text(encoding="utf-8")
         expected_canonical = ORIGIN + p["route"]
         if f'<link rel="canonical" href="{expected_canonical}"' not in html:
             errors.append(f"seo: {p['route']} missing canonical {expected_canonical}")
@@ -55,7 +55,7 @@ def run():
     for surface, path in (("home", ROOT / "index.html"), ("/lexicon/", ROOT / "lexicon" / "index.html")):
         if not path.exists():
             continue
-        html = path.read_text()
+        html = path.read_text(encoding="utf-8")
         blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
         if not blocks:
             errors.append(f"seo: {surface} surface carries no JSON-LD")
@@ -75,12 +75,12 @@ def run():
     sitemap = ROOT / "sitemap.xml"
     if not robots.exists():
         errors.append("seo: robots.txt missing")
-    elif "sitemap" not in robots.read_text().lower():
+    elif "sitemap" not in robots.read_text(encoding="utf-8").lower():
         errors.append("seo: robots.txt does not reference the sitemap")
     if not sitemap.exists():
         errors.append("seo: sitemap.xml missing")
     else:
-        sm = sitemap.read_text()
+        sm = sitemap.read_text(encoding="utf-8")
         for p in active:
             if f"<loc>{ORIGIN}{p['route']}</loc>" not in sm:
                 errors.append(f"seo: active route {p['route']} missing from sitemap.xml")

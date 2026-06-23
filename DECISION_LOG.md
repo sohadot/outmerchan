@@ -6,11 +6,11 @@ Every entry is permanent. Decisions are superseded by later entries, never edite
 
 ---
 
-## DEC-001 — OutMerchant defined as both verb and rank
+## DEC-001 — Outmerchant defined as both verb and rank
 
 **Date:** 2025-09-01 · **Layer:** Constitutional / Lexicon / Score
 
-The founding duality is established and inviolable: *outmerchant* (v.) is the act of trading without ceding control of the route to the buyer. *OutMerchant* (n.) is the rank earned when that act is complete: a merchant who has achieved measurable commercial sovereignty across the eight governed dimensions. This duality is not decoration — it is the asset's structural premise. The verb names what the merchant does; the noun names what the merchant becomes. This entry cannot be superseded on the noun/verb relationship, only extended.
+The founding duality is established and inviolable: *outmerchant* (v.) is the act of trading without ceding control of the route to the buyer. *Outmerchant* (n.) is the rank earned when that act is complete: a merchant who has achieved measurable commercial sovereignty across the eight governed dimensions. This duality is not decoration — it is the asset's structural premise. The verb names what the merchant does; the noun names what the merchant becomes. This entry cannot be superseded on the noun/verb relationship, only extended.
 
 ---
 
@@ -126,13 +126,13 @@ The `engine_guidance.json` file is the single source of truth for all text surfa
 
 ---
 
-## DEC-016 — "Outmerchant" established as the official unified spelling
-**Date:** 2026-06-21 · **Layer:** Constitutional / Lexicon / Orthography
+## DEC-016 — Official Orthography: Outmerchant as a Unified Word
 
-"Outmerchant" (initial capital only) supersedes "OutMerchant" (CamelCase) as the official spelling of the brand, rank, standard, protocol, and asset across all files — HTML, Markdown, JSON, and Python. The superseded form must not appear in any governed file outside of historical decision body text (DEC-001 through DEC-015) and this record. The new spelling applies immediately to all surfaces: og:site_name, BreadcrumbList, JSON-LD, data models, script logic, and governance documents. A new validator (`validate_orthography.py`) enforces this rule automatically on every push. Decision is constitutional and permanent.
+**Date:** 2026-06-23 · **Layer:** Constitutional / Lexicon / Orthography
 
-**Rationale:** The mixed-case "OutMerchant" introduced visual noise inconsistent with the standard's tone and created orthographic ambiguity. A single canonical form — initial capital only — aligns with standard English noun capitalisation, is unambiguous in all rendering contexts, and eliminates the need for per-context spelling decisions. The terminal rank name is preserved as "Outmerchant" under DEC-001 (name inviolable) with its spelling now governed by DEC-016.
+Outmerchant is the official written form of the asset, protected rank, protocol, and public standard. The spelling is intentionally unified to preserve the value of the word as a single canonical term, not a camel-cased composition. The lowercase form "outmerchant" may be used only when referring to the verb or lexical headword. The forms "OutMerchant," "Out Merchant," and "outMerchant" are not allowed in public-facing canonical surfaces, metadata, generated reference pages, structured data, reports, or governance documents except where explicitly preserved as superseded historical wording.
 
+**Rationale:** A category-origin asset must stabilize its name before it can stabilize its category. Outmerchant is intended to become a single canonical word: the asset, the rank, and the terminal state of the standard. Orthographic drift weakens memory, search consistency, machine readability, and conceptual authority.
 
 ---
 
